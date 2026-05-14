@@ -1,0 +1,28 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face{
+    src: url(fonts/sora/Sora-Regular.ttf);
+    font-family: sora;
+}
+
+@font-face{
+    src: url(fonts/play-fair/PlayfairDisplay-Regular.ttf);
+    font-family: playfair;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: playfair;
+}

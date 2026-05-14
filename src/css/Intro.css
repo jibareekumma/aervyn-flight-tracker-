@@ -1,0 +1,373 @@
+@font-face {
+  src: url(fonts/sora/Sora-Regular.ttf);
+  font-family: sora;
+}
+@font-face {
+  src: url(fonts/play-fair/PlayfairDisplay-Regular.ttf);
+  font-family: playfair;
+}
+.body-container {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url("photos/bg image mbl.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: auto;
+}
+header .logo-image {
+  width: 10rem;
+  height: 4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header nav.hamburger-menu {
+  width: 8rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.5s ease-in-out;
+}
+header nav.hamburger-menu:hover {
+  cursor: pointer;
+  background-color: none;
+}
+header nav.hamburger-menu img {
+  width: 4.5rem;
+  height: 4.5rem;
+  filter: brightness(0) invert(1);
+}
+
+main {
+  width: 80%;
+  margin: 0 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  color: white;
+}
+main .intro-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+main .intro-texts h4 {
+  font-size: 5rem;
+  line-height: 5rem;
+  color: white;
+  font-weight: 600;
+  word-spacing: 1px;
+}
+main .intro-texts h4 i {
+  font-weight: 300;
+  font-size: 4rem;
+  color: rgb(209, 209, 216);
+}
+main .intro-texts p {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  font-weight: 400;
+  color: rgb(209, 209, 216);
+}
+main .intro-btns {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .intro-btns button {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  color: black;
+  font-family: sora;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+main .intro-btns button:hover {
+  cursor: pointer;
+  background-color: rgb(10, 13, 20);
+  color: white;
+}
+main .intro-btns #login-btn {
+  background-color: transparent;
+  color: white;
+  border: 0.5px solid rgb(46, 56, 80);
+}
+main .intro-btns #login-btn:hover {
+  background-color: rgb(10, 13, 20);
+  color: white;
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+.menu-drawer {
+  width: 25rem;
+  height: 100vh;
+  background: rgba(10, 13, 20, 0.96);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.45);
+  animation: slideIn 0.35s ease;
+}
+
+.menu-close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.menu-close-btn:hover {
+  transform: rotate(90deg);
+  color: rgb(209, 209, 216);
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding: 0;
+}
+.menu-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-family: sora;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.menu-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+.menu-list li a:hover {
+  color: rgb(209, 209, 216);
+}
+.menu-list li a:hover::after {
+  width: 100%;
+}
+
+.stats-bar {
+  display: none;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .body-container {
+    background-image: url("/photos/bg image dsk.png");
+  }
+  header {
+    align-items: center;
+  }
+  header .logo-image {
+    width: 15rem;
+    height: 7rem;
+  }
+  nav.hamburger-menu img {
+    display: none;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-right: 2rem;
+  }
+  .desktop-nav .nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-end;
+  }
+  .desktop-nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: sora;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+  .desktop-nav a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  .desktop-nav .desktop-nav-cta {
+    background: transparent;
+    color: rgb(209, 209, 216);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    width: 10rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sora;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  .desktop-nav .desktop-nav-cta:hover {
+    background: rgba(10, 13, 20, 0.55);
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  main {
+    width: 55%;
+    margin-left: 5%;
+    margin-right: 0;
+    justify-content: center;
+    gap: 2rem;
+  }
+  main .intro-texts h4 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  main .intro-texts i {
+    font-size: 3.5rem;
+  }
+  main .intro-texts p {
+    font-size: 1.2rem;
+    max-width: 38rem;
+  }
+  main .intro-btns {
+    flex-direction: row;
+    gap: 1.2rem;
+    width: auto;
+  }
+  main .intro-btns button {
+    width: auto;
+    padding: 0 2.5rem;
+    border-radius: 999px;
+  }
+  main .intro-btns #login-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+  }
+  main .intro-btns #login-btn:hover {
+    border: none;
+  }
+  .stats-bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: rgba(10, 13, 20, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem 2.5rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 1rem;
+  }
+  .stats-bar .stat-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .stats-bar .stat-item .stat-image {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+  }
+  .stats-bar .stat-item .stat-number {
+    font-family: playfair;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+  }
+  .stats-bar .stat-item .stat-label {
+    font-family: sora;
+    font-size: 0.75rem;
+    color: rgb(209, 209, 216);
+    letter-spacing: 0.5px;
+  }
+  .stats-bar .stat-divider {
+    width: 1px;
+    height: 2.5rem;
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+.stat-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}/*# sourceMappingURL=Intro.css.map */
