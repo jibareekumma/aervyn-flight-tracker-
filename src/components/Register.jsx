@@ -1,5 +1,3 @@
-
-
 import leftArrow from "/icons/left_arrow_icon.png"
 import mainLogo from "/icons/main-icon.png"
 import profileIcon from "/icons/profile_icon.png"
@@ -8,43 +6,48 @@ import padlockIcon from "/icons/padlock icon.png"
 import googleIcon from "/icons/google-icon.png"
 import githubIcon from "/icons/github-icon.png"
 import facebookIcon from "/icons/facebook-icon.png"
+import githubIcon1 from "/icons/github 1.png"
+import { useNavigate } from "react-router-dom"
 
 
 import "../css/Register.css"
 
 const Register = function (){
+
+    const navigate = useNavigate()
     return <>
         <div className = 'entry-page' 
         id = 'register-container'>
 
-                <header>
+                <div className = 'register-header'>
                     <div>
-                    <button>
+                    <button onClick = {() => navigate('/')}>
                         <img src = {leftArrow} alt="Left Arrow" 
                         title = 'Go back to Intro page'
                         loading ='lazy'
                         />
                     </button>
+                    <div className = 'logo-container'></div>
                     <img src = {mainLogo} 
                     alt="Company Logo" 
                     loading = 'lazy'
                     className = 'company-logo'
                     />
                     </div>
-                </header>
+                </div>
 
-                <main id = "register-main">
+                <div id = "register-main">
 
-                    <section className = 'header-main'>
+                    <div className = 'header-main'>
                         <h4>Create Account</h4>
                         <p>Join us and start 
                             enjoying your journey</p>
-                    </section>
+                    </div>
 
                     <form>
 
-                    <section className="form-inputs">
-                <div className = 'input-container'>
+                    <div className="form-inputs">
+                        <div className = 'input-container'>
                         <div className = 'icon-box'>
                                 <img src = {profileIcon} 
                                 alt="User profile icon" 
@@ -97,15 +100,22 @@ const Register = function (){
                         />
                     </div>
 
-                    </section>
+                    </div>
 
-                    <input type = "checkbox" />
+                    <div className = 'checkbox-container'>
+                    <input type = "checkbox" 
+                    className = 'checkbox-input'
+                    />
+                    <p>I agree to the <a href="">terms & conditions</a></p>
+                    </div>
 
-                    <button type = 'button'>
+                    <button type = 'button'
+                    className = 'register-btn'
+                    >
                         Register
                     </button>
                         </form>
-                </main>
+                </div>
 
 
             <footer>
@@ -118,8 +128,9 @@ const Register = function (){
                         />
                     </div>
 
-                    <div className = 'items'>
-                        <img src = {githubIcon} 
+                    <div className = 'items' 
+                    id = 'github-item'>
+                        <img src = {githubIcon1} 
                         alt="Github sign in icon"
                         />
                     </div>
@@ -131,10 +142,12 @@ const Register = function (){
                     </div>
                 </div>
 
-                <p>Already have an account?</p> <a 
-                onClick = {() => Navigate('/login')}>
+                <p
+                className = 'login-paragraph'
+                >Already have an account? <a onClick = {() => navigate('/login')}>
                     Log in
                 </a>
+                </p>
 
             </footer>
         </div>
