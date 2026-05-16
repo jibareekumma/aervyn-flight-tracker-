@@ -62,11 +62,11 @@ const Intro = function () {
                             onClick={() => setOpenMenu(false)}>
                                 About Us</a></li>
                             <li><a href="#signup" 
-                            onClick={() => setOpenMenu(false)}>
+                            onClick = {() => navigate('/register')}>
                                 Sign Up</a></li>
                             <li><a href="#login" 
                             onClick = {() => navigate('/login')}
-                            onClick={() => setOpenMenu(false)}>
+                            >
                                 Log in</a></li>
                         </ul>
                     </div>
@@ -82,10 +82,17 @@ const Intro = function () {
                 </div>
 
                 <div className="intro-btns">
-                    <button className="intro-button" id="get-started-btn" type="button">
+                    <button className="intro-button" 
+                    id="get-started-btn" 
+                    type="button"
+                    onClick = {() => navigate('/register')}
+                    >
                         Get Started
                     </button>
-                    <button id = 'login-btn' type="button"> 
+                    <button id = 'login-btn' 
+                    type="button"
+                    onClick = {() => navigate('/login')}
+                    > 
                         Log in</button>
                     
                 </div>

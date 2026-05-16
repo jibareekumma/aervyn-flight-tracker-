@@ -1,5 +1,16 @@
 
 
+
+$secondary-text: rgb(209, 209, 216);
+$bg-color1: rgba(10, 13, 20);
+$transix: 0.5s ease-in-out;
+$filter-white: brightness(0) invert(1);
+$btn-outline: 1px solid rgba(255, 255, 255, 0.3);
+$bg-color2: rgba(10, 13, 20, 0.55);
+$bg-color3: rgba(15, 38, 46);
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +33,7 @@ html{
 
 
 body{
-    background-color: black;
+    background-color: $bg-color3;
     color: white;
     font-family: playfair;
 }

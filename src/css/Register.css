@@ -1,0 +1,52 @@
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.entry-page {
+  width: 100vw;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid white;
+}
+header div {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header button {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 66, 76);
+  border: none;
+  border-radius: 50%;
+}
+header button img {
+  filter: brightness(0) invert(1);
+}
+header .company-logo {
+  width: 13rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#register-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  border: 2px solid white;
+}
+#register-main .header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}/*# sourceMappingURL=Register.css.map */

@@ -1,0 +1,78 @@
+
+
+$secondary-text: rgb(209, 209, 216);
+$bg-color1: rgba(10, 13, 20);
+$transix: 0.5s ease-in-out;
+$filter-white: brightness(0) invert(1);
+$btn-outline: 1px solid rgba(255, 255, 255, 0.3);
+$bg-color2: rgba(10, 13, 20, 0.55);
+$bg-color3: rgba(15, 38, 46);
+$bg-color4: rgba(44, 66, 76);
+
+
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.entry-page{
+    width: 100vw;
+    padding: 1rem;
+}
+
+header{
+
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+
+
+    div{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    button{
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-color4;
+        border: none;
+        border-radius: 50%;
+
+        img{
+            filter: $filter-white;
+        }
+    }
+
+    .company-logo{
+        width: 13rem;
+        height: 5rem;
+       
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#register-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+    
+    border: 2px solid white;
+
+
+    .header-main{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
