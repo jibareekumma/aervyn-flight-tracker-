@@ -9,6 +9,7 @@ import googleIcon from "/icons/google-icon.png"
 import githubIcon from "/icons/github-icon.png"
 import facebookIcon from "/icons/facebook-icon.png"
 import githubIcon1 from "/icons/github 1.png"
+import windowImage from "/photos/window image .png"
 
 
 import "../css/Register.css"
@@ -18,6 +19,20 @@ const Login = function (){
 
     const navigate = useNavigate()
     return <>
+
+        <div id="register-container-dskp">
+                    <div className="image-container-dskp">
+                        <img src = {windowImage}  
+                        alt="Image of flight window"
+                        loading="lazy"
+                        className = 'flight-window-image'
+                        />
+                    </div>
+        
+        
+        
+                    {/* Mobile Starts here  */}
+
         <div className = 'entry-page' 
         id = 'register-container'>
 
@@ -130,6 +145,7 @@ const Login = function (){
                 </p>
 
             </footer>
+        </div>
         </div>
     </>
 }

@@ -1,3 +1,5 @@
+
+
 import leftArrow from "/icons/left_arrow_icon.png"
 import mainLogo from "/icons/main-icon.png"
 import profileIcon from "/icons/profile_icon.png"
@@ -8,6 +10,7 @@ import githubIcon from "/icons/github-icon.png"
 import facebookIcon from "/icons/facebook-icon.png"
 import githubIcon1 from "/icons/github 1.png"
 import { useNavigate } from "react-router-dom"
+import windowImage from "/photos/window image .png"
 
 
 import "../css/Register.css"
@@ -16,7 +19,20 @@ const Register = function (){
 
     const navigate = useNavigate()
     return <>
-        <div className = 'entry-page' 
+
+    <div id="register-container-dskp">
+            <div className="image-container-dskp">
+                <img src = {windowImage}  
+                alt="Image of flight window"
+                loading="lazy"
+                className = 'flight-window-image'
+                />
+            </div>
+
+
+
+            {/* Mobile Starts here  */}
+             <div className = 'entry-page' 
         id = 'register-container'>
 
                 <div className = 'register-header'>
@@ -151,6 +167,13 @@ const Register = function (){
 
             </footer>
         </div>
+
+    </div>
+
+
+       
+
+        
     </>
 }
 
