@@ -14,10 +14,50 @@ import windowImage from "/photos/window image .png"
 
 
 import "../css/Register.css"
+import { useState } from "react"
+import { supabase } from "../lib/supabaseClient"
 
 const Register = function (){
 
     const navigate = useNavigate()
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [confirmPassword, setConfirmPassword] = useState("")
+    const [name, setName ] = useState("")
+
+    // Sign up Logics
+    // const [user, setUser] = useState(null)
+    const [error, setError] = useState("")
+    const [loading, setLoading] = useState(false)
+
+    const handleRegister = async function(){
+        setError("")
+
+        if (password !== confirmPassword) {
+        return setError("Passwords do not match")
+    }
+
+
+        setLoading(true)
+        const {data, error} = await supabase.auth.signUp({email, password})
+
+        setLoading(false)
+        if (error) return setError(error.message);
+
+          if (error) {
+        if (error.message.toLowerCase().includes("already registered")) {
+            return setError("An account with this email already exists. Please log in instead.")
+        }
+        return setError(error.message)
+    }
+
+        // setUser(data.user ?? null)
+
+         navigate('/dashboard')
+    }
+
+
     return <>
 
     <div id="register-container-dskp">
@@ -61,7 +101,7 @@ const Register = function (){
                     </div>
 
                     <form>
-
+                    {error && <p>{error}</p>}
                     <div className="form-inputs">
                         <div className = 'input-container'>
                         <div className = 'icon-box'>
@@ -73,6 +113,9 @@ const Register = function (){
                         <input type="text" 
                         maxLength = {40}
                         placeholder = "Full Name"
+                        value = {name}
+                        onChange = {(e) => setName(e.target.value)}
+                        disabled = {loading}
                         />
                     </div>
 
@@ -87,6 +130,9 @@ const Register = function (){
                         <input type="email" 
                         maxLength = {40}
                         placeholder = "Email Address"
+                        value = {email}
+                        onChange = {(e) => setEmail(e.target.value)}
+                        disabled = {loading}
                         />
                     </div>
 
@@ -100,6 +146,9 @@ const Register = function (){
                         <input type="password" 
                         maxLength = {40}
                         placeholder = "New Password"
+                        value = {password}
+                        onChange = {(e) => setPassword(e.target.value)}
+                        disabled = {loading}
                         />
                     </div>
 
@@ -113,6 +162,9 @@ const Register = function (){
                         <input type="password" 
                         maxLength = {40}
                         placeholder = "Confirm Password"
+                        value = {confirmPassword}
+                        onChange = {(e) => setConfirmPassword(e.target.value)}
+                        disabled = {loading}
                         />
                     </div>
 
@@ -127,8 +179,12 @@ const Register = function (){
 
                     <button type = 'button'
                     className = 'register-btn'
+                    onClick = {handleRegister}
+                    disabled = {loading}
+
                     >
-                        Register
+                        {loading? "Please wait..." : "Register"}
+                        
                     </button>
                         </form>
                 </div>

@@ -292,4 +292,11 @@ footer p {
   #register-main {
     margin-top: 0.5rem;
   }
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+input:disabled {
+  cursor: not-allowed;
 }/*# sourceMappingURL=Register.css.map */

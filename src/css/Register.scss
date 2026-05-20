@@ -363,3 +363,12 @@ footer p { font-size: $font-sm; }
      }
 }
 
+
+button:disabled{
+    cursor: not-allowed;
+}
+
+input:disabled{
+    cursor: not-allowed;
+}
+

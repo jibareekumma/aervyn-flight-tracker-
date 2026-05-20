@@ -14,10 +14,39 @@ import windowImage from "/photos/window image .png"
 
 import "../css/Register.css"
 import { useNavigate } from "react-router-dom"
+import { useState } from "react"
+
+import { supabase } from "../lib/supabaseClient"
 
 const Login = function (){
 
     const navigate = useNavigate()
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+
+       // Sign in Logics
+        // const [user, setUser] = useState(null)
+        const [error, setError] = useState("")
+        const [loading, setLoading] = useState(false)
+    
+        const handleLogin = async function(){
+            setError("")
+            setLoading(true)
+            const {data, error} = await supabase.auth.signInWithPassword({email, password})
+    
+            setLoading(false)
+            if (error) return setError(error.message);
+    
+            // setUser(data.user ?? null)
+
+            navigate('/dashboard')
+        }
+    
+
+
+    
     return <>
 
         <div id="register-container-dskp">
@@ -61,10 +90,11 @@ const Login = function (){
                     </div>
 
                     <form>
+                    {error && <p>{error}</p>}
 
                     <div className="form-inputs">
                         
-
+                    
 
                 <div className = 'input-container'>
                         <div className = 'icon-box'>
@@ -76,6 +106,9 @@ const Login = function (){
                         <input type="email" 
                         maxLength = {40}
                         placeholder = "Email Address"
+                        value = {email}
+                        onChange = {(e) => setEmail(e.target.value)}
+                        disabled = {loading}
                         />
                     </div>
 
@@ -89,6 +122,9 @@ const Login = function (){
                         <input type="password" 
                         maxLength = {40}
                         placeholder = "New Password"
+                        value = {password}
+                        onChange = {(e) => setPassword(e.target.value)}
+                        disabled = {loading}
                         />
                     </div>
 
@@ -105,8 +141,10 @@ const Login = function (){
 
                     <button type = 'button'
                     className = 'register-btn'
+                    onClick = {handleLogin}
+                    disabled = {loading}
                     >
-                        Login
+                        {loading? "Please wait..." : "Login"}
                     </button>
                         </form>
                 </div>
