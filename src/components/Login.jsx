@@ -10,6 +10,8 @@ import githubIcon from "/icons/github-icon.png"
 import facebookIcon from "/icons/facebook-icon.png"
 import githubIcon1 from "/icons/github 1.png"
 import windowImage from "/photos/window image .png"
+import showPasswordIcon from "/icons/show_password.png"
+import hidePasswordIcon from "/icons/hide_password.png"
 
 
 import "../css/Register.css"
@@ -24,6 +26,10 @@ const Login = function (){
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+
+
+    const [showPassword, setShowPassword] = useState(false);
+
 
 
        // Sign in Logics
@@ -90,7 +96,7 @@ const Login = function (){
                     </div>
 
                     <form>
-                    {error && <p>{error}</p>}
+                    {error && <p className = "error-message">{error}</p>}
 
                     <div className="form-inputs">
                         
@@ -115,17 +121,31 @@ const Login = function (){
                      <div className = 'input-container'>
                         <div className = 'icon-box'>
                                 <img src = {padlockIcon} 
-                                alt="User mail icon" 
+                                alt="password icon" 
                                 />
                          </div>
 
-                        <input type="password" 
+                        <input 
                         maxLength = {40}
                         placeholder = "New Password"
                         value = {password}
                         onChange = {(e) => setPassword(e.target.value)}
                         disabled = {loading}
+                        type={showPassword ? "text" : "password"}
                         />
+
+
+                        <button
+                    type="button"
+                    onClick={() => setShowPassword(prev => !prev)}
+                className="toggle-password-btn"
+                     >
+                {showPassword 
+                ? <img src = {hidePasswordIcon} 
+                className = 'password-sensitive'/> 
+                : <img src = {showPasswordIcon} 
+                className = 'password-sensitive'/>}
+                </button>
                     </div>
 
                     

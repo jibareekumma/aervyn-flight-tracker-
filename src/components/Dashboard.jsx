@@ -1,9 +1,12 @@
 
+import Header from "./Header"
+
 
 
 const Dashboard = function(){
     return<>
-            <h3>YOU ARE WELCOMED</h3>
+            
+        <Header/>
     </>
 }
 

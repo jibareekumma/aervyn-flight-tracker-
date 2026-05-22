@@ -106,6 +106,7 @@ form {
 .form-inputs .input-container .icon-box img {
   width: 18px;
   opacity: 0.5;
+  filter: brightness(0) invert(1);
 }
 .form-inputs .input-container input {
   flex: 1;
@@ -246,6 +247,11 @@ footer p {
   font-size: clamp(1.2rem, 1.4vw, 1.4rem);
 }
 
+.error-message {
+  color: red;
+  font-style: italic;
+}
+
 @media (min-width: 768px) {
   #register-container-dskp {
     display: flex;
@@ -299,4 +305,27 @@ button:disabled {
 
 input:disabled {
   cursor: not-allowed;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  line-height: 1;
+}
+
+.password-sensitive {
+  min-width: 25px;
+  height: 25px;
+  filter: brightness(0) invert(1);
 }/*# sourceMappingURL=Register.css.map */

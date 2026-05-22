@@ -1,0 +1,71 @@
+
+
+import { useState, useEffect } from "react"
+import { supabase } from "../lib/supabaseClient"
+import dummyProfile from "/photos/dummy profile.jpeg"
+
+
+import bellIcon from "/icons/bell_icon.png"
+
+
+const Header = function(){
+    const [userName, setUserName] = useState("")
+
+    useEffect(() => {
+        const getUser = async () => {
+            const { data: { user } } = await supabase.auth.getUser()
+            if (user) {
+                setUserName(user.user_metadata?.full_name || "User")
+            }
+        }
+        getUser()
+    }, [])
+
+    const today = new Date().toLocaleDateString('en-US', {
+        weekday: 'long', 
+        day: 'numeric',
+        month: 'long'
+    })
+
+    return <>
+        <section className = 'user-detail-header'>
+            <div className = 'user-detail-header-text'>
+            <p>{today}</p>
+            <p>{userName}</p>
+            </div>
+
+            <div className = 'user-detail-header-icons'>
+
+                    <div className = 'bell-icon'>
+                        <img src = {bellIcon} alt="bell icon" 
+                        loading="lazy"
+                        />
+                    </div>
+
+                    <img src = {dummyProfile} alt="user-profile" 
+                    className = 'user-profile-photo' 
+                    loading="lazy"
+                    />
+
+            </div>
+
+
+        </section>
+
+
+        <section className = 'grouped-navigation'>
+
+                <div className = 'grouped-item item-flight'>
+                    Flights</div>
+
+                <div className = 'grouped-item item-hotel'>
+                    Hotels</div>
+                    
+                    <div className = 'grouped-item item-car'>
+                    Cars</div>
+        </section>
+
+    </>
+}
+
+export default Header

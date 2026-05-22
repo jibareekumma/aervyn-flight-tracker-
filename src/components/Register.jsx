@@ -11,6 +11,8 @@ import facebookIcon from "/icons/facebook-icon.png"
 import githubIcon1 from "/icons/github 1.png"
 import { useNavigate } from "react-router-dom"
 import windowImage from "/photos/window image .png"
+import showPasswordIcon from "/icons/show_password.png"
+import hidePasswordIcon from "/icons/hide_password.png"
 
 
 import "../css/Register.css"
@@ -31,31 +33,42 @@ const Register = function (){
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
 
+    const [showPassword, setShowPassword] = useState(false);
+
     const handleRegister = async function(){
-        setError("")
+    setError("")
 
-        if (password !== confirmPassword) {
-        return setError("Passwords do not match")
-    }
+    if (!name.trim()) return setError("Please enter your full name")
+    if (!email.trim()) return setError("Please enter your email")
+    if (password.length < 6) return setError("Password must be at least 6 characters")
+    if (password !== confirmPassword) return setError("Passwords do not match")
 
+    setLoading(true)
 
-        setLoading(true)
-        const {data, error} = await supabase.auth.signUp({email, password})
+    const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+            data: {
+                full_name: name,
+            }
+        }
+    })
 
-        setLoading(false)
-        if (error) return setError(error.message);
+    setLoading(false)
 
-          if (error) {
+    if (error) {
         if (error.message.toLowerCase().includes("already registered")) {
             return setError("An account with this email already exists. Please log in instead.")
         }
         return setError(error.message)
     }
 
-        // setUser(data.user ?? null)
+    navigate('/dashboard')
+}
 
-         navigate('/dashboard')
-    }
+
+    const [userName, setUserName] = useState("")
 
 
     return <>
@@ -101,7 +114,7 @@ const Register = function (){
                     </div>
 
                     <form>
-                    {error && <p>{error}</p>}
+                    {error && <p className = "error-message">{error}</p>}
                     <div className="form-inputs">
                         <div className = 'input-container'>
                         <div className = 'icon-box'>
@@ -112,7 +125,7 @@ const Register = function (){
 
                         <input type="text" 
                         maxLength = {40}
-                        placeholder = "Full Name"
+                        placeholder = "username"
                         value = {name}
                         onChange = {(e) => setName(e.target.value)}
                         disabled = {loading}
@@ -143,13 +156,26 @@ const Register = function (){
                                 />
                          </div>
 
-                        <input type="password" 
+                        <input  
                         maxLength = {40}
                         placeholder = "New Password"
                         value = {password}
                         onChange = {(e) => setPassword(e.target.value)}
                         disabled = {loading}
+                        type={showPassword ? "text" : "password"}
                         />
+
+                        <button
+                                type="button"
+                                onClick={() => setShowPassword(prev => !prev)}
+                                className="toggle-password-btn"
+                                >
+                                {showPassword 
+                                ? <img src = {hidePasswordIcon} 
+                                className = 'password-sensitive'/> 
+                                : <img src = {showPasswordIcon} 
+                                className = 'password-sensitive'/>}
+                                </button>
                     </div>
 
                     <div className = 'input-container'>
@@ -165,7 +191,20 @@ const Register = function (){
                         value = {confirmPassword}
                         onChange = {(e) => setConfirmPassword(e.target.value)}
                         disabled = {loading}
+                        type={showPassword ? "text" : "password"}
                         />
+
+                        <button
+                                type="button"
+                                onClick={() => setShowPassword(prev => !prev)}
+                                className="toggle-password-btn"
+                                >
+                                {showPassword 
+                                ? <img src = {hidePasswordIcon} 
+                                className = 'password-sensitive'/> 
+                                : <img src = {showPasswordIcon} 
+                                className = 'password-sensitive'/>}
+                                </button>
                     </div>
 
                     </div>
@@ -216,7 +255,8 @@ const Register = function (){
 
                 <p
                 className = 'login-paragraph'
-                >Already have an account? <a onClick = {() => navigate('/login')}>
+                >Already have an account? 
+                <a onClick = {() => navigate('/login')}>
                     Log in
                 </a>
                 </p>
