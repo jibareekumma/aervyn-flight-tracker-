@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { supabase } from "../lib/supabaseClient"
 import dummyProfile from "/photos/dummy profile.jpeg"
+import "../css/Header.css"
 
 
 import bellIcon from "/icons/bell_icon.png"
@@ -31,7 +32,7 @@ const Header = function(){
         <section className = 'user-detail-header'>
             <div className = 'user-detail-header-text'>
             <p>{today}</p>
-            <p>{userName}</p>
+            <h6>{userName}✈️</h6>
             </div>
 
             <div className = 'user-detail-header-icons'>
