@@ -20,7 +20,8 @@ const NavigatedSection = function(){
                <div className='country-options'>
 
   {/* Origin Country */}
-  <div style={{ position: "relative", display: "inline-block" }}>
+  <div style={{ position: "relative", 
+    display: "inline-block" }}>
     <select
       name="located-country"
       id="located-country"
@@ -33,12 +34,14 @@ const NavigatedSection = function(){
       src={selectArrow}
       alt="down arrow"
       loading="lazy"
+      className = 'select-icon'
       style={{
         position: "absolute",
         right: "10px",
         top: "50%",
         transform: "translateY(-50%)",
-        pointerEvents: "none"
+        pointerEvents: "none",
+       
       }}
     />
   </div>
@@ -68,7 +71,7 @@ const NavigatedSection = function(){
       src={selectArrow}
       alt="down arrow"
       loading="lazy"
-      className = 'select-arrow'
+      className = 'select-arrow select-icon'
       style={{
         position: "absolute",
         right: "10px",
@@ -104,7 +107,8 @@ const NavigatedSection = function(){
     <p>Trip Type</p>
     <div 
     className = 'input-item'
-    style={{ position: "relative", display: "inline-block" }}>
+    style={{ position: "relative", 
+    display: "inline-block" }}>
       <select
         name="trip-type"
         className="select-item"
@@ -120,6 +124,7 @@ const NavigatedSection = function(){
         src={selectArrow}
         alt="down arrow"
         loading="lazy"
+        className = 'select-icon'
         style={{
           position: "absolute",
           right: "10px",
@@ -152,23 +157,30 @@ const NavigatedSection = function(){
         src={selectArrow}
         alt="down arrow"
         loading="lazy"
+        className = 'select-icon'
         style={{
-          position: "absolute",
-          right: "10px",
-          top: "50%",
-          transform: "translateY(-50%)",
-          pointerEvents: "none"
-        }}
+        position: "absolute",
+        right: "10px",
+        top: "50%",
+        transform: "translateY(-50%)",
+        pointerEvents: "none",
+        width: "20px",   
+        height: "20px"
+  }}
+    
       />
     </div>
   </div>
 
 </div>
 
-            <button>Search Flights</button>
+            <button
+            className = 'search-btn'
+            >Search Flights</button>
             </div>
 
             </div>
+
     </>
 }
 

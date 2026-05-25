@@ -2,6 +2,7 @@
 import Header from "./Header"
 import NavigatedSection from "./NavigatedSection"
 import "../css/Header.css"
+import Destination from "./Destination"
 
 
 
@@ -13,6 +14,7 @@ const Dashboard = function(){
         <Header/>
 
         <NavigatedSection/>
+        <Destination />
 
         </div>
     </>
