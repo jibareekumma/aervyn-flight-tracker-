@@ -7,6 +7,7 @@ import "../css/Header.css"
 
 
 import bellIcon from "/icons/bell_icon.png"
+import favoriteIcon from "/icons/favorite_icon.png"
 
 
 const Header = function(){
@@ -29,44 +30,35 @@ const Header = function(){
     })
 
     return <>
-        <section className = 'user-detail-header'>
-            <div className = 'user-detail-header-text'>
+        
+        
+    <section className="user-detail-header">
+        <div className="user-detail-header-text">
             <p>{today}</p>
-            <h6>{userName}✈️</h6>
+            <h6>{userName}</h6>
+        </div>
+
+        <div className="user-detail-header-icons">
+            
+
+            <div className="bell-icon">
+                <img src={bellIcon} alt="bell icon" loading="lazy" />
             </div>
 
-            <div className = 'user-detail-header-icons'>
+            <img src={dummyProfile} alt="user-profile"
+            className="user-profile-photo"
+            loading="lazy"
+            />
+        </div>
+    </section>
 
-                    <div className = 'bell-icon'>
-                        <img src = {bellIcon} alt="bell icon" 
-                        loading="lazy"
-                        />
-                    </div>
-
-                    <img src = {dummyProfile} alt="user-profile" 
-                    className = 'user-profile-photo' 
-                    loading="lazy"
-                    />
-
-            </div>
-
-
-        </section>
-
-
-        <section className = 'grouped-navigation'>
-
-                <div className = 'grouped-item item-flight'>
-                    Flights</div>
-
-                <div className = 'grouped-item item-hotel'>
-                    Hotels</div>
-                    
-                    <div className = 'grouped-item item-car'>
-                    Cars</div>
-        </section>
-
-    </>
+    <section className="grouped-navigation">
+        <div className="grouped-item item-flight">Flights</div>
+        <div className="grouped-item item-hotel">Hotels</div>
+        <div className="grouped-item item-car">Cars</div>
+    </section>
+</>
+   
 }
 
 export default Header
