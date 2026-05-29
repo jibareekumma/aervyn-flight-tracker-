@@ -87,6 +87,12 @@ img {
 .grouped-navigation .grouped-item:focus {
   background-color: rgb(210, 221, 230);
 }
+.grouped-navigation .grouped-item.active {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  font-style: italic;
+}
 .grouped-navigation .item-flight {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -239,6 +245,10 @@ img {
 }
 
 .desktop-sidebar {
+  display: none;
+}
+
+.dsk-info-container {
   display: none;
 }
 

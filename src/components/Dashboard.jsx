@@ -12,9 +12,15 @@ import FooterNavigation from "./FooterNavigation"
 import mainIcon from "/icons/main-icon.png"
 
 
+
 import "../css/DskDashboard.css"
 
+import { useState } from "react"
+
 const Dashboard = function(){
+
+    const [activeTabs, setActiveTabs] = useState('flights')
+
     return <>
         <div className="dashboard-layout">
 
@@ -50,8 +56,9 @@ const Dashboard = function(){
             </aside>
 
             <div className="main-dashboard">
-                <Header/>
-                <NavigatedSection/>
+                <Header activeTabs = {activeTabs} 
+                setActiveTabs = {setActiveTabs}/>
+                <NavigatedSection activeTabs = {activeTabs}/>
                 <Destination/>
                 <FooterNavigation/>
             </div>

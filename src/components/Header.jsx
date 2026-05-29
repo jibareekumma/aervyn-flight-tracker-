@@ -10,7 +10,7 @@ import bellIcon from "/icons/bell_icon.png"
 import favoriteIcon from "/icons/favorite_icon.png"
 
 
-const Header = function(){
+const Header = function({ activeTabs, setActiveTabs } ){
     const [userName, setUserName] = useState("")
 
     useEffect(() => {
@@ -53,9 +53,18 @@ const Header = function(){
     </section>
 
     <section className="grouped-navigation">
-        <div className="grouped-item item-flight">Flights</div>
-        <div className="grouped-item item-hotel">Hotels</div>
-        <div className="grouped-item item-car">Cars</div>
+        <div className={`grouped-item item-flight 
+        ${activeTabs === "flights" ? "active" : ""}`}
+                onClick={() => setActiveTabs("flights")}>
+        Flights</div>
+        <div className={`grouped-item item-hotel
+        ${activeTabs === "hotels" ? "active" : ""}`}
+        onClick = {() => setActiveTabs("hotels")}>
+            Hotels</div>
+        <div className = {`grouped-item item-car
+            ${activeTabs === "cars" ? "active" : ""}`}
+            onClick = {() => setActiveTabs("cars")}>
+            Cars</div>
     </section>
 </>
    

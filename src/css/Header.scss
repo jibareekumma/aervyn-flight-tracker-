@@ -128,7 +128,17 @@ img{
             background-color: $btn-color;
 
         }
+
+        &.active{
+            background-color: white;
+            color: black;
+            font-weight: 600;
+            font-style: italic;
+        }
+
     }
+
+    
 
     .item-flight{
         border-top-left-radius: 15px;
@@ -309,6 +319,9 @@ img{
 
 
 .desktop-sidebar{
+    display: none;
+}
+.dsk-info-container{
     display: none;
 }
 
