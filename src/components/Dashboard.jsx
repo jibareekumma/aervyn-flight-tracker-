@@ -59,7 +59,7 @@ const Dashboard = function(){
                 <Header activeTabs = {activeTabs} 
                 setActiveTabs = {setActiveTabs}/>
                 <NavigatedSection activeTabs = {activeTabs}/>
-                <Destination/>
+                <Destination activeTabs={activeTabs}/>
                 <FooterNavigation/>
             </div>
         </div>

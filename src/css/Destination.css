@@ -146,4 +146,64 @@
 }
 .destination-section .cities-wrapper .cities .city-newyork {
   background-image: url("/photos/destinations/mobile/usa_mbl.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-bangkok {
+  background-image: url("/photos/hotels/bangkok_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-toronto {
+  background-image: url("/photos/hotels/toronto_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-paris {
+  background-image: url("/photos/hotels/paris_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-istanbul {
+  background-image: url("/photos/hotels/istanbul_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-tokyo {
+  background-image: url("/photos/hotels/tokyo_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-rome {
+  background-image: url("/photos/hotels/rome_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-capetown {
+  background-image: url("/photos/hotels/cape-town_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-dubai {
+  background-image: url("/photos/hotels/dubai_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-london {
+  background-image: url("/photos/hotels/london_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .hotel-newyork {
+  background-image: url("/photos/hotels/nyc_hotel.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-bmw {
+  background-image: url("/photos/cars/bmw 3.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-honda_civic {
+  background-image: url("/photos/cars/honda civic.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-honda_crv {
+  background-image: url("/photos/cars/honda crv.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-honda_oddyssy {
+  background-image: url("/photos/cars/honda odyssey.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-hyundai_accent {
+  background-image: url("/photos/cars/hyundai accent.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-toyota_camry {
+  background-image: url("/photos/cars/toyota camry.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-toyota_corolla {
+  background-image: url("/photos/cars/toyota corolla.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-toyota_rav4 {
+  background-image: url("/photos/cars/toyota rav4.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-toyota_yaris {
+  background-image: url("/photos/cars/Toyota yaris.jpeg");
+}
+.destination-section .cities-wrapper .cities .car-volkswagon {
+  background-image: url("/photos/cars/volkswagon.jpeg");
 }/*# sourceMappingURL=Destination.css.map */

@@ -1,3 +1,11 @@
+@font-face {
+  src: url(fonts/sora/Sora-Regular.ttf);
+  font-family: sora;
+}
+@font-face {
+  src: url(fonts/play-fair/PlayfairDisplay-Regular.ttf);
+  font-family: playfair;
+}
 img {
   width: 20px;
   height: 20px;
@@ -179,6 +187,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  font-family: playfair;
 }
 .navigated-container .item-option .select-item p {
   font-size: 1.3rem;
@@ -191,6 +200,11 @@ img {
   font-size: 1.5rem;
   border: none;
   width: 60%;
+  font-family: playfair;
+}
+.navigated-container .item-option .select-item input:focus {
+  border: none;
+  outline: none;
 }
 .navigated-container .item-option .item1 {
   border-right: 0.5px solid rgb(141, 154, 160);
@@ -219,6 +233,11 @@ img {
   background-color: transparent;
   border: none;
   width: 100%;
+  font-family: playfair;
+}
+.navigated-container .item-option .type-item .input-item select:focus {
+  border: none;
+  outline: none;
 }
 .navigated-container button {
   width: 100%;
@@ -242,6 +261,12 @@ img {
   filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
   width: 15px;
   height: 15px;
+}
+
+.location-icon {
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+  width: 4rem;
+  height: 4rem;
 }
 
 .desktop-sidebar {
