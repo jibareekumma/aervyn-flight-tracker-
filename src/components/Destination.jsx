@@ -45,7 +45,7 @@ const cars = [
     { name: "Toyota Corolla",  price: "$75/day",  className: "city car-toyota_corolla"},
     { name: "Toyota RAV4",     price: "$105/day", className: "city car-toyota_rav4"   },
     { name: "Toyota Yaris",    price: "$65/day",  className: "city car-toyota_yaris"  },
-    { name: "Volkswagen",      price: "$100/day", className: "city car-volkswagon"    },
+    { name: "Volkswagen",      price: "$110/day", className: "city car-volkswagon"    },
 ]
 
 
@@ -204,7 +204,8 @@ const Destination = function ({activeTabs}) {
                 </div>
             ))}
         </div>
-        {carsOffset < carsMaxOffset && <button className='carousel-btn right' onClick={scrollCarsRight}>›</button>}
+        {carsOffset < carsMaxOffset && 
+        <button className='carousel-btn right' onClick={scrollCarsRight}>›</button>}
     </div>
 
 </section>
