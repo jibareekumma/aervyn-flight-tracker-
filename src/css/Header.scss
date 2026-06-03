@@ -219,6 +219,17 @@ img{
             // border: 2px solid white;
             height: 3rem;
             min-width: 18rem;
+            font-family: playfair;
+            &:focus{
+                border: none;
+                outline: none;
+            }
+
+            option{
+                background-color: $bg-color4;
+                color: white;
+                font-weight: 400;
+            }
         }
     
         .arrow-container{

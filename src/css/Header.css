@@ -158,6 +158,16 @@ img {
   flex-direction: row;
   height: 3rem;
   min-width: 18rem;
+  font-family: playfair;
+}
+.navigated-container .country-options select:focus {
+  border: none;
+  outline: none;
+}
+.navigated-container .country-options select option {
+  background-color: rgb(44, 66, 76);
+  color: white;
+  font-weight: 400;
 }
 .navigated-container .country-options .arrow-container {
   width: 3rem;
