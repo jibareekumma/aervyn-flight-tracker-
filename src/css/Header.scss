@@ -225,11 +225,7 @@ img{
                 outline: none;
             }
 
-            option{
-                background-color: $bg-color4;
-                color: white;
-                font-weight: 400;
-            }
+        //    Code Options here
         }
     
         .arrow-container{
@@ -633,3 +629,10 @@ img{
         }
     }
 }
+
+
+        option{
+                background-color: $bg-color4;
+                color: white;
+                font-weight: 400;
+            }

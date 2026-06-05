@@ -8,6 +8,8 @@ import locationIcon from "/icons/location.png"
 import gpsIcon from "/icons/gps.png"
 import { useState } from "react"
 
+import { useNavigate } from "react-router-dom"
+
 
 const NavigatedSection = function( {activeTabs} ){
 
@@ -20,6 +22,8 @@ const NavigatedSection = function( {activeTabs} ){
         setFromValue(toValue);
         setToValue(tempFrom)
     }
+
+    const navigate = useNavigate();
 
     return <>
 
@@ -548,7 +552,9 @@ const NavigatedSection = function( {activeTabs} ){
                 </div>
             </div>
 
-            <button className="search-btn">Search Flights</button>
+            <button className="search-btn"
+            onClick = {() => navigate('/flightResult')}
+            >Search Flights</button>
         </div>
     </div> 
     )}
@@ -649,7 +655,9 @@ const NavigatedSection = function( {activeTabs} ){
             </div>
         </div>
 
-        <button className="search-btn">Search Hotels</button>
+        <button className="search-btn"
+        onClick = {() => navigate('/hotelResult')}
+        >Search Hotels</button>
     </div>
 </div>
 )}
@@ -753,7 +761,9 @@ const NavigatedSection = function( {activeTabs} ){
             </div>
         </div>
 
-        <button className="search-btn">Search Cars</button>
+        <button className="search-btn"
+        onClick = {() => navigate('/carResult')}
+        >Search Cars</button>
     </div>
 </div>
 )}

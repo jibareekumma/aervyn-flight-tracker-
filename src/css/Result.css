@@ -1,0 +1,236 @@
+.result-container {
+  padding: 2rem 1.5rem;
+}
+
+.result-header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 0.5rem;
+}
+
+.search-details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 7rem;
+}
+.search-details .header-text-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.search-details .header-text-section .icon-container {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: rgb(44, 66, 76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-details .header-text-section .icon-container img {
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.search-details .header-text-section .icon-container:hover {
+  cursor: pointer;
+}
+.search-details .header-text-section .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search-details .header-text-section .text-container .locations {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.search-details .header-text-section .text-container .locations h5 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.search-details .header-text-section .text-container .locations img {
+  width: 2rem;
+  height: 2rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.search-details .header-text-section .text-container .dates {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  height: 2rem;
+  height: auto;
+}
+.search-details .header-text-section .text-container .dates p {
+  font-size: 1.1rem;
+  color: rgb(209, 209, 216);
+  letter-spacing: 0.6px;
+}
+.search-details .header-text-section .text-container .dates span {
+  font-size: 2.5rem;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.2rem;
+}
+.search-details button {
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  align-self: center;
+  border: none;
+  background-color: rgb(44, 66, 76);
+  color: white;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  font-size: 1.2rem;
+}
+.search-details button:hover {
+  cursor: pointer;
+}
+
+.result-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+  margin-top: -1rem;
+}
+.result-nav .nav-item {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  background-color: rgb(44, 66, 76);
+  border: none;
+}
+.result-nav .nav-item:hover {
+  cursor: pointer;
+}
+.result-nav .nav-item img {
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.result-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.result-main h6 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: 600;
+  color: rgb(209, 209, 216);
+}
+
+.details-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.details-container .details-item {
+  padding: 1rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(44, 66, 76);
+  border-radius: 5px;
+}
+.details-container .details-item .airline-name {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+  font-weight: 500;
+}
+.details-container .details-item .time-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-container .details-item .time-details .one {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.details-container .details-item .time-details .one h5 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+.details-container .details-item .time-details .one p {
+  font-size: 1.2rem;
+  color: rgb(209, 209, 216);
+}
+.details-container .details-item .time-details .two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.details-container .details-item .time-details .two p {
+  font-size: 1.2rem;
+  color: rgb(209, 209, 216);
+  font-weight: 300;
+}
+.details-container .details-item .time-details .two img {
+  width: 7rem;
+  height: 1.5rem;
+  filter: brightness(0) saturate(100%) invert(67%) sepia(8%) saturate(293%) hue-rotate(155deg) brightness(92%) contrast(88%);
+}
+.details-container .details-item .price-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.details-container .details-item .price-detail .price-detail-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: flex-end;
+}
+.details-container .details-item .price-detail .price-detail-item h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.details-container .details-item .price-detail .price-detail-item p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: rgb(209, 209, 216);
+}
+.details-container .details-item .price-detail img {
+  width: 3rem;
+  height: 3rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.details-container .details-item .price-detail img:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=Result.css.map */

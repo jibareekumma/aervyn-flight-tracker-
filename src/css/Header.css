@@ -164,11 +164,6 @@ img {
   border: none;
   outline: none;
 }
-.navigated-container .country-options select option {
-  background-color: rgb(44, 66, 76);
-  color: white;
-  font-weight: 400;
-}
 .navigated-container .country-options .arrow-container {
   width: 3rem;
   height: 3rem;
@@ -501,4 +496,9 @@ img {
     min-width: 18rem;
     height: 18rem;
   }
+}
+option {
+  background-color: rgb(44, 66, 76);
+  color: white;
+  font-weight: 400;
 }/*# sourceMappingURL=Header.css.map */
