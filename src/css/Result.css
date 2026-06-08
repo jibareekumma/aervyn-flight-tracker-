@@ -124,6 +124,7 @@
 }
 .result-nav .nav-item:hover {
   cursor: pointer;
+  background-color: rgba(10, 13, 20, 0.55);
 }
 .result-nav .nav-item img {
   filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
@@ -159,6 +160,7 @@
   gap: 1rem;
   background-color: rgb(44, 66, 76);
   border-radius: 5px;
+  height: 14rem;
 }
 .details-container .details-item .airline-name {
   display: flex;
@@ -243,6 +245,71 @@ aside {
 
 .time-details-dsk {
   display: none;
+}
+
+#details-item-hotel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#details-item-hotel .item-photo {
+  height: 100%;
+  min-width: 12rem;
+  border-radius: 5px;
+}
+#details-item-hotel .item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 45%;
+}
+#details-item-hotel .item-details h5 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 550;
+}
+#details-item-hotel .item-details .rating {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: rgba(10, 13, 20, 0.55);
+  width: 8rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#details-item-hotel .item-details .pecs {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+#details-item-hotel .item-details .pecs span {
+  height: 2.5rem;
+  width: auto;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 13, 20, 0.55);
+  border-radius: 5px;
+}
+#details-item-hotel .item-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  align-items: center;
+}
+#details-item-hotel .item-action .site-icon {
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+#details-item-hotel .item-action .favorite-icon {
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+  height: 3rem;
+  width: 3rem;
+  align-self: flex-end;
 }
 
 @media (min-width: 768px) {
