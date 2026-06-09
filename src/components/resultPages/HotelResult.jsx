@@ -32,7 +32,7 @@ import { useNavigate } from "react-router-dom"
 
 
 import "../../css/Result.css"
-// import "../../css/Header.css"
+
 
 const HotelResult = function () {
 
@@ -165,7 +165,7 @@ const HotelResult = function () {
             <div className='result-main'>
                 <h6>342 Hotels Found</h6>
 
-                <section className='details-container'>
+                <section className='details-container' id = "details-container">
 
                     <div className='details-item' id = "details-item-hotel">
 
@@ -192,7 +192,13 @@ const HotelResult = function () {
                             </div>
                         </div>
                         <div className="item-action">
-                            <div>
+                            <div id="texts">
+                                <h5>$180</h5>
+                                <p>
+                                    /night
+                                </p>
+                            </div>
+                            <div className = 'visit-site'>
                                 <img src = {visitSite} 
                                 alt="Visit site icon"  loading = "lazy"
                                 className="site-icon"/>
@@ -234,7 +240,13 @@ const HotelResult = function () {
                             </div>
                         </div>
                         <div className="item-action">
-                            <div>
+                            <div id="texts">
+                                <h5>$180</h5>
+                                <p>
+                                    /night
+                                </p>
+                            </div>
+                            <div className = 'visit-site'>
                                 <img src = {visitSite} 
                                 alt="Visit site icon"  loading = "lazy"
                                 className="site-icon"
@@ -277,7 +289,13 @@ const HotelResult = function () {
                             </div>
                         </div>
                         <div className="item-action">
-                            <div>
+                            <div id="texts">
+                                <h5>$180</h5>
+                                <p>
+                                    /night
+                                </p>
+                            </div>
+                            <div className = 'visit-site'>
                                 <img src = {visitSite} 
                                 alt="Visit site icon"  loading = "lazy"
                                 className="site-icon"

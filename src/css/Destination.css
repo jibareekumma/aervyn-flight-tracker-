@@ -4,6 +4,8 @@
   gap: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: slideUp 0.6s ease-out 0.4s forwards;
 }
 .destination-section .texts {
   display: flex;
@@ -206,4 +208,15 @@
 }
 .destination-section .cities-wrapper .cities .car-volkswagon {
   background-image: url("/photos/cars/volkswagon.jpeg");
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=Destination.css.map */

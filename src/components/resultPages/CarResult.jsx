@@ -167,9 +167,10 @@ const CarResult = function () {
             <div className='result-main'>
                 <h6>129 Cars Found</h6>
 
-                <section className='details-container'>
+                <section className='details-container' 
+                id = "details-container">
 
-                    <div className='details-item car-result-details' id = "details-item-hotel">
+                    <div className='car-item-detail'>
 
                         <img src = {car1} alt="Image of hotel"
                         loading = 'lazy' className = "item-photo"
@@ -199,7 +200,7 @@ const CarResult = function () {
 
 
 
-                    <div className='details-item car-result-details' id = "details-item-hotel">
+                    <div className='car-item-detail'>
 
                         <img src = {car2} alt="Image of hotel"
                         loading = 'lazy' className = "item-photo"
@@ -228,7 +229,7 @@ const CarResult = function () {
                     </div>
 
 
-                    <div className='details-item car-result-details' id = "details-item-hotel">
+                    <div className='car-item-detail'>
 
                         <img src = {car3} alt="Image of hotel"
                         loading = 'lazy' className = "item-photo"
