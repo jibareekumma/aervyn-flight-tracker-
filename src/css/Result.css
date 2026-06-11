@@ -334,7 +334,6 @@
   font-size: clamp(1.7rem, 4vw, 2.2rem);
   font-weight: 700;
   letter-spacing: 1px;
-  color: rgb(80, 180, 200);
 }
 .details-container .details-item .price-detail .price-detail-item p {
   font-size: clamp(1.1rem, 1.3vw, 1.3rem);
@@ -608,7 +607,6 @@ aside {
 .car-item-detail .item-details .pecs h5 {
   font-size: clamp(1.6rem, 3.5vw, 2rem);
   font-weight: 700;
-  color: rgb(80, 180, 200);
 }
 .car-item-detail .item-details .pecs p {
   font-size: clamp(0.9rem, 1.1vw, 1.1rem);

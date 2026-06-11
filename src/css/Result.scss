@@ -381,7 +381,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                     font-size: clamp(1.7rem, 4vw, 2.2rem);
                     font-weight: 700;
                     letter-spacing: 1px;
-                    color: $accent;
+                    // color: $accent;
                 }
 
                 p {
@@ -464,7 +464,9 @@ aside {
             img {
                 width: 1.2rem;
                 height: 1.2rem;
-                filter: brightness(0) saturate(100%) invert(80%) sepia(60%) saturate(800%) hue-rotate(10deg);
+                filter: brightness(0) saturate(100%) 
+                invert(80%) sepia(60%) saturate(800%) 
+                hue-rotate(10deg);
             }
         }
 
@@ -566,7 +568,9 @@ aside {
 
             &:hover {
                 cursor: pointer;
-                filter: brightness(0) saturate(100%) invert(40%) sepia(80%) saturate(800%) hue-rotate(320deg) brightness(120%);
+                filter: brightness(0) saturate(100%) 
+                invert(40%) sepia(80%) saturate(800%) 
+                hue-rotate(320deg) brightness(120%);
                 transform: scale(1.15);
             }
         }
@@ -586,7 +590,9 @@ aside {
     background-color: $bg-color4;
     border-radius: 10px;
     overflow: hidden;
-    transition: background-color $transix, border-color $transix, transform $transix-fast, box-shadow $transix;
+    transition: background-color $transix, 
+    border-color $transix, 
+    transform $transix-fast, box-shadow $transix;
     animation: slideUp 0.5s ease both;
 
     @for $i from 1 through 6 {
@@ -674,7 +680,7 @@ aside {
             h5 {
                 font-size: clamp(1.6rem, 3.5vw, 2rem);
                 font-weight: 700;
-                color: $accent;
+                // color: $accent;
             }
 
             p {
