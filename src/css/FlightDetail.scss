@@ -1,0 +1,772 @@
+
+
+
+
+
+$secondary-text: rgb(180, 190, 200);
+$bg-color1: rgba(10, 13, 20);
+$btn-color: rgb(210, 221, 230);
+$transix: 0.35s ease;
+$transix-fast: 0.2s ease;
+
+$filter-white: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+$filter-white-lighter: brightness(0) saturate(100%) invert(67%) sepia(8%) saturate(293%) hue-rotate(155deg) brightness(92%) contrast(88%);
+$filter-blue: brightness(0) saturate(100%) invert(25%) sepia(95%) saturate(3000%) hue-rotate(200deg) brightness(100%) contrast(100%);
+
+$bg-color2: rgba(10, 13, 20, 0.55);
+$bg-color3: rgba(15, 38, 46);
+$bg-color4: rgba(44, 66, 76);
+$bg-color5: rgb(141, 154, 160);
+$input-box: rgba(255, 255, 255, 0.06);
+$bg-color-dsk: rgba(18, 31, 39);
+$accent: rgba(80, 180, 200);
+$accent-dim: rgba(80, 180, 200, 0.12);
+$card-hover: rgba(55, 82, 94);
+$border-subtle: rgba(255, 255, 255, 0.07);
+
+$bg-color6: #041b2f;
+$bg-color7: #061f36;
+
+$font-xs: clamp(0.9rem, 1.1vw, 1.1rem);
+$font-sm: clamp(1.1rem, 1.3vw, 1.3rem);
+$font-md: clamp(1.2rem, 1.4vw, 1.4rem);
+$font-lg: clamp(1.4rem, 1.7vw, 1.7rem);
+$font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideUpFast {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.bottom-sheet-icon{
+    filter: $filter-white;
+}
+
+
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 31, 35, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1; 
+
+    &:hover{
+      cursor: pointer;
+    }
+}
+
+.overlay--active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+.bottom-sheet{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    background-color: black;
+    z-index: 5;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    animation: slideUp 0.8s ease-in;
+     overflow-y: auto;
+     background-color: $bg-color2;
+     padding-top: 2rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+}
+
+
+.bottom-sheet--active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.details-header{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        border: none;
+
+        img{
+            border-radius: 50%;
+            height: 3rem;
+            width: 3rem;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            height: 3rem;
+            justify-content: space-between;
+
+            h5{
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+            }
+            p{
+                letter-spacing: 1.3px;
+                word-spacing: 1.5px;
+                font-size: 1.1rem;
+                color: $secondary-text;
+            }
+        }
+    }
+
+    .icons-container{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            &:hover{
+                cursor: pointer;
+            }
+
+        .icon-item{
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $bg-color3;
+            border-radius: 10px;
+            img{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+    }
+}
+
+.details-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    border: none;
+    // background-color: $bg-color3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 0.1px solid $accent-dim;
+    padding: 0.5rem 1rem;
+
+
+    .price{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h4{
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        p{
+            letter-spacing: 0.5px;
+            word-spacing: 1.5px;
+            color: $secondary-text;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+    }
+
+    .weights{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-end;
+
+        .average{
+            display: flex;
+            flex-direction: row;
+            gap: 0.3rem;
+            height: 2.5rem;
+            background-color: #0A2D38;
+            border-radius: 10px;
+            width: fit-content;
+            align-items: center;
+            color: #5FA7A0;
+            padding-right: 0.2rem;
+
+            img{
+                filter: brightness(0) saturate(100%) 
+                invert(66%) sepia(15%) saturate(834%) 
+                hue-rotate(124deg) 
+                brightness(91%) contrast(88%);;
+            }
+        }
+
+        .weight-p{
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            color: $secondary-text;
+        }
+    }
+}
+
+
+
+
+
+
+
+.flightTimeline {
+  width: 100%;
+  max-width: 700px;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background: $bg-color6;
+  color: #fff;
+  font-family: inherit;
+  margin-top: 0.5rem;
+  
+
+  &__route {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__airport {
+    min-width: 70px;
+
+    h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.5px;
+    }
+
+    span {
+      display: block;
+      margin-top: 6px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__lineWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  &__duration {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.55);
+    white-space: nowrap;
+  }
+
+  &__stopLabel {
+    font-size: 11px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  &__line {
+    width: 100%;
+    position: relative;
+    height: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+
+  &__stop {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  &__bottom {
+    margin-top: 4px;
+
+
+    span {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__times {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-size: 13px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+}
+
+.flightDetailsCard {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  background: #041b2f;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #fff;
+  margin-top: 0.5rem;
+  button{
+    background-color: $bg-color3;
+    letter-spacing: 0.5px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+    h3 {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__close {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__timeline {
+    position: relative;
+  }
+
+  &__row {
+    display: flex;
+    gap: 12px;
+    position: relative;
+    min-height: 56px;
+  }
+
+  &__track {
+    width: 18px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      bottom: -14px;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+
+  &__row:last-child &__track::after {
+    display: none;
+  }
+
+  &__plane {
+    font-size: 12px;
+    color: #5ea8ff;
+    position: relative;
+    z-index: 2;
+
+    &--arrival {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: #041b2f;
+    position: relative;
+    z-index: 2;
+    margin-top: 4px;
+  }
+
+  &__content {
+    flex: 1;
+
+    h4 {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    h5 {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 2px 0;
+      font-size: 9px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    span {
+      display: block;
+      font-size: 8px;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    small {
+      display: block;
+      margin-top: 2px;
+      font-size: 8px;
+      color: rgba(255, 255, 255, 0.45);
+    }
+  }
+
+  &__action {
+    align-self: flex-start;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #103d68;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  &__duration {
+    align-self: flex-start;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(16, 61, 104, 0.8);
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  &__layover {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+
+
+.class-details{
+  border: none;
+  border-radius: 10px;
+  background-color: $bg-color6;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+
+  .details-icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: $bg-color3;
+
+    img{
+      filter: $filter-white;
+    }
+  }
+
+  .details-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h5{
+      letter-spacing: 1px;
+      font-size: 1.3rem;
+      color: $secondary-text;
+      font-weight: 300;
+    }
+    .texts{
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      letter-spacing: 0.5px;
+      font-size: 1.1rem;
+      color: white;
+    }
+  }
+}
+
+
+.details-vendor{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem 1rem;
+  background-color: $bg-color6;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  
+
+  h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .container{
+    border: none;
+    border-top: 0.5px groove $accent-dim;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 0.5px groove $accent-dim;
+
+    .item{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .airline{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: flex-start;
+
+        img{
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+        }
+        h6{
+          font-size: 1.3rem;
+          letter-spacing: 0.5px;
+          font-weight: 500;
+        }
+        span{
+          font-size: 1rem;
+          letter-spacing: 0.2px;
+          font-weight: 600;
+          color: #5FA7A0;
+          background-color: #0A2D38;
+          padding: 0.2rem;
+          border-radius: 10px;
+        }
+      }
+
+      .cta{
+        border: none;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+
+        p{
+          font-weight: 550;
+          font-size: 1.7rem;
+          letter-spacing: 1px;
+          
+        }
+        button{
+          width: 8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 2.5rem;
+          border: none;
+          border-radius: 5px;
+          letter-spacing: 0.5px;
+          font-weight: 550;
+          background-color: $bg-color2;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+.details-footer {
+    position: sticky;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 0.9rem 1rem;
+
+    background: rgba(7, 20, 34, 0.92);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 24px 24px 0 0;
+
+    z-index: 20;
+
+    img{
+      filter: $filter-white;
+    }
+
+    .favorite,
+    .share {
+        width: 44px;
+        height: 44px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 14px;
+
+        background: rgba(255, 255, 255, 0.03);
+
+        border: 1px solid rgba(255, 255, 255, 0.06);
+
+        flex-shrink: 0;
+        cursor: pointer;
+
+        img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            opacity: 0.9;
+        }
+    }
+
+    .book-btn {
+        flex: 1;
+
+        height: 48px;
+        border: none;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        border-radius: 16px;
+
+        background: linear-gradient(
+            90deg,
+            #204f8e 0%,
+            #3b7bd6 50%,
+            #4ab8ff 100%
+        );
+
+        box-shadow:
+            0 0 25px rgba(74, 184, 255, 0.35),
+            inset 0 1px 1px rgba(255, 255, 255, 0.15);
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+        }
+    }
+}

@@ -1,6 +1,11 @@
 
 
 import dummyFlag from "/photos/usa_flag.png"
+import emiratesLogo from "/photos/emirates_logo.jpeg"
+import britishAirways from "/photos/british_airways.jpeg"
+import turkishLogo from "/photos/turkish_logo.jpeg"
+
+
 import favoriteIcon from "/icons/favorite_icon.png"
 import leftArrow from "/icons/left_arrow_icon.png"
 import rightArrow from "/icons/right_arr.png"
@@ -17,14 +22,23 @@ import mainIcon from "/icons/main-icon.png"
 import calendarIcon from "/icons/bell_icon.png"
 import settingsIcon from "/icons/spin-rotate.png"
 
+
+import FlightDetails from "./FlightDetails"
+
 import { useNavigate } from "react-router-dom"
+import { useState } from "react"
 
 
 import "../../css/Result.css"
+
 // import "../../css/Header.css"
 
 const FlightResult = function () {
 
+    const [showOverlay, setShowOverlay] = useState(false);
+
+    // const [showBottomSheet, setShowBottomSheet] = useState(false)
+    const [selectedFlight, setSelectedFlight] = useState(null)
 
     const today = new Date().toLocaleDateString('en-US', {
         weekday: 'long',
@@ -41,10 +55,6 @@ const FlightResult = function () {
 
 
     return <>
-
-
-    
-
 
         <div className="result-container">
 
@@ -163,9 +173,22 @@ const FlightResult = function () {
 
                 <section className='details-container'>
 
-                    <div className='details-item'>
+                    <div className='details-item'
+                    onClick = {() => {
+                        setShowOverlay(true)
+                        setSelectedFlight({
+                        logo: britishAirways,
+                        name: 'British Airways',
+                        code: 'BA 075',
+                        price: '$420',
+                        weight: '267 kg'
+                        })
+                    }}
+                    
+                    
+                    >
                         <div className="airline-name">
-                            <img src={dummyFlag}
+                            <img src={britishAirways}
                                 alt="Country Flag" loading="lazy" />
                             <p>Bristish Airways</p>
                         </div>
@@ -228,9 +251,20 @@ const FlightResult = function () {
                     </div>
 
 
-                    <div className='details-item'>
+                    <div className='details-item'
+                    onClick = {() => {
+                        setShowOverlay(true)
+                        setSelectedFlight({
+                        logo: emiratesLogo,
+                        name: 'Emirates',
+                        code: 'EK 101',
+                        price: '$395',
+                        weight: '312 kg'
+                        })
+                    }}
+                    >
                         <div className="airline-name">
-                            <img src={dummyFlag}
+                            <img src={emiratesLogo}
                                 alt="Country Flag" loading="lazy" />
                             <p>Emirates</p>
                         </div>
@@ -293,9 +327,20 @@ const FlightResult = function () {
                         </div>
                     </div>
 
-                    <div className='details-item'>
+                    <div className='details-item'
+                    onClick = {() => {
+                        setShowOverlay(true)
+                        setSelectedFlight({
+                        logo: turkishLogo,
+                        name: 'Turkish Airlinea',
+                        code: 'TK 622 - TK 1981',
+                        price: '$385',
+                        weight: '195 kg'
+                        })
+                    }}
+                    >
                         <div className="airline-name">
-                            <img src={dummyFlag}
+                            <img src={turkishLogo}
                                 alt="Country Flag" loading="lazy" />
                             <p>Turkish Airlines</p>
                         </div>
@@ -366,6 +411,12 @@ const FlightResult = function () {
 
         </div>
 
+            <FlightDetails
+            isOpen={showOverlay}
+            onClose={() => setShowOverlay(false)}
+            selectedFlight={selectedFlight}
+            sheetClose={() => setSelectedFlight(null)} 
+            />
     </>
 }
 
