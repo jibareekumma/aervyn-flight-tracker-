@@ -621,4 +621,443 @@
   height: 16px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 80vw;
+  margin-right: 10vw;
+  height: auto;
+  overflow-y: auto;
+  background-color: rgba(10, 13, 20, 0.55);
+  border-radius: 15px;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .bottom-sheet {
+    display: none;
+  }
+  .modal-window {
+    display: block;
+    width: 80vw;
+  }
+  .modal-window.modal-window--active {
+    opacity: 1;
+    pointer-events: all;
+    animation: fadeIn 0.3s ease;
+  }
+}
+.modal-wrapper {
+  padding: 1.5rem;
+}
+
+.modal-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.modal-top .modal-top-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.modal-top .modal-top-left img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+.modal-top .modal-top-left .text h5 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.modal-top .modal-top-left .text p {
+  font-size: 1.1rem;
+  color: rgb(180, 190, 200);
+}
+.modal-top .modal-top-right {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+.modal-top .modal-top-right .icon-item {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 38, 46);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modal-top .modal-top-right .icon-item img {
+  width: 2rem;
+  height: 2rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+
+.modal-route {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #041b2f;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.modal-route .route-point {
+  min-width: 120px;
+}
+.modal-route .route-point h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.modal-route .route-point h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(180, 190, 200);
+}
+.modal-route .route-point p {
+  color: rgb(180, 190, 200);
+  font-size: 1.2rem;
+}
+.modal-route .route-point small {
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+.modal-route .route-point .time-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+.modal-route .route-point .next-day {
+  font-size: 0.75rem;
+  color: rgb(80, 180, 200);
+}
+.modal-route .route-point--right {
+  text-align: right;
+}
+.modal-route .route-line {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+.modal-route .route-line .duration-top {
+  font-size: 0.8rem;
+  color: rgb(180, 190, 200);
+  margin-bottom: 0.4rem;
+}
+.modal-route .route-line .line-track {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  position: relative;
+}
+.modal-route .route-line .line-track .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+.modal-route .route-line .line-track .stop-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: rgb(15, 38, 46);
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.modal-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #041b2f;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+}
+.modal-meta .meta-item {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
+}
+.modal-meta .meta-item img {
+  width: 1.1rem;
+  height: 1.1rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.modal-meta .meta-item .text p {
+  font-size: 1.1rem;
+  color: rgb(180, 190, 200);
+}
+.modal-meta .meta-item .text h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.modal-meta .meta-divider {
+  width: 1px;
+  height: 2rem;
+  background-color: rgba(80, 180, 200, 0.12);
+  margin: 0 1rem;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-legs {
+  flex: 1.4;
+  background-color: #041b2f;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.modal-legs h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.modal-legs .leg-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+.modal-legs .leg-item .leg-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(80, 180, 200);
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+}
+.modal-legs .leg-item .leg-content {
+  flex: 1;
+}
+.modal-legs .leg-item .leg-content .leg-code-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+.modal-legs .leg-item .leg-content .leg-code-row .leg-code {
+  font-size: 0.85rem;
+  color: rgb(180, 190, 200);
+}
+.modal-legs .leg-item .leg-content .leg-code-row .leg-flight-no {
+  font-size: 0.8rem;
+  color: rgb(180, 190, 200);
+}
+.modal-legs .leg-item .leg-content .leg-route {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.modal-legs .leg-item .leg-content .leg-route .leg-airport h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.modal-legs .leg-item .leg-content .leg-route .leg-airport p {
+  font-size: 0.75rem;
+  color: rgb(180, 190, 200);
+}
+.modal-legs .leg-item .leg-content .leg-route .leg-duration {
+  font-size: 0.75rem;
+  color: rgb(180, 190, 200);
+}
+.modal-legs .leg-item .leg-content .leg-times {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  font-size: 0.8rem;
+  color: rgb(180, 190, 200);
+}
+.modal-legs .leg-item .leg-content .leg-terminal {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+.modal-legs .leg-layover {
+  font-size: 0.8rem;
+  color: rgb(180, 190, 200);
+  padding: 0.5rem 0;
+  margin-left: 1.5rem;
+  border-top: 0.5px groove rgba(80, 180, 200, 0.12);
+  border-bottom: 0.5px groove rgba(80, 180, 200, 0.12);
+  margin-bottom: 0.8rem;
+}
+
+.modal-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.modal-side .side-card {
+  background-color: #041b2f;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+}
+.modal-side .side-card p {
+  font-size: 0.8rem;
+  color: rgb(180, 190, 200);
+}
+.modal-side .side-card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.modal-side .side-card h6 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.modal-side .side-card .emissions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.modal-side .side-card .emissions-row .below-average {
+  font-size: 0.7rem;
+  color: #5FA7A0;
+  background-color: #0A2D38;
+  padding: 0.15rem 0.5rem;
+  border-radius: 8px;
+}
+.modal-side .side-card .emissions-note {
+  font-size: 0.75rem;
+  color: #5FA7A0;
+}
+.modal-side .side-vendors h6 {
+  margin-bottom: 0.6rem;
+}
+.modal-side .side-vendors .vendor-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-top: 0.5px groove rgba(80, 180, 200, 0.12);
+}
+.modal-side .side-vendors .vendor-item .vendor-left {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
+}
+.modal-side .side-vendors .vendor-item .vendor-left img {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+}
+.modal-side .side-vendors .vendor-item .vendor-left .text p {
+  font-size: 0.85rem;
+  color: white;
+}
+.modal-side .side-vendors .vendor-item .vendor-left .text span {
+  font-size: 0.7rem;
+  color: #5FA7A0;
+}
+.modal-side .side-vendors .vendor-item .vendor-right {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
+}
+.modal-side .side-vendors .vendor-item .vendor-right p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+.modal-side .side-vendors .vendor-item .vendor-right button {
+  background-color: rgb(15, 38, 46);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.modal-side .side-vendors .view-more {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(80, 180, 200);
+  margin-top: 0.6rem;
+  text-decoration: none;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 1rem;
+}
+.modal-footer .footer-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+.modal-footer .footer-top img {
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.modal-footer .footer-top .favorite, .modal-footer .footer-top .share {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.modal-footer .footer-top .favorite img, .modal-footer .footer-top .share img {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.modal-footer .footer-top .favorite p, .modal-footer .footer-top .share p {
+  font-size: 0.85rem;
+  color: rgb(180, 190, 200);
+}
+.modal-footer .footer-top .book-btn {
+  flex: 1;
+  height: 44px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #204f8e 0%, #3b7bd6 50%, #4ab8ff 100%);
+}
+.modal-footer .footer-top .book-btn p {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.modal-footer .footer-top .book-btn img {
+  width: 16px;
+  height: 16px;
+  filter: none;
+}
+.modal-footer .disclaimer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 0.6rem;
 }/*# sourceMappingURL=FlightDetail.css.map */
