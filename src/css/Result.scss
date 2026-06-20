@@ -1,5 +1,6 @@
 
 
+
 $secondary-text: rgb(180, 190, 200);
 $bg-color1: rgba(10, 13, 20);
 $btn-color: rgb(210, 221, 230);
@@ -149,6 +150,15 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                     height: 1.8rem;
                     filter: $filter-white-lighter;
                     flex-shrink: 0;
+                }
+
+                .flag-icon {
+                    filter: none;
+                    width: 1.7rem;
+                    height: 1.3rem;
+                    border-radius: 2px;
+                    object-fit: cover;
+                    border: 1px solid $border-subtle;
                 }
             }
 
@@ -319,6 +329,12 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                 border-radius: 50%;
                 object-fit: cover;
                 border: 1px solid $border-subtle;
+            }
+
+            .airline-logo {
+                filter: none;
+                background-color: white;
+                padding: 2px;
             }
         }
 

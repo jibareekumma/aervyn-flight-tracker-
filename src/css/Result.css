@@ -116,6 +116,15 @@
   filter: brightness(0) saturate(100%) invert(67%) sepia(8%) saturate(293%) hue-rotate(155deg) brightness(92%) contrast(88%);
   flex-shrink: 0;
 }
+.search-details .header-text-section .text-container .locations .flag-icon {
+  filter: none;
+  width: 1.7rem;
+  height: 1.3rem;
+  border-radius: 2px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
 .search-details .header-text-section .text-container .dates {
   display: flex;
   flex-direction: row;
@@ -281,6 +290,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.details-container .details-item .airline-name .airline-logo {
+  filter: none;
+  background-color: white;
+  padding: 2px;
 }
 .details-container .details-item .time-details {
   display: flex;

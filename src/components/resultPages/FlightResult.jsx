@@ -1,5 +1,6 @@
 
 
+
 import dummyFlag from "/photos/usa_flag.png"
 import emiratesLogo from "/photos/emirates_logo.jpeg"
 import britishAirways from "/photos/british_airways.jpeg"
@@ -29,6 +30,10 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 
+import { useLocation } from "react-router-dom"
+import flightsData from "../../data/FlightsData.json"
+
+
 import "../../css/Result.css"
 
 // import "../../css/Header.css"
@@ -39,6 +44,24 @@ const FlightResult = function () {
 
     // const [showBottomSheet, setShowBottomSheet] = useState(false)
     const [selectedFlight, setSelectedFlight] = useState(null)
+
+    const { state } = useLocation()
+    const routeKey = state ? `${state.fromCode}-${state.toCode}` : 'LOS-LHR'
+    const routeData = flightsData.routes[routeKey]
+
+    console.log('routeData:', routeData)
+    console.log('fromFlag:', routeData?.fromFlag)
+
+    
+
+    if (!routeData) {
+    return (
+        <div className="result-container">
+            <p>No flights found for this route. 
+                Try Lagos → London, Dubai, or New York.</p>
+        </div>
+    )
+}
 
     const today = new Date().toLocaleDateString('en-US', {
         weekday: 'long',
@@ -107,13 +130,15 @@ const FlightResult = function () {
                         <div className='text-container'>
 
                             <div className='locations'>
-                                <h5>Lagos</h5>
-                                <img src={rightArrow}
-                                    alt="Arrow Towards right" loading="lazy"
-
-                                />
-                                <h5>London</h5>
-                            </div>
+                    <img src={routeData.fromFlag} alt={routeData.fromCity} 
+                 />
+                    <h5>{routeData.fromCity}</h5>
+                    <img src={rightArrow}
+                    alt="Arrow Towards right" loading="lazy" />
+                    <img src={routeData.toFlag} alt={routeData.toCity} 
+                     />
+                    <h5>{routeData.toCity}</h5>
+                        </div>
 
                             <div className="dates">
                                 <p>{today}</p>
@@ -169,239 +194,72 @@ const FlightResult = function () {
 
 
             <div className='result-main'>
-                <h6>20 Flights Found</h6>
+                <h6>{routeData.flights.length} Flights Found</h6>
 
                 <section className='details-container'>
 
-                    <div className='details-item'
-                    onClick = {() => {
-                        setShowOverlay(true)
-                        setSelectedFlight({
-                        logo: britishAirways,
-                        name: 'British Airways',
-                        code: 'BA 075',
-                        price: '$420',
-                        weight: '267 kg'
-                        })
-                    }}
-                    
-                    
-                    >
-                        <div className="airline-name">
-                            <img src={britishAirways}
-                                alt="Country Flag" loading="lazy" />
-                            <p>Bristish Airways</p>
-                        </div>
-                        <div className="time-details">
-                            <div className='one'>
-                                <h5>08:30</h5>
-                                <p>LOS</p>
-                            </div>
-                            <div className='two'>
-                                <p>7h 40m</p>
-                                <img src={twoSideArrow}
-                                    alt="Two side arrow" />
-                                <p>Direct</p>
-                            </div>
-                            <div className='one'>
-                                <h5>15:15</h5>
-                                <p>LHR</p>
-                            </div>
-                        </div>
-                        {/* Desktop */}
-                        <div className="time-details-dsk">
+                        {routeData.flights.map(flight => (
+        <div className='details-item' key={flight.id}
+        onClick={() => {
+            setShowOverlay(true)
+            setSelectedFlight(flight)
+        }}
+            >
+        <div className="airline-name">
+            <img src={flight.logo} 
+            alt={flight.name} loading="lazy" />
+            <p>{flight.name}</p>
+        </div>
+        <div className="time-details">
+            <div className='one'>
+                <h5>{flight.departTime}</h5>
+                <p>{flight.fromCode}</p>
+            </div>
+            <div className='two'>
+                <p>{flight.durationLabel}</p>
+                <img src={twoSideArrow} alt="Two side arrow" />
+                <p>{flight.stopLabel}</p>
+            </div>
+            <div className='one'>
+                <h5>{flight.arriveTime}</h5>
+                <p>{flight.toCode}</p>
+            </div>
+        </div>
 
-                            <div className='one'>
-                                <h5>08:30</h5>
-                                <p>LOS</p>
-                                <h6>{today2}</h6>
-                            </div>
+        <div className="time-details-dsk">
+            <div className='one'>
+                <h5>{flight.departTime}</h5>
+                <p>{flight.fromCode}</p>
+                <h6>{today2}</h6>
+            </div>
+            <div className='two'>
+                <img src={leftArrowDsk} 
+                alt="Arrow Icon" loading="lazy" />
+                <div>
+                    <p>{flight.durationLabel}</p>
+                    <p>{flight.stopLabel}</p>
+                </div>
+                <img src={rightArrowDsk} 
+                alt="Arrow icon" loading="lazy" />
+            </div>
+            <div className='one'>
+                <h5>{flight.arriveTime}</h5>
+                <p>{flight.toCode}</p>
+                <h6>{today2}</h6>
+                </div>
+            </div>
 
-                            <div className='two'>
-                                <img src = {leftArrowDsk} 
-                                alt="Arrow Icon"  loading="lazy"/>
-                                <div>
-                                    <p>7h 40m</p>
-                                    <p>Direct</p>
-                                </div>
-                                <img src={rightArrowDsk} 
-                                alt="Arrow icon" loading = "lazy" />
-                                </div>
-
-
-                                <div className='one'>
-                                <h5>15:15</h5>
-                                <p>LHR</p>
-                                <h6>{today2}</h6>
-                            
-                            </div>
-                        </div>
-
-                        <div className='price-detail'>
-                            <div className='price-detail-item'>
-                                <h4>$420</h4>
-                                <p>/person</p>
-                                
-                            </div>
-                            <img src={favoriteIcon}
-                                alt="Add to favorite" title="Add to favorite"
-                                loading="lazy"
-                            />
-                        </div>
-                    </div>
-
-
-                    <div className='details-item'
-                    onClick = {() => {
-                        setShowOverlay(true)
-                        setSelectedFlight({
-                        logo: emiratesLogo,
-                        name: 'Emirates',
-                        code: 'EK 101',
-                        price: '$395',
-                        weight: '312 kg'
-                        })
-                    }}
-                    >
-                        <div className="airline-name">
-                            <img src={emiratesLogo}
-                                alt="Country Flag" loading="lazy" />
-                            <p>Emirates</p>
-                        </div>
-                        <div className="time-details">
-                            <div className='one'>
-                                <h5>09:15</h5>
-                                <p>LOS</p>
-                            </div>
-                            <div className='two'>
-                                <p>9h 10m</p>
-                                <img src={twoSideArrow}
-                                    alt="Two side arrow" />
-                                <p>1 Stop</p>
-                            </div>
-                            <div className='one'>
-                                <h5>18:00</h5>
-                                <p>LHR</p>
-                            </div>
-                        </div>
-
-                        {/* Desktop */}
-                        <div className="time-details-dsk">
-
-                            <div className='one'>
-                                <h5>08:30</h5>
-                                <p>LOS</p>
-                                <h6>{today2}</h6>
-                            </div>
-
-                            <div className='two'>
-                                <img src = {leftArrowDsk} 
-                                alt="Arrow Icon"  loading="lazy"/>
-                                <div>
-                                    <p>7h 40m</p>
-                                    <p>Direct</p>
-                                </div>
-                                <img src={rightArrowDsk} 
-                                alt="Arrow icon" loading = "lazy" />
-                                </div>
-
-
-                                <div className='one'>
-                                <h5>15:15</h5>
-                                <p>LHR</p>
-                                <h6>{today2}</h6>
-                            
-                            </div>
-                        </div>
-
-
-                        <div className='price-detail'>
-                            <div className='price-detail-item'>
-                                <h4>$395</h4>
-                                <p>/person</p>
-                            </div>
-                            <img src={favoriteIcon}
-                                alt="Add to favorite" title="Add to favorite"
-                                loading="lazy"
-                            />
-                        </div>
-                    </div>
-
-                    <div className='details-item'
-                    onClick = {() => {
-                        setShowOverlay(true)
-                        setSelectedFlight({
-                        logo: turkishLogo,
-                        name: 'Turkish Airlinea',
-                        code: 'TK 622 - TK 1981',
-                        price: '$385',
-                        weight: '195 kg'
-                        })
-                    }}
-                    >
-                        <div className="airline-name">
-                            <img src={turkishLogo}
-                                alt="Country Flag" loading="lazy" />
-                            <p>Turkish Airlines</p>
-                        </div>
-                        <div className="time-details">
-                            <div className='one'>
-                                <h5>11:45</h5>
-                                <p>LOS</p>
-                            </div>
-                            <div className='two'>
-                                <p>10h 25m</p>
-                                <img src={twoSideArrow}
-                                    alt="Two side arrow" />
-                                <p>1 Stop</p>
-                            </div>
-                            <div className='one'>
-                                <h5>22:00</h5>
-                                <p>LHR</p>
-                            </div>
-                        </div>
-
-                        {/* Desktop */}
-                        <div className="time-details-dsk">
-
-                            <div className='one'>
-                                <h5>08:30</h5>
-                                <p>LOS</p>
-                                <h6>{today2}</h6>
-                            </div>
-
-                            <div className='two'>
-                                <img src = {leftArrowDsk} 
-                                alt="Arrow Icon"  loading="lazy"/>
-                                <div>
-                                    <p>7h 40m</p>
-                                    <p>Direct</p>
-                                </div>
-                                <img src={rightArrowDsk} 
-                                alt="Arrow icon" loading = "lazy" />
-                                </div>
-
-
-                                <div className='one'>
-                                <h5>15:15</h5>
-                                <p>LHR</p>
-                                <h6>{today2}</h6>
-                            
-                            </div>
-                        </div>
-
-                        
-                        <div className='price-detail'>
-                            <div className='price-detail-item'>
-                                <h4>$385</h4>
-                                <p>/person</p>
-                            </div>
-                            <img src={favoriteIcon}
-                                alt="Add to favorite" title="Add to favorite"
-                                loading="lazy"
-                            />
-                        </div>
-                    </div>
+            <div className='price-detail'>
+            <div className='price-detail-item'>
+                <h4>{flight.price}</h4>
+                <p>/person</p>
+            </div>
+            <img src={favoriteIcon} 
+            alt="Add to favorite" 
+            title="Add to favorite" loading="lazy" />
+            </div>
+                </div>
+        ))}
 
                 </section>
 
