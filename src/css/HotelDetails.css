@@ -1,0 +1,238 @@
+.hotel-header, .modal-top-left {
+  display: flex;
+  gap: 1.5rem;
+  border: 2px solid white;
+}
+.hotel-header .hotel-image, .modal-top-left .hotel-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.hotel-header .text, .modal-top-left .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  border: 2px solid white;
+}
+.hotel-header .text h5, .modal-top-left .text h5 {
+  font-size: 1.5rem;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+}
+.hotel-header .text .stars-row, .modal-top-left .text .stars-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.hotel-header .text .stars-row img, .modal-top-left .text .stars-row img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.hotel-header .text .stars-row .review-score, .modal-top-left .text .stars-row .review-score {
+  margin-left: 1rem;
+  font-weight: 600;
+  color: rgb(80, 180, 200);
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.hotel-header .text .stars-row .review-label, .modal-top-left .text .stars-row .review-label {
+  margin-left: 1rem;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(180, 190, 200);
+}
+.hotel-header .text .address-row, .modal-top-left .text .address-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+.hotel-header .text .address-row img, .modal-top-left .text .address-row img {
+  width: 3rem;
+  height: 3rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.hotel-header .text .address-row p, .modal-top-left .text .address-row p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(180, 190, 200);
+}
+
+.stay-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+.stay-info .stay-info-item {
+  border: 1px solid rgb(15, 38, 46);
+  border-radius: 5px;
+  padding: 8px 10px;
+  background-color: rgba(10, 13, 20, 0.55);
+}
+.stay-info .stay-info-item p {
+  font-size: 1.2rem;
+  color: rgb(180, 190, 200);
+  margin-bottom: 4px;
+}
+.stay-info .stay-info-item h6 {
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+}
+
+.amenities {
+  margin-top: 20px;
+  border: 2px solid white;
+}
+.amenities h4 {
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  color: brightness(0) saturate(100%) invert(67%) sepia(8%) saturate(293%) hue-rotate(155deg) brightness(92%) contrast(88%);
+}
+.amenities .amenities-pecs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.amenities .amenities-pecs .pec-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: rgb(15, 38, 46);
+  font-size: 12px;
+}
+.amenities .amenities-pecs .pec-pill img {
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.amenities .amenities-pecs .pec-pill--more {
+  font-weight: 600;
+}
+
+.room-types {
+  margin-top: 20px;
+}
+.room-types h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.room-types .room-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(15, 38, 46);
+}
+.room-types .room-item:last-child {
+  border-bottom: none;
+}
+.room-types .room-item .room-image-placeholder {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.room-types .room-item .room-info {
+  flex: 1;
+}
+.room-types .room-item .room-info h6 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.room-types .room-item .room-info p {
+  font-size: 12px;
+  margin-top: 2px;
+}
+.room-types .room-item .room-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.room-types .room-item .room-action .room-price {
+  text-align: right;
+}
+.room-types .room-item .room-action .room-price h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.room-types .room-item .room-action .room-price p {
+  font-size: 11px;
+}
+.room-types .room-item .room-action .select-btn {
+  padding: 6px 14px;
+  border-radius: 16px;
+  border: 1px solid rgb(80, 180, 200);
+  background-color: transparent;
+  color: rgb(80, 180, 200);
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.35s ease;
+}
+.room-types .room-item .room-action .select-btn:hover {
+  background-color: rgb(80, 180, 200);
+  color: rgb(10, 13, 20);
+}
+
+.modal-window .stay-info {
+  margin-top: 20px;
+}
+.modal-window .modal-body {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+.modal-window .modal-body .modal-main {
+  flex: 2;
+}
+.modal-window .modal-body .modal-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal-window .modal-body .modal-side .side-card {
+  border: 1px solid rgb(15, 38, 46);
+  border-radius: 10px;
+  padding: 14px;
+  background-color: rgba(10, 13, 20, 0.55);
+}
+.modal-window .modal-body .modal-side .side-card p {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.modal-window .modal-body .modal-side .side-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.modal-window .modal-body .modal-side .side-card h6 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.modal-window .modal-body .modal-side .side-card .policy-note {
+  font-size: 12px;
+}
+
+.book-btn .price-pill {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.book-btn .price-pill small {
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.8;
+}/*# sourceMappingURL=HotelDetails.css.map */
