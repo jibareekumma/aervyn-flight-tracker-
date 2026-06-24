@@ -110,6 +110,21 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
      padding-right: 1rem;
      border-top-left-radius: 15px;
      border-top-right-radius: 15px;
+
+     
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(80, 180, 200, 0.4);
+        border-radius: 10px;
+    }
+
 }
 
 
@@ -798,6 +813,21 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
     .modal-window {
         display: block;
         width: 80vw;
+
+        
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(80, 180, 200, 0.4);
+        border-radius: 10px;
+    }
+
     }
 
     .modal-window.modal-window--active {
@@ -810,6 +840,8 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
 
 .modal-wrapper {
     padding: 1.5rem;
+
+    
 }
 
 

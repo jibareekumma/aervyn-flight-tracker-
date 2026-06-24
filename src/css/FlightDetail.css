@@ -71,6 +71,16 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+.bottom-sheet::-webkit-scrollbar {
+  width: 4px;
+}
+.bottom-sheet::-webkit-scrollbar-track {
+  background: transparent;
+}
+.bottom-sheet::-webkit-scrollbar-thumb {
+  background: rgba(80, 180, 200, 0.4);
+  border-radius: 10px;
+}
 
 .bottom-sheet--active {
   opacity: 1;
@@ -647,6 +657,16 @@
   .modal-window {
     display: block;
     width: 80vw;
+  }
+  .modal-window::-webkit-scrollbar {
+    width: 4px;
+  }
+  .modal-window::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .modal-window::-webkit-scrollbar-thumb {
+    background: rgba(80, 180, 200, 0.4);
+    border-radius: 10px;
   }
   .modal-window.modal-window--active {
     opacity: 1;
