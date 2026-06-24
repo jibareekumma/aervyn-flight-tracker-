@@ -1,6 +1,5 @@
 
 
-
 import favoriteIcon from "/icons/favorite_icon.png"
 import shareIcon from "/icons/share_icon.png"
 import starIcon from "/icons/star icon.png"
@@ -12,12 +11,13 @@ import gymIcon from "/icons/gym_icon.png"
 import poolIcon from "/icons/pool_icon.png"
 import mealIcon from "/icons/meal_icon.png"
 
+
+
 import "../../css/HotelDetails.css"
 import { useEffect } from "react"
 
 const HotelDetails = function ({ isOpen, onClose, 
-    selectedHotel, sheetClose, 
-    hotel1, hotel2, hotel3 }) {
+    selectedHotel, sheetClose }) {
 
     useEffect(() => {
         if (selectedHotel) {
@@ -56,7 +56,7 @@ const HotelDetails = function ({ isOpen, onClose,
 
                     {/* ── HEADER ── hotel image, name, rating, address */}
                     <div className='hotel-header'>
-                        <img src = {hotel2} alt="Image of hotel" 
+                        <img src = {selectedHotel.image} alt="Image of hotel" 
                         loading = "lazy" className = "hotel-image"
                         />
                         <div className="text">
@@ -124,7 +124,8 @@ const HotelDetails = function ({ isOpen, onClose,
                         <h4>Room Types</h4>
                         {selectedHotel.rooms.map(room => (
                             <div className='room-item' key={room.id}>
-                                <div className='room-image-placeholder'></div>
+                               <img src={room.image} alt={room.name} 
+                               loading="lazy" className="room-image" />
                                 <div className='room-info'>
                                     <h6>{room.name}</h6>
                                     <p>{room.bedInfo}</p>
@@ -182,7 +183,8 @@ const HotelDetails = function ({ isOpen, onClose,
                     {/* ── TOP ── hotel image, name, rating, address, favorite/share icons */}
                     <div className='modal-top'>
                         <div className='modal-top-left'>
-                            <div className='hotel-image-placeholder'></div>
+                            <img src={selectedHotel.image} alt="Image of hotel"
+                                loading="lazy" className="hotel-image" />
                             <div className="text">
                                 <h5>{selectedHotel.name}</h5>
                                 <div className='stars-row'>
@@ -259,7 +261,8 @@ const HotelDetails = function ({ isOpen, onClose,
                                 <h4>Room Types</h4>
                                 {selectedHotel.rooms.map(room => (
                                     <div className='room-item' key={room.id}>
-                                        <div className='room-image-placeholder'></div>
+                                        <img src={room.image} alt={room.name}
+                                            loading="lazy" className="room-image" />
                                         <div className='room-info'>
                                             <h6>{room.name}</h6>
                                             <p>{room.bedInfo}</p>
@@ -289,9 +292,9 @@ const HotelDetails = function ({ isOpen, onClose,
 
                             <div className='side-card'>
                                 <h6>Free Cancellation</h6>
-                                <span className='policy-note'>
+                                <p className='policy-note'>
                                     Cancel before check-in f
-                                    or a full refund</span>
+                                    or a full refund</p>
                             </div>
 
                         </div>

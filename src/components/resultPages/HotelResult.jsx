@@ -22,6 +22,10 @@ import hotel2 from "/photos/hotel2.jpeg"
 import hotel3 from "/photos/hotel3.jpeg"
 
 
+import deluxeRoom from "/photos/deluxe_room.jpeg"
+import executiveSuites from "/photos/executive_room.jpeg"
+
+
 import { useNavigate } from "react-router-dom"
 import HotelDetails from "./HotelDetails"
 
@@ -59,8 +63,8 @@ const HotelResult = function () {
             checkOut: "Jun 25",
             guests: "2 Adults",
             rooms: [
-                { id: 1, name: "Deluxe Room", bedInfo: "King Bed · City View", price: "$180" },
-                { id: 2, name: "Executive Suite", bedInfo: "King Bed · Park View", price: "$260" }
+                { id: 1, name: "Deluxe Room", bedInfo: "King Bed · City View", price: "$180", image: deluxeRoom },
+                { id: 2, name: "Executive Suite", bedInfo: "King Bed · Park View", price: "$260", image: executiveSuites }
             ]
         },
         {
@@ -77,8 +81,8 @@ const HotelResult = function () {
             checkOut: "Jun 25",
             guests: "2 Adults",
             rooms: [
-                { id: 1, name: "Classic Room", bedInfo: "Queen Bed · Street View", price: "$180" },
-                { id: 2, name: "Junior Suite", bedInfo: "King Bed · City View", price: "$245" }
+                { id: 1, name: "Classic Room", bedInfo: "Queen Bed · Street View", price: "$180", image: deluxeRoom },
+                { id: 2, name: "Junior Suite", bedInfo: "King Bed · City View", price: "$245", image: executiveSuites }
             ]
         },
         {
@@ -95,8 +99,11 @@ const HotelResult = function () {
             checkOut: "Jun 25",
             guests: "2 Adults",
             rooms: [
-                { id: 1, name: "Deluxe Room", bedInfo: "King Bed · City View", price: "$180" },
-                { id: 2, name: "Connaught Suite", bedInfo: "King Bed · Park View", price: "$310" }
+                { id: 1, name: "Deluxe Room", 
+                    bedInfo: "King Bed · City View", price: "$180",
+                   image: deluxeRoom },
+                { id: 2, name: "Connaught Suite", bedInfo: "King Bed · Park View", 
+                    price: "$310", image: executiveSuites }
             ]
         }
     ]
@@ -146,11 +153,13 @@ const HotelResult = function () {
 
                 <section className='search-details'>
                     <div className='header-text-section'>
-                        <div className="icon-container">
+                        <div className="icon-container"
+                        onClick={() => navigate('/dashboard')}
+                        >
                             <img src={leftArrow}
                                 alt="Arrow Towards left" 
                                 loading="lazy"
-                                onClick={() => navigate('/dashboard')}
+                                
                             />
                         </div>
 
@@ -279,9 +288,6 @@ const HotelResult = function () {
         </div>
 
         <HotelDetails
-            hotel1 = {hotel1}
-            hotel2 = {hotel2}
-            hotel3 = {hotel3}
             isOpen={showOverlay}
             onClose={() => setShowOverlay(false)}
             selectedHotel={selectedHotel}

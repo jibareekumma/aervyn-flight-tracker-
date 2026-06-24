@@ -23,7 +23,7 @@ $card-hover: rgba(55, 82, 94);
 $border-subtle: rgba(255, 255, 255, 0.07);
 
 $font-xs: clamp(0.9rem, 1.1vw, 1.1rem);
-$font-sm: clamp(1.1rem, 1.3vw, 1.3rem);
+$font-sm: clamp(1.1rem, 1.3vw, 1.2rem);
 $font-md: clamp(1.2rem, 1.4vw, 1.4rem);
 $font-lg: clamp(1.4rem, 1.7vw, 1.7rem);
 $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
@@ -31,10 +31,11 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
 
 
 
+
 .hotel-header, .modal-top-left {
     display: flex;
     gap: 1.5rem;
-    border: 2px solid white;
+    // border: 2px solid white;
 
     .hotel-image{
         width: 10rem;
@@ -48,7 +49,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
         flex-direction: column;
         justify-content: space-between;
         margin-top: 1.5rem;
-        border: 2px solid white;
+        // border: 2px solid white;
 
         h5 {
             font-size: 1.5rem;
@@ -140,10 +141,10 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
 
 .amenities {
     margin-top: 20px;
-    border: 2px solid white;
+    // border: 2px solid white;
 
     h4 {
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: 550;
         letter-spacing: 0.5px;
         margin-bottom: 10px;
@@ -172,9 +173,10 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                 filter: $filter-white;
             }
 
-            &--more {
+            .pec-pill--more {
                
-                font-weight: 600;
+                font-weight: 400;
+                letter-spacing: 2px;
             }
         }
     }
@@ -186,8 +188,9 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
 
     h4 {
         font-size: 14px;
-        font-weight: 600;
-       
+        font-weight: 550;
+        letter-spacing: 0.5px;
+        color: $filter-white-lighter;
         margin-bottom: 10px;
     }
 
@@ -202,10 +205,10 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
             border-bottom: none;
         }
 
-        .room-image-placeholder {
+        .room-image{
             width: 48px;
             height: 48px;
-            background-color: #fff;
+           
             border-radius: 6px;
             flex-shrink: 0;
         }
@@ -294,14 +297,14 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                 background-color: $bg-color2;
 
                 p {
-                    font-size: 12px;
+                    font-size: 1.2rem;
                     
                     margin-bottom: 6px;
                 }
 
                 h3 {
                     font-size: 22px;
-                    font-weight: 700;
+                    font-weight: 550;
                     
                 }
 
@@ -323,6 +326,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
 
 
 .book-btn {
+   
 
     .price-pill {
         display: flex;
@@ -337,4 +341,35 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
             opacity: 0.8;
         }
     }
+}
+
+.modal-footer{
+    
+    
+    .footer-top{
+
+        .favorite{
+            img{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .share{
+             img{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .disclaimer{
+        font-size: 1.2rem;
+}
+
 }

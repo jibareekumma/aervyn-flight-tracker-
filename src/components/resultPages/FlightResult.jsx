@@ -120,10 +120,12 @@ const FlightResult = function () {
 
                 <section className='search-details'>
                     <div className='header-text-section'>
-                        <div className="icon-container">
+                        <div className="icon-container"
+                        onClick={() => navigate('/dashboard')}
+                        >
                             <img src={leftArrow}
                                 alt="Arrow Towards left" loading="lazy"
-                                onClick={() => navigate('/dashboard')}
+                                
                             />
                         </div>
 

@@ -1,7 +1,6 @@
 .hotel-header, .modal-top-left {
   display: flex;
   gap: 1.5rem;
-  border: 2px solid white;
 }
 .hotel-header .hotel-image, .modal-top-left .hotel-image {
   width: 10rem;
@@ -14,7 +13,6 @@
   flex-direction: column;
   justify-content: space-between;
   margin-top: 1.5rem;
-  border: 2px solid white;
 }
 .hotel-header .text h5, .modal-top-left .text h5 {
   font-size: 1.5rem;
@@ -86,10 +84,9 @@
 
 .amenities {
   margin-top: 20px;
-  border: 2px solid white;
 }
 .amenities h4 {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 550;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
@@ -114,8 +111,9 @@
   height: 14px;
   filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
 }
-.amenities .amenities-pecs .pec-pill--more {
-  font-weight: 600;
+.amenities .amenities-pecs .pec-pill .pec-pill--more {
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .room-types {
@@ -123,7 +121,9 @@
 }
 .room-types h4 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  color: brightness(0) saturate(100%) invert(67%) sepia(8%) saturate(293%) hue-rotate(155deg) brightness(92%) contrast(88%);
   margin-bottom: 10px;
 }
 .room-types .room-item {
@@ -136,10 +136,9 @@
 .room-types .room-item:last-child {
   border-bottom: none;
 }
-.room-types .room-item .room-image-placeholder {
+.room-types .room-item .room-image {
   width: 48px;
   height: 48px;
-  background-color: #fff;
   border-radius: 6px;
   flex-shrink: 0;
 }
@@ -208,12 +207,12 @@
   background-color: rgba(10, 13, 20, 0.55);
 }
 .modal-window .modal-body .modal-side .side-card p {
-  font-size: 12px;
+  font-size: 1.2rem;
   margin-bottom: 6px;
 }
 .modal-window .modal-body .modal-side .side-card h3 {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 550;
 }
 .modal-window .modal-body .modal-side .side-card h6 {
   font-size: 13px;
@@ -235,4 +234,22 @@
   font-size: 11px;
   font-weight: 400;
   opacity: 0.8;
+}
+
+.modal-footer .footer-top .favorite img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.modal-footer .footer-top .favorite p {
+  font-size: 1.2rem;
+}
+.modal-footer .footer-top .share img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.modal-footer .footer-top .share p {
+  font-size: 1.2rem;
+}
+.modal-footer .disclaimer {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=HotelDetails.css.map */
