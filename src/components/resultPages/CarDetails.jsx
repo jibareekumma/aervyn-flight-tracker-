@@ -1,19 +1,24 @@
 
 
 
+
+
 import favoriteIcon from "/icons/favorite_icon.png"
 import shareIcon from "/icons/share_icon.png"
 import rightArrow from "/icons/right_arr.png"
 import locationIcon from "/icons/location.png"
 
 import "../../css/CarDetail.css"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 const CarDetails = function ({ isOpen, onClose, 
     selectedCar, sheetClose }) {
 
+    const [displayCar, setDisplayCar] = useState(null);
+
     useEffect(() => {
         if (selectedCar) {
+            setDisplayCar(selectedCar)
             document.body.style.overflow = "hidden"
         } else {
             document.body.style.overflow = ""
@@ -35,25 +40,25 @@ const CarDetails = function ({ isOpen, onClose,
         <div className={`car-bottom-sheet ${selectedCar ? 
             'car-bottom-sheet--active' : ''}`}>
 
-            {selectedCar && (
+            {displayCar && (
                 <div className='car-details-wrapper'>
 
                     {/* ── HEADER ── car image, name, type, specs */}
                     <div className='car-header'>
-                        <img src = {selectedCar.image} alt="Image of car" 
+                        <img src = {displayCar.image} alt="Image of car" 
                         loading = "lazy" className = "car-image"
                         />
                         <div className="car-text">
-                            <h5>{selectedCar.name}</h5>
-                            <p className='car-type'>{selectedCar.type}</p>
+                            <h5>{displayCar.name}</h5>
+                            <p className='car-type'>{displayCar.type}</p>
                             <div className='car-specs-row'>
                                 <span className='car-spec'>
-                                    <span className='spec-value'>{selectedCar.seats}</span> Seats
+                                    <span className='spec-value'>{displayCar.seats}</span> Seats
                                 </span>
                                 <span className='car-spec-divider'>•</span>
-                                <span className='car-spec'>{selectedCar.transmission}</span>
+                                <span className='car-spec'>{displayCar.transmission}</span>
                                 <span className='car-spec-divider'>•</span>
-                                <span className='car-spec'>{selectedCar.fuelType}</span>
+                                <span className='car-spec'>{displayCar.fuelType}</span>
                             </div>
                         </div>
                     </div>
@@ -66,16 +71,16 @@ const CarDetails = function ({ isOpen, onClose,
                             <div className='location-label'>
                                 <span className='pickup-badge'>Pickup</span>
                             </div>
-                            <h6>{selectedCar.pickupLocation}</h6>
-                            <p>{selectedCar.pickupDate}</p>
+                            <h6>{displayCar.pickupLocation}</h6>
+                            <p>{displayCar.pickupDate}</p>
                         </div>
                         <div className='location-divider'></div>
                         <div className='location-item'>
                             <div className='location-label'>
                                 <span className='return-badge'>Return</span>
                             </div>
-                            <h6>{selectedCar.returnLocation}</h6>
-                            <p>{selectedCar.returnDate}</p>
+                            <h6>{displayCar.returnLocation}</h6>
+                            <p>{displayCar.returnDate}</p>
                         </div>
                     </div>
                     {/* ── END LOCATION INFO ── */}
@@ -85,7 +90,7 @@ const CarDetails = function ({ isOpen, onClose,
                     <div className='car-features'>
                         <h4>Features</h4>
                         <div className='car-features-grid'>
-                            {selectedCar.features.map((feature, i) => (
+                            {displayCar.features.map((feature, i) => (
                                 <span key={i} className='feature-pill'>
                                     {feature}
                                 </span>
@@ -98,7 +103,7 @@ const CarDetails = function ({ isOpen, onClose,
                     {/* ── AVAILABLE CARS ── similar cars */}
                     <div className='similar-cars'>
                         <h4>Similar Cars</h4>
-                        {selectedCar.similarCars.map(car => (
+                        {displayCar.similarCars.map(car => (
                             <div className='similar-car-item' key={car.id}>
                                 <div className='similar-car-placeholder'>
                                     <span>Car Image</span>
@@ -141,7 +146,7 @@ const CarDetails = function ({ isOpen, onClose,
                         <button className="car-book-btn"
                             title="Rent Now">
                             <span className='car-price-pill'>
-                                ${selectedCar.price}<small>
+                                ${displayCar.price}<small>
                                     /day</small></span>
                             <p>Rent Now</p>
                             <img src={rightArrow} 
@@ -159,25 +164,25 @@ const CarDetails = function ({ isOpen, onClose,
         <div className={`car-modal-window ${selectedCar ? 
             'car-modal-window--active' : ''}`}>
 
-            {selectedCar && (
+            {displayCar && (
                 <div className='car-modal-wrapper'>
 
                     {/* ── TOP ── car image, name, type, specs, favorite/share icons */}
                     <div className='car-modal-top'>
                         <div className='car-modal-top-left'>
-                            <img src={selectedCar.image} alt="Image of car"
+                            <img src={displayCar.image} alt="Image of car"
                                 loading="lazy" className="car-modal-image" />
                             <div className="car-modal-text">
-                                <h5>{selectedCar.name}</h5>
-                                <p className='car-type'>{selectedCar.type}</p>
+                                <h5>{displayCar.name}</h5>
+                                <p className='car-type'>{displayCar.type}</p>
                                 <div className='car-specs-row'>
                                     <span className='car-spec'>
-                                        <span className='spec-value'>{selectedCar.seats}</span> Seats
+                                        <span className='spec-value'>{displayCar.seats}</span> Seats
                                     </span>
                                     <span className='car-spec-divider'>•</span>
-                                    <span className='car-spec'>{selectedCar.transmission}</span>
+                                    <span className='car-spec'>{displayCar.transmission}</span>
                                     <span className='car-spec-divider'>•</span>
-                                    <span className='car-spec'>{selectedCar.fuelType}</span>
+                                    <span className='car-spec'>{displayCar.fuelType}</span>
                                 </div>
                             </div>
                         </div>
@@ -203,16 +208,16 @@ const CarDetails = function ({ isOpen, onClose,
                             <div className='location-label'>
                                 <span className='pickup-badge'>Pickup</span>
                             </div>
-                            <h6>{selectedCar.pickupLocation}</h6>
-                            <p>{selectedCar.pickupDate}</p>
+                            <h6>{displayCar.pickupLocation}</h6>
+                            <p>{displayCar.pickupDate}</p>
                         </div>
                         <div className='location-divider'></div>
                         <div className='location-item'>
                             <div className='location-label'>
                                 <span className='return-badge'>Return</span>
                             </div>
-                            <h6>{selectedCar.returnLocation}</h6>
-                            <p>{selectedCar.returnDate}</p>
+                            <h6>{displayCar.returnLocation}</h6>
+                            <p>{displayCar.returnDate}</p>
                         </div>
                     </div>
                     {/* ── END LOCATION INFO ── */}
@@ -227,7 +232,7 @@ const CarDetails = function ({ isOpen, onClose,
                             <div className='car-features'>
                                 <h4>Features</h4>
                                 <div className='car-features-grid'>
-                                    {selectedCar.features.map((feature, i) => (
+                                    {displayCar.features.map((feature, i) => (
                                         <span key={i} className='feature-pill'>
                                             {feature}
                                         </span>
@@ -237,7 +242,7 @@ const CarDetails = function ({ isOpen, onClose,
 
                             <div className='similar-cars'>
                                 <h4>Similar Cars</h4>
-                                {selectedCar.similarCars.map(car => (
+                                {displayCar.similarCars.map(car => (
                                     <div className='similar-car-item' key={car.id}>
                                         <div className='similar-car-placeholder'>
                                             <span>Car Image</span>
@@ -272,7 +277,7 @@ const CarDetails = function ({ isOpen, onClose,
 
                             <div className='car-side-card'>
                                 <p>Price (per day)</p>
-                                <h3>${selectedCar.price}</h3>
+                                <h3>${displayCar.price}</h3>
                             </div>
 
                             <div className='car-side-card'>

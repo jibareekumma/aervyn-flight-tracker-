@@ -64,6 +64,8 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
     min-height: 100vh;
     background-color: $bg-color2;
     animation: fadeIn 0.4s ease;
+
+    
 }
 
 .result-header {
@@ -611,6 +613,7 @@ aside {
     border-color $transix, 
     transform $transix-fast, box-shadow $transix;
     animation: slideUp 0.5s ease both;
+    border: 2px solid white;
 
     @for $i from 1 through 6 {
         &:nth-child(#{$i}) {

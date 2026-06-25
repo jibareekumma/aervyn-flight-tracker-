@@ -223,6 +223,9 @@
   font-size: 12px;
 }
 
+.book-btn {
+  border: 2px solid white;
+}
 .book-btn .price-pill {
   display: flex;
   align-items: baseline;

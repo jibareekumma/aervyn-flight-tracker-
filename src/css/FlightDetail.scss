@@ -24,6 +24,9 @@ $accent-dim: rgba(80, 180, 200, 0.12);
 $card-hover: rgba(55, 82, 94);
 $border-subtle: rgba(255, 255, 255, 0.07);
 
+$linear-btn-color: linear-gradient(135deg, rgba(80, 180, 200), 
+rgba(50, 150, 180));
+
 $bg-color6: #041b2f;
 $bg-color7: #061f36;
 
@@ -759,12 +762,11 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
         gap: 1rem;
 
         border-radius: 16px;
-
-       background-color: $bg-color4;
-
-        box-shadow:
-            0 0 25px rgba(63, 75, 83, 0.35),
-            inset 0 1px 1px rgba(63, 62, 62, 0.15);
+        
+        background: $linear-btn-color;
+        // box-shadow:
+        //     0 0 25px rgba(63, 75, 83, 0.35),
+        //     inset 0 1px 1px rgba(63, 62, 62, 0.15);
 
         p {
             margin: 0;
@@ -851,6 +853,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 1.2rem;
+    
 
     .modal-top-left {
         display: flex;
@@ -881,8 +884,8 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
         gap: 0.7rem;
 
         .icon-item {
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 3.5rem;
+            height: 3.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -891,8 +894,8 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
             cursor: pointer;
 
             img {
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
                 filter: $filter-white;
             }
         }
@@ -925,11 +928,14 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
         }
         p {
             color: $secondary-text;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            
         }
         small {
             display: block;
             font-size: 0.75rem;
+            
+            font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.45);
         }
         .time-row {
@@ -967,6 +973,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
             gap: 0.5rem;
             width: 100%;
             position: relative;
+            
 
             .dot {
                 width: 6px;
@@ -1010,12 +1017,13 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
         }
         .text {
             p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
+                
                 color: $secondary-text;
                
             }
             h6 {
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 font-weight: 500;
             }
         }
@@ -1047,7 +1055,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
     padding: 1rem;
 
     h4 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 500;
         margin-bottom: 1rem;
     }
@@ -1065,6 +1073,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
             background-color: $accent;
             margin-top: 0.3rem;
             flex-shrink: 0;
+            
         }
 
         .leg-content {
@@ -1076,11 +1085,11 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                 margin-bottom: 0.3rem;
 
                 .leg-code {
-                    font-size: 0.85rem;
+                    font-size: 1.3rem;
                     color: $secondary-text;
                 }
                 .leg-flight-no {
-                    font-size: 0.8rem;
+                    font-size: 1.1rem;
                     color: $secondary-text;
                 }
             }
@@ -1098,12 +1107,12 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                         font-weight: 600;
                     }
                     p {
-                        font-size: 0.75rem;
+                        font-size: 1rem;
                         color: $secondary-text;
                     }
                 }
                 .leg-duration {
-                    font-size: 0.75rem;
+                    font-size: 1rem;
                     color: $secondary-text;
                 }
             }
@@ -1112,19 +1121,19 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                 display: flex;
                 justify-content: space-between;
                 width: 60%;
-                font-size: 0.8rem;
+                font-size: 1.1rem;
                 color: $secondary-text;
             }
 
             .leg-terminal {
-                font-size: 0.75rem;
+                font-size: 1rem;
                 color: rgba(255, 255, 255, 0.45);
             }
         }
     }
 
     .leg-layover {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         color: $secondary-text;
         padding: 0.5rem 0;
         margin-left: 1.5rem;
@@ -1141,6 +1150,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
+    
 
     .side-card {
         background-color: $bg-color6;
@@ -1293,7 +1303,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
             justify-content: center;
             gap: 0.7rem;
             border-radius: 12px;
-            background-color: $bg-color4;
+            background: $linear-btn-color;
             
 
         box-shadow:
@@ -1305,6 +1315,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
                 font-size: 1.3rem;
                 font-weight: 500;
                 letter-spacing: 0.5px;
+                
             }
             img {
                 width: 2rem;
@@ -1319,6 +1330,7 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
         font-size: 0.75rem;
         color: rgba(255, 255, 255, 0.4);
         margin-top: 0.6rem;
+        margin-left: 8rem;
     }
 }
 

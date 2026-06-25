@@ -617,8 +617,7 @@
   justify-content: center;
   gap: 1rem;
   border-radius: 16px;
-  background-color: rgb(44, 66, 76);
-  box-shadow: 0 0 25px rgba(63, 75, 83, 0.35), inset 0 1px 1px rgba(63, 62, 62, 0.15);
+  background: linear-gradient(135deg, rgb(80, 180, 200), rgb(50, 150, 180));
 }
 .details-footer .book-btn p {
   margin: 0;
@@ -709,8 +708,8 @@
   gap: 0.7rem;
 }
 .modal-top .modal-top-right .icon-item {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -719,8 +718,8 @@
   cursor: pointer;
 }
 .modal-top .modal-top-right .icon-item img {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
 }
 
@@ -748,11 +747,12 @@
 }
 .modal-route .route-point p {
   color: rgb(180, 190, 200);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .modal-route .route-point small {
   display: block;
   font-size: 0.75rem;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.45);
 }
 .modal-route .route-point .time-row {
@@ -824,11 +824,11 @@
   filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
 }
 .modal-meta .meta-item .text p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgb(180, 190, 200);
 }
 .modal-meta .meta-item .text h6 {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .modal-meta .meta-divider {
@@ -852,7 +852,7 @@
   padding: 1rem;
 }
 .modal-legs h4 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
@@ -879,11 +879,11 @@
   margin-bottom: 0.3rem;
 }
 .modal-legs .leg-item .leg-content .leg-code-row .leg-code {
-  font-size: 0.85rem;
+  font-size: 1.3rem;
   color: rgb(180, 190, 200);
 }
 .modal-legs .leg-item .leg-content .leg-code-row .leg-flight-no {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: rgb(180, 190, 200);
 }
 .modal-legs .leg-item .leg-content .leg-route {
@@ -898,26 +898,26 @@
   font-weight: 600;
 }
 .modal-legs .leg-item .leg-content .leg-route .leg-airport p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: rgb(180, 190, 200);
 }
 .modal-legs .leg-item .leg-content .leg-route .leg-duration {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: rgb(180, 190, 200);
 }
 .modal-legs .leg-item .leg-content .leg-times {
   display: flex;
   justify-content: space-between;
   width: 60%;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: rgb(180, 190, 200);
 }
 .modal-legs .leg-item .leg-content .leg-terminal {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.45);
 }
 .modal-legs .leg-layover {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: rgb(180, 190, 200);
   padding: 0.5rem 0;
   margin-left: 1.5rem;
@@ -1063,7 +1063,7 @@
   justify-content: center;
   gap: 0.7rem;
   border-radius: 12px;
-  background-color: rgb(44, 66, 76);
+  background: linear-gradient(135deg, rgb(80, 180, 200), rgb(50, 150, 180));
   box-shadow: 0 0 25px rgba(63, 75, 83, 0.35), inset 0 1px 1px rgba(63, 62, 62, 0.15);
 }
 .modal-footer .footer-top .book-btn p {
@@ -1082,6 +1082,7 @@
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.4);
   margin-top: 0.6rem;
+  margin-left: 8rem;
 }
 
 .modal-window {

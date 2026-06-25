@@ -1,7 +1,9 @@
 
 
 
-@import './Result';
+
+
+// @import './Result';
 
 // ── CAR DETAILS VARIABLES ──
 $car-accent: rgba(80, 180, 200);
@@ -10,6 +12,9 @@ $car-bg-color3: rgba(15, 38, 46);
 $car-bg-color2: rgba(10, 13, 20, 0.55);
 $car-border-subtle: rgba(255, 255, 255, 0.07);
 $car-filter-white-lighter: brightness(0) saturate(100%) invert(67%) sepia(8%) saturate(293%) hue-rotate(155deg) brightness(92%) contrast(88%);
+$linear-btn-color: linear-gradient(135deg, rgba(80, 180, 200), 
+rgba(50, 150, 180));
+
 
 // ── OVERLAY ──
 .car-overlay {
@@ -38,7 +43,8 @@ $car-filter-white-lighter: brightness(0) saturate(100%) invert(67%) sepia(8%) sa
     transform: translateY(100%);
     transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1);
     z-index: 1000;
-    max-height: 92vh;
+    height: 90vh;
+    border: 2px solid white;
     overflow-y: auto;
     padding: 20px 16px 20px;
     width: 100%;
@@ -74,7 +80,7 @@ $car-filter-white-lighter: brightness(0) saturate(100%) invert(67%) sepia(8%) sa
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 99;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.35s ease, visibility 0.35s ease;
@@ -415,7 +421,7 @@ $car-filter-white-lighter: brightness(0) saturate(100%) invert(67%) sepia(8%) sa
         padding: 12px 20px;
         border-radius: 30px;
         border: none;
-        background: linear-gradient(135deg, rgba(80, 180, 200), rgba(50, 150, 180));
+        background: $linear-btn-color;
         color: #fff;
         font-weight: 600;
         font-size: 1rem;
@@ -858,3 +864,7 @@ $car-filter-white-lighter: brightness(0) saturate(100%) invert(67%) sepia(8%) sa
         }
     }
 }
+
+
+
+

@@ -530,6 +530,7 @@ aside {
   overflow: hidden;
   transition: background-color 0.35s ease, border-color 0.35s ease, transform 0.2s ease, box-shadow 0.35s ease;
   animation: slideUp 0.5s ease both;
+  border: 2px solid white;
 }
 .car-item-detail:nth-child(1) {
   animation-delay: 0.08s;

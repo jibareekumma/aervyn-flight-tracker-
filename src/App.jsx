@@ -1,13 +1,20 @@
 
 
 import { Routes, Route, Navigate } from 'react-router-dom'
+
+
 import Login from "./components/Login"
 import Register from "./components/Register"
 import Intro from "./components/Intro"
 import Dashboard from './components/Dashboard'
+import Favorite from './components/Favorite'
+
+
 import FlightResult from './components/resultPages/FlightResult'
 import HotelResult from './components/resultPages/HotelResult'
 import CarResult from './components/resultPages/CarResult'
+
+
 import { useAuth } from './context/AuthContext'
 
 
@@ -38,6 +45,8 @@ function App() {
         <Route path = '/flightResult' element = {<FlightResult/>}/>
         <Route path = '/hotelResult' element = {<HotelResult/>} />
         <Route path = '/carResult' element = {<CarResult/>} />
+
+        <Route path = '/favorite' element = {<Favorite/>} />
       </Routes>
     </>
   )

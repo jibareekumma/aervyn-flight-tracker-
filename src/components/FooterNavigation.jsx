@@ -13,8 +13,11 @@ import flexibleIcon from "/icons/flexible_icon.png"
 
 
 import "../css/FooterNavigation.css"
+import { useNavigate } from "react-router-dom"
 
 const FooterNavigation = function(){
+
+    const navigate = useNavigate();
 
     return <>
 
@@ -37,6 +40,7 @@ const FooterNavigation = function(){
             <div className = 'nav-container'>
            <img src = {favoriteIcon} alt="Favourite icon"
            title = "Favorite Flights" className='nav-favorite'
+           onClick = { () => navigate('/favorite') }
            />
            <p>Favorites</p>
            </div>
