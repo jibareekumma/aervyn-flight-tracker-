@@ -374,3 +374,14 @@ $font-xl: clamp(1.8rem, 2.2vw, 2.2rem);
 }
 
 }
+
+.image-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-color3;
+    color: $filter-white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 8px;
+}

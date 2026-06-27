@@ -1,6 +1,5 @@
 
 
-
 import favoriteIcon from "/icons/favorite_icon.png"
 import leftArrow from "/icons/left_arrow_icon.png"
 import rightArrow from "/icons/right_arr.png"
@@ -15,30 +14,24 @@ import settingsIcon from "/icons/spin-rotate.png"
 import starIcon from "/icons/star icon.png"
 import visitSite from "/icons/visit-site.png"
 
-
-
-import hotel1 from "/photos/hotel1.jpeg"
-import hotel2 from "/photos/hotel2.jpeg"
-import hotel3 from "/photos/hotel3.jpeg"
-
-
-import deluxeRoom from "/photos/deluxe_room.jpeg"
-import executiveSuites from "/photos/executive_room.jpeg"
-
-
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import HotelDetails from "./HotelDetails"
 
-
 import "../../css/Result.css"
-import { useState } from "react"
-
+import { useState, useEffect } from "react"
 
 const HotelResult = function () {
 
-    const [showOverlay, setShowOverlay] = useState(false);
-    const [selectedHotel, setSelectedHotel] = useState(null);
+    const [showOverlay, setShowOverlay] = useState(false)
+    const [selectedHotel, setSelectedHotel] = useState(null)
 
+    const [allHotels, setAllHotels] = useState([])
+    const [loading, setLoading] = useState(true)
+
+    const [imageErrors, setImageErrors] = useState({})
+
+    const { state } = useLocation()
+    const cityCode = state ? state.cityCode : 'LOS'
 
     const today = new Date().toLocaleDateString('en-US', {
         weekday: 'long',
@@ -48,72 +41,70 @@ const HotelResult = function () {
 
     const navigate = useNavigate()
 
-    const hotels = [
-        {
-            id: 1,
-            name: "Claridge's (Mayfair)",
-            image: hotel2,
-            rating: 5,
-            reviewScore: "8.7",
-            reviewLabel: "Excellent",
-            price: "$180",
-            amenities: ["Free WiFi", "Gym", "Pool", "Breakfast"],
-            address: "Brooks Mews, Mayfair, London W1K 4HR, UK",
-            checkIn: "Jun 22",
-            checkOut: "Jun 25",
-            guests: "2 Adults",
-            rooms: [
-                { id: 1, name: "Deluxe Room", bedInfo: "King Bed · City View", price: "$180", image: deluxeRoom },
-                { id: 2, name: "Executive Suite", bedInfo: "King Bed · Park View", price: "$260", image: executiveSuites }
-            ]
-        },
-        {
-            id: 2,
-            name: "Brown's Hotel",
-            image: hotel3,
-            rating: 5,
-            reviewScore: "8.0",
-            reviewLabel: "Excellent",
-            price: "$180",
-            amenities: ["Free WiFi", "Gym", "Spa"],
-            address: "Albemarle St, Mayfair, London W1S 4BP, UK",
-            checkIn: "Jun 22",
-            checkOut: "Jun 25",
-            guests: "2 Adults",
-            rooms: [
-                { id: 1, name: "Classic Room", bedInfo: "Queen Bed · Street View", price: "$180", image: deluxeRoom },
-                { id: 2, name: "Junior Suite", bedInfo: "King Bed · City View", price: "$245", image: executiveSuites }
-            ]
-        },
-        {
-            id: 3,
-            name: "The Connaught Hotel",
-            image: hotel1,
-            rating: 5,
-            reviewScore: "9.2",
-            reviewLabel: "Excellent",
-            price: "$180",
-            amenities: ["Free WiFi", "Gym", "Breakfast"],
-            address: "Carlos Pl, Mayfair, London W1K 2AL, UK",
-            checkIn: "Jun 22",
-            checkOut: "Jun 25",
-            guests: "2 Adults",
-            rooms: [
-                { id: 1, name: "Deluxe Room", 
-                    bedInfo: "King Bed · City View", price: "$180",
-                   image: deluxeRoom },
-                { id: 2, name: "Connaught Suite", bedInfo: "King Bed · Park View", 
-                    price: "$310", image: executiveSuites }
-            ]
-        }
-    ]
+    useEffect(function () {
+        fetch("/data/hotelsData.json")
+            .then(function (res) { return res.json() })
+            .then(function (data) {
+                setAllHotels(data.hotels)
+                setLoading(false)
+            })
+            .catch(function (err) {
+                console.log('Failed to load hotels data:', err)
+                setLoading(false)
+            })
+    }, [])
 
+    const matchingHotels = allHotels.filter(function (hotel) {
+        return hotel.cityCode === cityCode
+    })
+
+    const handleImageError = function (imagePath) {
+        setImageErrors(function (prev) {
+            return { ...prev, [imagePath]: true }
+        })
+    }
+
+    const renderHotelImage = function (imagePath, altText, className) {
+        if (imageErrors[imagePath]) {
+            return (
+                <div className={`image-fallback ${className || ''}`}>
+                    <span>{altText}</span>
+                </div>
+            )
+        }
+        return (
+            <img
+                src={imagePath}
+                alt={altText}
+                loading="lazy"
+                className={className}
+                onError={() => handleImageError(imagePath)}
+            />
+        )
+    }
+
+    if (loading) {
+        return (
+            <div className="result-container">
+                <p>Loading hotels...</p>
+            </div>
+        )
+    }
+
+    if (matchingHotels.length === 0) {
+        return (
+            <div className="result-container">
+                <p>No hotels found for this city.
+                    Try Lagos, London, or Dubai.</p>
+            </div>
+        )
+    }
+
+    const cityName = matchingHotels[0].city
 
     return <>
 
-
         <div className="result-container">
-
 
             <aside className="desktop-sidebar">
                 <div className="sidebar-top">
@@ -146,40 +137,30 @@ const HotelResult = function () {
                 </div>
             </aside>
 
-
-
             <div className='result-header'
                 id="flight-result-header">
 
                 <section className='search-details'>
                     <div className='header-text-section'>
                         <div className="icon-container"
-                        onClick={() => navigate('/dashboard')}
+                            onClick={() => navigate('/dashboard')}
                         >
                             <img src={leftArrow}
-                                alt="Arrow Towards left" 
+                                alt="Arrow Towards left"
                                 loading="lazy"
-                                
                             />
                         </div>
 
                         <div className='text-container'>
 
                             <div className='locations'>
-                                <h5>Lagos</h5>
-                                <img src={rightArrow}
-                                    alt="Arrow Towards right" 
-                                    loading="lazy"
-
-                                />
-                                <h5>London</h5>
+                                <h5>{cityName}</h5>
                             </div>
 
                             <div className="dates">
                                 <p>{today}</p>
                                 <span>.</span>
                                 <p>2 Guests</p>
-
                             </div>
 
                         </div>
@@ -190,9 +171,7 @@ const HotelResult = function () {
                     </button>
                 </section>
 
-
                 <nav className="result-nav">
-
 
                     <div className="nav-item">
                         <p>Price</p>
@@ -220,13 +199,12 @@ const HotelResult = function () {
                 </nav>
             </div>
 
-
             <div className='result-main'>
-                <h6>342 Hotels Found</h6>
+                <h6>{matchingHotels.length} Hotels Found</h6>
 
                 <section className='details-container' id="details-container">
 
-                    {hotels.map(hotel => (
+                    {matchingHotels.map(hotel => (
                         <div className='details-item' id="details-item-hotel" key={hotel.id}
 
                             onClick={() => {
@@ -236,9 +214,7 @@ const HotelResult = function () {
 
                         >
 
-                            <img src={hotel.image} alt="Image of hotel"
-                                loading='lazy' className="item-photo"
-                            />
+                            {renderHotelImage(hotel.image, "Image of hotel", "item-photo")}
                             <div className="item-details">
                                 <h5>{hotel.name}</h5>
                                 <div className='stars-container'>
@@ -281,8 +257,6 @@ const HotelResult = function () {
 
                 </section>
 
-
-
             </div>
 
         </div>
@@ -292,10 +266,11 @@ const HotelResult = function () {
             onClose={() => setShowOverlay(false)}
             selectedHotel={selectedHotel}
             sheetClose={() => setSelectedHotel(null)}
+            imageErrors={imageErrors}
+            onImageError={handleImageError}
         />
 
     </>
 }
-
 
 export default HotelResult

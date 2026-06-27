@@ -1,3 +1,6 @@
+
+
+
 import rotateIcon from "/icons/spin-rotate.png"
 import "../css/Header.css"
 import selectArrow from "/icons/select arrow.png"
@@ -16,6 +19,7 @@ const NavigatedSection = function( {activeTabs} ){
 
     const [fromValue, setFromValue] = useState("LOS");
     const [toValue, setToValue] = useState("LHR");
+    const [hotelCityCode, setHotelCityCode] = useState("LOS");
 
     const handleSwap = function(){
         const tempFrom = fromValue
@@ -26,6 +30,10 @@ const NavigatedSection = function( {activeTabs} ){
 
     const handleSearch = function(){
         navigate('/flightResult', { state: { fromCode: fromValue, toCode: toValue } })
+    }
+
+    const handleHotelSearch = function(){
+        navigate('/hotelResult', { state: { cityCode: hotelCityCode } })
     }
 
     return <>
@@ -407,13 +415,32 @@ const NavigatedSection = function( {activeTabs} ){
                     <select
                         name="country-hotel"
                         id="country-hotel"
+                        value={hotelCityCode}
+                        onChange={(e) => setHotelCityCode(e.target.value)}
                         style={{ appearance: "none", 
                             WebkitAppearance: "none", paddingLeft: "28px", 
                             paddingRight: "40px" }}
                     >
-                        <option value="UAE">Dubai, United Arab Emirates</option>
-                        <option value="USA">New York (JFK)</option>
-                        <option value="NIGERIA">Lagos (LOS)</option>
+                        <option value="LOS">Lagos (LOS)</option>
+<option value="ABV">Abuja (ABV)</option>
+<option value="LHR">London (LHR)</option>
+<option value="CDG">Paris (CDG)</option>
+<option value="AMS">Amsterdam (AMS)</option>
+<option value="FRA">Frankfurt (FRA)</option>
+<option value="FCO">Rome (FCO)</option>
+<option value="MAD">Madrid (MAD)</option>
+<option value="IST">Istanbul (IST)</option>
+<option value="DXB">Dubai (DXB)</option>
+<option value="DOH">Doha (DOH)</option>
+<option value="AUH">Abu Dhabi (AUH)</option>
+<option value="NBO">Nairobi (NBO)</option>
+<option value="SIN">Singapore (SIN)</option>
+<option value="HKG">Hong Kong (HKG)</option>
+<option value="MNL">Manila (MNL)</option>
+<option value="SYD">Sydney (SYD)</option>
+<option value="JFK">New York (JFK)</option>
+<option value="ATL">Atlanta (ATL)</option>
+<option value="YUL">Montreal (YUL)</option>
                     </select>
                 </div>
             </div>
@@ -476,7 +503,7 @@ const NavigatedSection = function( {activeTabs} ){
         </div>
 
         <button className="search-btn"
-        onClick = {() => navigate('/hotelResult')}
+        onClick = {handleHotelSearch}
         >Search Hotels</button>
     </div>
 </div>

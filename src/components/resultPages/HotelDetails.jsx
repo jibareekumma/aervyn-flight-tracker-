@@ -11,13 +11,17 @@ import gymIcon from "/icons/gym_icon.png"
 import poolIcon from "/icons/pool_icon.png"
 import mealIcon from "/icons/meal_icon.png"
 
-
-
 import "../../css/HotelDetails.css"
 import { useEffect } from "react"
 
-const HotelDetails = function ({ isOpen, onClose, 
-    selectedHotel, sheetClose }) {
+const HotelDetails = function ({
+    isOpen,
+    onClose,
+    selectedHotel,
+    sheetClose,
+    imageErrors,
+    onImageError
+}) {
 
     useEffect(() => {
         if (selectedHotel) {
@@ -30,14 +34,32 @@ const HotelDetails = function ({ isOpen, onClose,
         }
     }, [selectedHotel])
 
-
     const amenityIcons = {
-    "Free WiFi": wifiIcon,
-    "Gym": gymIcon,
-    "Pool": poolIcon,
-    "Breakfast": mealIcon,
-    "Spa": favoriteIcon
-}
+        "Free WiFi": wifiIcon,
+        "Gym": gymIcon,
+        "Pool": poolIcon,
+        "Breakfast": mealIcon,
+        "Spa": favoriteIcon
+    }
+
+    const renderImage = function (imagePath, altText, className) {
+        if (imageErrors[imagePath]) {
+            return (
+                <div className={`image-fallback ${className || ''}`}>
+                    <span>{altText}</span>
+                </div>
+            )
+        }
+        return (
+            <img
+                src={imagePath}
+                alt={altText}
+                loading="lazy"
+                className={className}
+                onError={() => onImageError(imagePath)}
+            />
+        )
+    }
 
     return <>
 
@@ -48,7 +70,7 @@ const HotelDetails = function ({ isOpen, onClose,
             }}
         />
 
-        <div className={`bottom-sheet ${selectedHotel ? 
+        <div className={`bottom-sheet ${selectedHotel ?
             'bottom-sheet--active' : ''}`}>
 
             {selectedHotel && (
@@ -56,9 +78,7 @@ const HotelDetails = function ({ isOpen, onClose,
 
                     {/* ── HEADER ── hotel image, name, rating, address */}
                     <div className='hotel-header'>
-                        <img src = {selectedHotel.image} alt="Image of hotel" 
-                        loading = "lazy" className = "hotel-image"
-                        />
+                        {renderImage(selectedHotel.image, "Image of hotel", "hotel-image")}
                         <div className="text">
                             <h5>{selectedHotel.name}</h5>
                             <div className='stars-row'>
@@ -71,14 +91,13 @@ const HotelDetails = function ({ isOpen, onClose,
                                     {selectedHotel.reviewLabel}</span>
                             </div>
                             <div className='address-row'>
-                                <img src={locationIcon} 
-                                alt="Location pin" loading="lazy" />
+                                <img src={locationIcon}
+                                    alt="Location pin" loading="lazy" />
                                 <p>{selectedHotel.address}</p>
                             </div>
                         </div>
                     </div>
                     {/* ── END HEADER ── */}
-
 
                     {/* ── STAY INFO ── check-in, check-out, guests */}
                     <div className="stay-info">
@@ -97,15 +116,14 @@ const HotelDetails = function ({ isOpen, onClose,
                     </div>
                     {/* ── END STAY INFO ── */}
 
-
                     {/* ── AMENITIES ── pill icons */}
                     <div className='amenities'>
                         <h4>Amenities</h4>
                         <div className='amenities-pecs'>
                             {selectedHotel.amenities.slice(0, 4).map((item, i) => (
                                 <span key={i} className='pec-pill'>
-                                    <img src={amenityIcons[item]} 
-                                    alt={item} loading="lazy" />
+                                    <img src={amenityIcons[item]}
+                                        alt={item} loading="lazy" />
                                     {item}
                                 </span>
                             ))}
@@ -118,14 +136,12 @@ const HotelDetails = function ({ isOpen, onClose,
                     </div>
                     {/* ── END AMENITIES ── */}
 
-
                     {/* ── ROOM TYPES ── */}
                     <div className='room-types'>
                         <h4>Room Types</h4>
                         {selectedHotel.rooms.map(room => (
                             <div className='room-item' key={room.id}>
-                               <img src={room.image} alt={room.name} 
-                               loading="lazy" className="room-image" />
+                                {renderImage(room.image, room.name, "room-image")}
                                 <div className='room-info'>
                                     <h6>{room.name}</h6>
                                     <p>{room.bedInfo}</p>
@@ -143,7 +159,6 @@ const HotelDetails = function ({ isOpen, onClose,
                     </div>
                     {/* ── END ROOM TYPES ── */}
 
-
                     {/* ── FOOTER ── favorite, share, reserve now */}
                     <div className="details-footer">
                         <div className="favorite">
@@ -151,9 +166,9 @@ const HotelDetails = function ({ isOpen, onClose,
                                 loading="lazy" title="Add to favorite" />
                         </div>
                         <div className="share">
-                            <img src={shareIcon} 
-                            alt="Share Icon"
-                                loading="lazy" 
+                            <img src={shareIcon}
+                                alt="Share Icon"
+                                loading="lazy"
                                 title="Share with friends" />
                         </div>
                         <button className="book-btn"
@@ -162,8 +177,8 @@ const HotelDetails = function ({ isOpen, onClose,
                                 {selectedHotel.price}<small>
                                     /night</small></span>
                             <p>Reserve Now</p>
-                            <img src={rightArrow} 
-                            alt="Right Arrow" loading="lazy" />
+                            <img src={rightArrow}
+                                alt="Right Arrow" loading="lazy" />
                         </button>
                     </div>
                     {/* ── END FOOTER ── */}
@@ -173,8 +188,7 @@ const HotelDetails = function ({ isOpen, onClose,
 
         </div>
 
-
-        <div className={`modal-window ${selectedHotel ? 
+        <div className={`modal-window ${selectedHotel ?
             'modal-window--active' : ''}`}>
 
             {selectedHotel && (
@@ -183,14 +197,13 @@ const HotelDetails = function ({ isOpen, onClose,
                     {/* ── TOP ── hotel image, name, rating, address, favorite/share icons */}
                     <div className='modal-top'>
                         <div className='modal-top-left'>
-                            <img src={selectedHotel.image} alt="Image of hotel"
-                                loading="lazy" className="hotel-image" />
+                            {renderImage(selectedHotel.image, "Image of hotel", "hotel-image")}
                             <div className="text">
                                 <h5>{selectedHotel.name}</h5>
                                 <div className='stars-row'>
                                     {Array.from({ length: selectedHotel.rating }).map((_, i) => (
-                                        <img key={i} src={starIcon} 
-                                        alt="Star" loading="lazy" />
+                                        <img key={i} src={starIcon}
+                                            alt="Star" loading="lazy" />
                                     ))}
                                     <span className='review-score'>
                                         {selectedHotel.reviewScore}</span>
@@ -198,27 +211,26 @@ const HotelDetails = function ({ isOpen, onClose,
                                         {selectedHotel.reviewLabel}</span>
                                 </div>
                                 <div className='address-row'>
-                                    <img src={favoriteIcon} 
-                                    alt="Location pin" loading="lazy" />
+                                    <img src={favoriteIcon}
+                                        alt="Location pin" loading="lazy" />
                                     <p>{selectedHotel.address}</p>
                                 </div>
                             </div>
                         </div>
                         <div className='modal-top-right'>
-                            <div className="icon-item" 
-                            title="Add to favorites">
-                                <img src={favoriteIcon} 
-                                alt="Favourite Icon" loading="lazy" />
+                            <div className="icon-item"
+                                title="Add to favorites">
+                                <img src={favoriteIcon}
+                                    alt="Favourite Icon" loading="lazy" />
                             </div>
-                            <div className="icon-item" 
-                            title="Share Hotel">
-                                <img src={shareIcon} 
-                                alt="Share Icon" loading="lazy" />
+                            <div className="icon-item"
+                                title="Share Hotel">
+                                <img src={shareIcon}
+                                    alt="Share Icon" loading="lazy" />
                             </div>
                         </div>
                     </div>
                     {/* ── END TOP ── */}
-
 
                     {/* ── STAY INFO ── check-in, check-out, guests */}
                     <div className="stay-info">
@@ -237,7 +249,6 @@ const HotelDetails = function ({ isOpen, onClose,
                     </div>
                     {/* ── END STAY INFO ── */}
 
-
                     {/* ── BODY ── amenities + room types on left, price/policies on right */}
                     <div className='modal-body'>
 
@@ -249,8 +260,8 @@ const HotelDetails = function ({ isOpen, onClose,
                                 <div className='amenities-pecs'>
                                     {selectedHotel.amenities.map((item, i) => (
                                         <span key={i} className='pec-pill'>
-                                            <img src={favoriteIcon} 
-                                            alt={item} loading="lazy" />
+                                            <img src={amenityIcons[item]}
+                                                alt={item} loading="lazy" />
                                             {item}
                                         </span>
                                     ))}
@@ -261,8 +272,7 @@ const HotelDetails = function ({ isOpen, onClose,
                                 <h4>Room Types</h4>
                                 {selectedHotel.rooms.map(room => (
                                     <div className='room-item' key={room.id}>
-                                        <img src={room.image} alt={room.name}
-                                            loading="lazy" className="room-image" />
+                                        {renderImage(room.image, room.name, "room-image")}
                                         <div className='room-info'>
                                             <h6>{room.name}</h6>
                                             <p>{room.bedInfo}</p>
@@ -280,7 +290,6 @@ const HotelDetails = function ({ isOpen, onClose,
 
                         </div>
                         {/* ── END LEFT ── */}
-
 
                         {/* ── RIGHT ── price card, cancellation policy */}
                         <div className='modal-side'>
@@ -302,7 +311,6 @@ const HotelDetails = function ({ isOpen, onClose,
 
                     </div>
                     {/* ── END BODY ── */}
-
 
                     {/* ── FOOTER ── favorite, share, reserve now, disclaimer */}
                     <div className="modal-footer">

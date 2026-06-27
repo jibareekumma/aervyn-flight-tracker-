@@ -1,0 +1,3893 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "The Peninsula Lagos Suites",
+      "image": "/hotels/lagos/the-peninsula-lagos-0.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "rating": 4,
+      "reviewScore": "7.8",
+      "reviewLabel": "Very Good",
+      "price": "$414",
+      "amenities": [
+        "Breakfast",
+        "Free WiFi",
+        "Pool",
+        "Gym"
+      ],
+      "address": "115 Harbor View Road, Ikoyi, Lagos, Nigeria",
+      "checkIn": "Aug 17",
+      "checkOut": "Aug 21",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$414",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$533",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "JW Marriott Lagos Tower",
+      "image": "/hotels/lagos/jw-marriott-lagos-1.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "rating": 4,
+      "reviewScore": "8.1",
+      "reviewLabel": "Excellent",
+      "price": "$515",
+      "amenities": [
+        "Gym",
+        "Spa",
+        "Free WiFi"
+      ],
+      "address": "25 Sunset Boulevard, Ikeja, Lagos, Nigeria",
+      "checkIn": "Oct 9",
+      "checkOut": "Oct 14",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$515",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$558",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$665",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fairmont Lagos Residences",
+      "image": "/hotels/lagos/fairmont-lagos-2.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "rating": 3,
+      "reviewScore": "8.5",
+      "reviewLabel": "Excellent",
+      "price": "$352",
+      "amenities": [
+        "Breakfast",
+        "Pool",
+        "Free WiFi"
+      ],
+      "address": "123 High Street, Lekki, Lagos, Nigeria",
+      "checkIn": "Oct 21",
+      "checkOut": "Oct 23",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$352",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$449",
+          "image": "/rooms/deluxe-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "The Continental Lagos Hotel",
+      "image": "/hotels/lagos/the-continental-lagos-3.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "rating": 5,
+      "reviewScore": "9.0",
+      "reviewLabel": "Exceptional",
+      "price": "$298",
+      "amenities": [
+        "Breakfast",
+        "Gym",
+        "Free WiFi"
+      ],
+      "address": "104 Riverside Drive, Ikeja, Lagos, Nigeria",
+      "checkIn": "Sep 8",
+      "checkOut": "Sep 11",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$298",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$388",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Grand Abuja Residences",
+      "image": "/hotels/abuja/grand-abuja-0.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "country": "Nigeria",
+      "rating": 5,
+      "reviewScore": "9.6",
+      "reviewLabel": "Exceptional",
+      "price": "$246",
+      "amenities": [
+        "Gym",
+        "Free WiFi",
+        "Breakfast"
+      ],
+      "address": "83 Central Boulevard, Wuse, Abuja, Nigeria",
+      "checkIn": "Aug 30",
+      "checkOut": "Sep 1",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$246",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$334",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "The Westin Abuja Residences",
+      "image": "/hotels/abuja/the-westin-abuja-1.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "country": "Nigeria",
+      "rating": 3,
+      "reviewScore": "8.8",
+      "reviewLabel": "Excellent",
+      "price": "$398",
+      "amenities": [
+        "Gym",
+        "Free WiFi",
+        "Spa",
+        "Breakfast",
+        "Pool"
+      ],
+      "address": "114 King's Road, Asokoro, Abuja, Nigeria",
+      "checkIn": "Oct 2",
+      "checkOut": "Oct 4",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$398",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$494",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$498",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Park Plaza Abuja House",
+      "image": "/hotels/abuja/park-plaza-abuja-2.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "country": "Nigeria",
+      "rating": 5,
+      "reviewScore": "8.1",
+      "reviewLabel": "Excellent",
+      "price": "$73",
+      "amenities": [
+        "Gym",
+        "Pool",
+        "Spa",
+        "Free WiFi",
+        "Breakfast"
+      ],
+      "address": "190 Central Boulevard, Central Business District, Abuja, Nigeria",
+      "checkIn": "Oct 3",
+      "checkOut": "Oct 9",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$73",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$191",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$237",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "The Peninsula Abuja Suites",
+      "image": "/hotels/abuja/the-peninsula-abuja-3.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "country": "Nigeria",
+      "rating": 4,
+      "reviewScore": "8.4",
+      "reviewLabel": "Excellent",
+      "price": "$156",
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Free WiFi"
+      ],
+      "address": "13 Sunset Boulevard, Wuse, Abuja, Nigeria",
+      "checkIn": "Oct 3",
+      "checkOut": "Oct 4",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$156",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$202",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$384",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "The Continental Abuja House",
+      "image": "/hotels/abuja/the-continental-abuja-4.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "country": "Nigeria",
+      "rating": 4,
+      "reviewScore": "9.2",
+      "reviewLabel": "Exceptional",
+      "price": "$114",
+      "amenities": [
+        "Gym",
+        "Free WiFi"
+      ],
+      "address": "183 Liberty Lane, Wuse, Abuja, Nigeria",
+      "checkIn": "Oct 1",
+      "checkOut": "Oct 6",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$114",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$227",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$214",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Waldorf London Hotel",
+      "image": "/hotels/london/waldorf-london-0.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "country": "United Kingdom",
+      "rating": 5,
+      "reviewScore": "8.4",
+      "reviewLabel": "Excellent",
+      "price": "$359",
+      "amenities": [
+        "Breakfast",
+        "Free WiFi",
+        "Gym",
+        "Pool",
+        "Spa"
+      ],
+      "address": "18 Victoria Street, Knightsbridge, London, United Kingdom",
+      "checkIn": "Jul 28",
+      "checkOut": "Jul 31",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$359",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$418",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Crowne Plaza London Hotel",
+      "image": "/hotels/london/crowne-plaza-london-1.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "country": "United Kingdom",
+      "rating": 5,
+      "reviewScore": "9.6",
+      "reviewLabel": "Exceptional",
+      "price": "$226",
+      "amenities": [
+        "Pool",
+        "Breakfast"
+      ],
+      "address": "128 Liberty Lane, Knightsbridge, London, United Kingdom",
+      "checkIn": "Jul 30",
+      "checkOut": "Aug 5",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$226",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$273",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$452",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "InterContinental London Gardens",
+      "image": "/hotels/london/intercontinental-london-2.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "country": "United Kingdom",
+      "rating": 4,
+      "reviewScore": "9.2",
+      "reviewLabel": "Exceptional",
+      "price": "$259",
+      "amenities": [
+        "Breakfast",
+        "Gym",
+        "Free WiFi"
+      ],
+      "address": "98 Sunset Boulevard, Covent Garden, London, United Kingdom",
+      "checkIn": "Oct 5",
+      "checkOut": "Oct 10",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$259",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$332",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$383",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Le Méridien London Plaza",
+      "image": "/hotels/london/le-m-ridien-london-3.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "country": "United Kingdom",
+      "rating": 5,
+      "reviewScore": "8.4",
+      "reviewLabel": "Excellent",
+      "price": "$81",
+      "amenities": [
+        "Gym",
+        "Breakfast",
+        "Free WiFi",
+        "Pool",
+        "Spa"
+      ],
+      "address": "91 High Street, Knightsbridge, London, United Kingdom",
+      "checkIn": "Sep 24",
+      "checkOut": "Sep 27",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$81",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$127",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Radisson Blu Paris Hotel",
+      "image": "/hotels/paris/radisson-blu-paris-0.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "country": "France",
+      "rating": 5,
+      "reviewScore": "9.4",
+      "reviewLabel": "Exceptional",
+      "price": "$276",
+      "amenities": [
+        "Spa",
+        "Pool",
+        "Free WiFi"
+      ],
+      "address": "188 Liberty Lane, Montmartre, Paris, France",
+      "checkIn": "Sep 17",
+      "checkOut": "Sep 23",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$276",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$348",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "The Peninsula Paris Gardens",
+      "image": "/hotels/paris/the-peninsula-paris-1.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "country": "France",
+      "rating": 3,
+      "reviewScore": "9.4",
+      "reviewLabel": "Exceptional",
+      "price": "$428",
+      "amenities": [
+        "Free WiFi",
+        "Spa",
+        "Pool",
+        "Breakfast"
+      ],
+      "address": "135 Liberty Lane, Champs-Élysées, Paris, France",
+      "checkIn": "Aug 25",
+      "checkOut": "Aug 26",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$428",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$508",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$572",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Marriott Paris Tower",
+      "image": "/hotels/paris/marriott-paris-2.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "country": "France",
+      "rating": 4,
+      "reviewScore": "7.6",
+      "reviewLabel": "Very Good",
+      "price": "$95",
+      "amenities": [
+        "Breakfast",
+        "Gym",
+        "Pool",
+        "Spa",
+        "Free WiFi"
+      ],
+      "address": "71 Riverside Drive, Champs-Élysées, Paris, France",
+      "checkIn": "Aug 11",
+      "checkOut": "Aug 13",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$95",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$169",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$249",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "St. Regis Paris Palace",
+      "image": "/hotels/paris/st-regis-paris-3.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "country": "France",
+      "rating": 4,
+      "reviewScore": "7.8",
+      "reviewLabel": "Very Good",
+      "price": "$411",
+      "amenities": [
+        "Spa",
+        "Gym"
+      ],
+      "address": "47 Victoria Street, Montmartre, Paris, France",
+      "checkIn": "Aug 18",
+      "checkOut": "Aug 21",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$411",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$494",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$637",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Waldorf Paris Residences",
+      "image": "/hotels/paris/waldorf-paris-4.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "country": "France",
+      "rating": 5,
+      "reviewScore": "7.7",
+      "reviewLabel": "Very Good",
+      "price": "$75",
+      "amenities": [
+        "Pool",
+        "Gym"
+      ],
+      "address": "197 Marina Road, Le Marais, Paris, France",
+      "checkIn": "Jul 4",
+      "checkOut": "Jul 8",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$75",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$180",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$297",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "InterContinental Paris Gardens",
+      "image": "/hotels/paris/intercontinental-paris-5.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "country": "France",
+      "rating": 4,
+      "reviewScore": "8.5",
+      "reviewLabel": "Excellent",
+      "price": "$343",
+      "amenities": [
+        "Pool",
+        "Breakfast",
+        "Spa",
+        "Free WiFi"
+      ],
+      "address": "95 Sunset Boulevard, Montmartre, Paris, France",
+      "checkIn": "Oct 12",
+      "checkOut": "Oct 15",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$343",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$451",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Waldorf Amsterdam Plaza",
+      "image": "/hotels/amsterdam/waldorf-amsterdam-0.jpg",
+      "cityCode": "AMS",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "rating": 5,
+      "reviewScore": "8.4",
+      "reviewLabel": "Excellent",
+      "price": "$145",
+      "amenities": [
+        "Spa",
+        "Free WiFi",
+        "Gym",
+        "Pool"
+      ],
+      "address": "137 High Street, Canal District, Amsterdam, Netherlands",
+      "checkIn": "Oct 15",
+      "checkOut": "Oct 21",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$145",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$191",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Hilton Garden Amsterdam Hotel",
+      "image": "/hotels/amsterdam/hilton-garden-amsterdam-1.jpg",
+      "cityCode": "AMS",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "rating": 5,
+      "reviewScore": "9.1",
+      "reviewLabel": "Exceptional",
+      "price": "$259",
+      "amenities": [
+        "Pool",
+        "Free WiFi"
+      ],
+      "address": "37 King's Road, Canal District, Amsterdam, Netherlands",
+      "checkIn": "Sep 1",
+      "checkOut": "Sep 4",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$259",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$300",
+          "image": "/rooms/presidential-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$465",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "The Peninsula Amsterdam Tower",
+      "image": "/hotels/amsterdam/the-peninsula-amsterdam-2.jpg",
+      "cityCode": "AMS",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "rating": 4,
+      "reviewScore": "7.2",
+      "reviewLabel": "Very Good",
+      "price": "$508",
+      "amenities": [
+        "Spa",
+        "Free WiFi",
+        "Breakfast",
+        "Gym"
+      ],
+      "address": "152 Marina Road, Museum Quarter, Amsterdam, Netherlands",
+      "checkIn": "Oct 11",
+      "checkOut": "Oct 17",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$508",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$557",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Imperial Amsterdam Palace",
+      "image": "/hotels/amsterdam/imperial-amsterdam-3.jpg",
+      "cityCode": "AMS",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "rating": 5,
+      "reviewScore": "8.5",
+      "reviewLabel": "Excellent",
+      "price": "$457",
+      "amenities": [
+        "Spa",
+        "Gym"
+      ],
+      "address": "102 Harbor View Road, De Pijp, Amsterdam, Netherlands",
+      "checkIn": "Aug 22",
+      "checkOut": "Aug 25",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$457",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$549",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$669",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "The Continental Frankfurt Plaza",
+      "image": "/hotels/frankfurt/the-continental-frankfurt-0.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "rating": 4,
+      "reviewScore": "8.5",
+      "reviewLabel": "Excellent",
+      "price": "$286",
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Spa"
+      ],
+      "address": "139 Marina Road, Sachsenhausen, Frankfurt, Germany",
+      "checkIn": "Aug 4",
+      "checkOut": "Aug 9",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$286",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$405",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$488",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "The Savoy Frankfurt Tower",
+      "image": "/hotels/frankfurt/the-savoy-frankfurt-1.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "rating": 3,
+      "reviewScore": "8.0",
+      "reviewLabel": "Excellent",
+      "price": "$112",
+      "amenities": [
+        "Pool",
+        "Free WiFi",
+        "Breakfast"
+      ],
+      "address": "8 Harbor View Road, Bankenviertel, Frankfurt, Germany",
+      "checkIn": "Jul 30",
+      "checkOut": "Aug 5",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$112",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$214",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$214",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Fairmont Frankfurt Suites",
+      "image": "/hotels/frankfurt/fairmont-frankfurt-2.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "rating": 5,
+      "reviewScore": "8.2",
+      "reviewLabel": "Excellent",
+      "price": "$321",
+      "amenities": [
+        "Free WiFi",
+        "Gym",
+        "Spa",
+        "Breakfast",
+        "Pool"
+      ],
+      "address": "72 High Street, Sachsenhausen, Frankfurt, Germany",
+      "checkIn": "Aug 29",
+      "checkOut": "Aug 30",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$321",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$367",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Radisson Blu Frankfurt Hotel",
+      "image": "/hotels/frankfurt/radisson-blu-frankfurt-3.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "rating": 3,
+      "reviewScore": "9.5",
+      "reviewLabel": "Exceptional",
+      "price": "$483",
+      "amenities": [
+        "Free WiFi",
+        "Breakfast"
+      ],
+      "address": "161 Park Avenue, Innenstadt, Frankfurt, Germany",
+      "checkIn": "Oct 23",
+      "checkOut": "Oct 29",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$483",
+          "image": "/rooms/presidential-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$578",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Mandarin Oriental Frankfurt Residences",
+      "image": "/hotels/frankfurt/mandarin-oriental-frankfurt-4.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "rating": 5,
+      "reviewScore": "9.1",
+      "reviewLabel": "Exceptional",
+      "price": "$250",
+      "amenities": [
+        "Pool",
+        "Free WiFi",
+        "Breakfast",
+        "Gym",
+        "Spa"
+      ],
+      "address": "164 High Street, Sachsenhausen, Frankfurt, Germany",
+      "checkIn": "Aug 23",
+      "checkOut": "Aug 25",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$250",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$353",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$368",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Waldorf Rome Hotel",
+      "image": "/hotels/rome/waldorf-rome-0.jpg",
+      "cityCode": "FCO",
+      "city": "Rome",
+      "country": "Italy",
+      "rating": 4,
+      "reviewScore": "8.0",
+      "reviewLabel": "Excellent",
+      "price": "$83",
+      "amenities": [
+        "Free WiFi",
+        "Gym"
+      ],
+      "address": "44 High Street, Monti, Rome, Italy",
+      "checkIn": "Oct 21",
+      "checkOut": "Oct 24",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$83",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$199",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Marriott Rome Palace",
+      "image": "/hotels/rome/marriott-rome-1.jpg",
+      "cityCode": "FCO",
+      "city": "Rome",
+      "country": "Italy",
+      "rating": 5,
+      "reviewScore": "9.6",
+      "reviewLabel": "Exceptional",
+      "price": "$234",
+      "amenities": [
+        "Spa",
+        "Gym",
+        "Free WiFi",
+        "Pool"
+      ],
+      "address": "164 Park Avenue, Trastevere, Rome, Italy",
+      "checkIn": "Oct 1",
+      "checkOut": "Oct 6",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$234",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$284",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$432",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Kempinski Rome House",
+      "image": "/hotels/rome/kempinski-rome-2.jpg",
+      "cityCode": "FCO",
+      "city": "Rome",
+      "country": "Italy",
+      "rating": 4,
+      "reviewScore": "7.8",
+      "reviewLabel": "Very Good",
+      "price": "$237",
+      "amenities": [
+        "Breakfast",
+        "Gym",
+        "Free WiFi"
+      ],
+      "address": "47 Victoria Street, Prati, Rome, Italy",
+      "checkIn": "Sep 20",
+      "checkOut": "Sep 25",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$237",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$336",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$381",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Conrad Rome Residences",
+      "image": "/hotels/rome/conrad-rome-3.jpg",
+      "cityCode": "FCO",
+      "city": "Rome",
+      "country": "Italy",
+      "rating": 5,
+      "reviewScore": "7.9",
+      "reviewLabel": "Very Good",
+      "price": "$439",
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Pool",
+        "Gym"
+      ],
+      "address": "102 Victoria Street, Centro Storico, Rome, Italy",
+      "checkIn": "Aug 15",
+      "checkOut": "Aug 19",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$439",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$553",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$615",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "St. Regis Madrid Hotel",
+      "image": "/hotels/madrid/st-regis-madrid-0.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "country": "Spain",
+      "rating": 4,
+      "reviewScore": "8.9",
+      "reviewLabel": "Excellent",
+      "price": "$459",
+      "amenities": [
+        "Breakfast",
+        "Gym"
+      ],
+      "address": "183 Harbor View Road, Centro, Madrid, Spain",
+      "checkIn": "Sep 3",
+      "checkOut": "Sep 8",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$459",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$510",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Royal Madrid House",
+      "image": "/hotels/madrid/royal-madrid-1.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "country": "Spain",
+      "rating": 3,
+      "reviewScore": "8.8",
+      "reviewLabel": "Excellent",
+      "price": "$168",
+      "amenities": [
+        "Spa",
+        "Free WiFi",
+        "Gym"
+      ],
+      "address": "87 Harbor View Road, Salamanca, Madrid, Spain",
+      "checkIn": "Aug 12",
+      "checkOut": "Aug 14",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$168",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$238",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "JW Marriott Madrid Gardens",
+      "image": "/hotels/madrid/jw-marriott-madrid-2.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "country": "Spain",
+      "rating": 5,
+      "reviewScore": "9.6",
+      "reviewLabel": "Exceptional",
+      "price": "$147",
+      "amenities": [
+        "Spa",
+        "Gym",
+        "Free WiFi",
+        "Pool",
+        "Breakfast"
+      ],
+      "address": "40 Riverside Drive, Retiro, Madrid, Spain",
+      "checkIn": "Aug 7",
+      "checkOut": "Aug 10",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$147",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$194",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$301",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "The Ritz Madrid Residences",
+      "image": "/hotels/madrid/the-ritz-madrid-3.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "country": "Spain",
+      "rating": 3,
+      "reviewScore": "8.7",
+      "reviewLabel": "Excellent",
+      "price": "$143",
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Spa",
+        "Pool",
+        "Gym"
+      ],
+      "address": "64 King's Road, Retiro, Madrid, Spain",
+      "checkIn": "Sep 3",
+      "checkOut": "Sep 8",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$143",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$257",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Le Méridien Madrid Suites",
+      "image": "/hotels/madrid/le-m-ridien-madrid-4.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "country": "Spain",
+      "rating": 4,
+      "reviewScore": "8.2",
+      "reviewLabel": "Excellent",
+      "price": "$396",
+      "amenities": [
+        "Spa",
+        "Breakfast",
+        "Free WiFi"
+      ],
+      "address": "125 High Street, Chueca, Madrid, Spain",
+      "checkIn": "Jul 6",
+      "checkOut": "Jul 10",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$396",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$465",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$540",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Le Méridien Istanbul Residences",
+      "image": "/hotels/istanbul/le-m-ridien-istanbul-0.jpg",
+      "cityCode": "IST",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "rating": 4,
+      "reviewScore": "8.3",
+      "reviewLabel": "Excellent",
+      "price": "$250",
+      "amenities": [
+        "Pool",
+        "Gym",
+        "Breakfast",
+        "Free WiFi",
+        "Spa"
+      ],
+      "address": "27 Park Avenue, Beşiktaş, Istanbul, Turkey",
+      "checkIn": "Oct 4",
+      "checkOut": "Oct 7",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$250",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$293",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$454",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "InterContinental Istanbul Suites",
+      "image": "/hotels/istanbul/intercontinental-istanbul-1.jpg",
+      "cityCode": "IST",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "rating": 4,
+      "reviewScore": "8.7",
+      "reviewLabel": "Excellent",
+      "price": "$444",
+      "amenities": [
+        "Spa",
+        "Free WiFi",
+        "Breakfast",
+        "Pool"
+      ],
+      "address": "175 Liberty Lane, Nişantaşı, Istanbul, Turkey",
+      "checkIn": "Aug 7",
+      "checkOut": "Aug 9",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$444",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$506",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Kempinski Istanbul Palace",
+      "image": "/hotels/istanbul/kempinski-istanbul-2.jpg",
+      "cityCode": "IST",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "rating": 5,
+      "reviewScore": "9.2",
+      "reviewLabel": "Exceptional",
+      "price": "$260",
+      "amenities": [
+        "Breakfast",
+        "Pool"
+      ],
+      "address": "119 Victoria Street, Nişantaşı, Istanbul, Turkey",
+      "checkIn": "Jul 3",
+      "checkOut": "Jul 5",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$260",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$323",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Hilton Garden Istanbul House",
+      "image": "/hotels/istanbul/hilton-garden-istanbul-3.jpg",
+      "cityCode": "IST",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "rating": 3,
+      "reviewScore": "8.7",
+      "reviewLabel": "Excellent",
+      "price": "$326",
+      "amenities": [
+        "Pool",
+        "Breakfast",
+        "Gym",
+        "Free WiFi",
+        "Spa"
+      ],
+      "address": "166 Riverside Drive, Sultanahmet, Istanbul, Turkey",
+      "checkIn": "Oct 18",
+      "checkOut": "Oct 21",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$326",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$370",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$544",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "The Ritz Dubai Residences",
+      "image": "/hotels/dubai/the-ritz-dubai-0.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "rating": 4,
+      "reviewScore": "7.9",
+      "reviewLabel": "Very Good",
+      "price": "$72",
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Spa",
+        "Gym",
+        "Pool"
+      ],
+      "address": "29 Harbor View Road, Business Bay, Dubai, United Arab Emirates",
+      "checkIn": "Oct 2",
+      "checkOut": "Oct 4",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$72",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$117",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Marriott Dubai Gardens",
+      "image": "/hotels/dubai/marriott-dubai-1.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "rating": 5,
+      "reviewScore": "7.9",
+      "reviewLabel": "Very Good",
+      "price": "$155",
+      "amenities": [
+        "Gym",
+        "Spa",
+        "Breakfast",
+        "Pool"
+      ],
+      "address": "10 Victoria Street, Downtown Dubai, Dubai, United Arab Emirates",
+      "checkIn": "Oct 4",
+      "checkOut": "Oct 8",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$155",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$244",
+          "image": "/rooms/presidential-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$317",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Imperial Dubai Hotel",
+      "image": "/hotels/dubai/imperial-dubai-2.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "rating": 4,
+      "reviewScore": "7.3",
+      "reviewLabel": "Very Good",
+      "price": "$250",
+      "amenities": [
+        "Spa",
+        "Gym",
+        "Free WiFi"
+      ],
+      "address": "192 Riverside Drive, Downtown Dubai, Dubai, United Arab Emirates",
+      "checkIn": "Oct 25",
+      "checkOut": "Oct 28",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$250",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$364",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Sofitel Dubai Residences",
+      "image": "/hotels/dubai/sofitel-dubai-3.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "rating": 3,
+      "reviewScore": "8.1",
+      "reviewLabel": "Excellent",
+      "price": "$431",
+      "amenities": [
+        "Pool",
+        "Free WiFi",
+        "Spa"
+      ],
+      "address": "135 High Street, Business Bay, Dubai, United Arab Emirates",
+      "checkIn": "Sep 30",
+      "checkOut": "Oct 1",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$431",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$550",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Sofitel Doha Residences",
+      "image": "/hotels/doha/sofitel-doha-0.jpg",
+      "cityCode": "DOH",
+      "city": "Doha",
+      "country": "Qatar",
+      "rating": 4,
+      "reviewScore": "8.3",
+      "reviewLabel": "Excellent",
+      "price": "$362",
+      "amenities": [
+        "Pool",
+        "Gym",
+        "Spa",
+        "Free WiFi",
+        "Breakfast"
+      ],
+      "address": "62 Sunset Boulevard, Souq Waqif, Doha, Qatar",
+      "checkIn": "Jul 11",
+      "checkOut": "Jul 16",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$362",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$423",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$450",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "The Savoy Doha House",
+      "image": "/hotels/doha/the-savoy-doha-1.jpg",
+      "cityCode": "DOH",
+      "city": "Doha",
+      "country": "Qatar",
+      "rating": 4,
+      "reviewScore": "7.7",
+      "reviewLabel": "Very Good",
+      "price": "$89",
+      "amenities": [
+        "Gym",
+        "Free WiFi"
+      ],
+      "address": "196 High Street, The Pearl, Doha, Qatar",
+      "checkIn": "Sep 18",
+      "checkOut": "Sep 24",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$89",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$199",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$245",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "The Westin Doha Tower",
+      "image": "/hotels/doha/the-westin-doha-2.jpg",
+      "cityCode": "DOH",
+      "city": "Doha",
+      "country": "Qatar",
+      "rating": 4,
+      "reviewScore": "9.5",
+      "reviewLabel": "Exceptional",
+      "price": "$94",
+      "amenities": [
+        "Pool",
+        "Free WiFi"
+      ],
+      "address": "70 Marina Road, Souq Waqif, Doha, Qatar",
+      "checkIn": "Oct 21",
+      "checkOut": "Oct 25",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$94",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$144",
+          "image": "/rooms/presidential-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$310",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Waldorf Doha Gardens",
+      "image": "/hotels/doha/waldorf-doha-3.jpg",
+      "cityCode": "DOH",
+      "city": "Doha",
+      "country": "Qatar",
+      "rating": 4,
+      "reviewScore": "8.6",
+      "reviewLabel": "Excellent",
+      "price": "$423",
+      "amenities": [
+        "Spa",
+        "Breakfast",
+        "Gym",
+        "Pool"
+      ],
+      "address": "157 Sunset Boulevard, The Pearl, Doha, Qatar",
+      "checkIn": "Aug 17",
+      "checkOut": "Aug 20",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$423",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$536",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Royal Doha Palace",
+      "image": "/hotels/doha/royal-doha-4.jpg",
+      "cityCode": "DOH",
+      "city": "Doha",
+      "country": "Qatar",
+      "rating": 5,
+      "reviewScore": "7.8",
+      "reviewLabel": "Very Good",
+      "price": "$162",
+      "amenities": [
+        "Breakfast",
+        "Gym"
+      ],
+      "address": "180 High Street, Al Sadd, Doha, Qatar",
+      "checkIn": "Aug 15",
+      "checkOut": "Aug 20",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$162",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$277",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$294",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Le Méridien Doha Plaza",
+      "image": "/hotels/doha/le-m-ridien-doha-5.jpg",
+      "cityCode": "DOH",
+      "city": "Doha",
+      "country": "Qatar",
+      "rating": 5,
+      "reviewScore": "8.6",
+      "reviewLabel": "Excellent",
+      "price": "$177",
+      "amenities": [
+        "Spa",
+        "Free WiFi",
+        "Gym",
+        "Pool",
+        "Breakfast"
+      ],
+      "address": "55 Central Boulevard, West Bay, Doha, Qatar",
+      "checkIn": "Sep 21",
+      "checkOut": "Sep 23",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$177",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$279",
+          "image": "/rooms/deluxe-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "The Savoy Abu Dhabi Plaza",
+      "image": "/hotels/abu dhabi/the-savoy-abu-dhabi-0.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "rating": 4,
+      "reviewScore": "8.0",
+      "reviewLabel": "Excellent",
+      "price": "$193",
+      "amenities": [
+        "Breakfast",
+        "Free WiFi",
+        "Spa"
+      ],
+      "address": "103 Park Avenue, Khalidiya, Abu Dhabi, United Arab Emirates",
+      "checkIn": "Oct 24",
+      "checkOut": "Oct 26",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$193",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$281",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$373",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Sofitel Abu Dhabi Palace",
+      "image": "/hotels/abu dhabi/sofitel-abu-dhabi-1.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "rating": 5,
+      "reviewScore": "8.3",
+      "reviewLabel": "Excellent",
+      "price": "$476",
+      "amenities": [
+        "Pool",
+        "Free WiFi",
+        "Gym",
+        "Spa",
+        "Breakfast"
+      ],
+      "address": "1 Central Boulevard, Khalidiya, Abu Dhabi, United Arab Emirates",
+      "checkIn": "Aug 20",
+      "checkOut": "Aug 23",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$476",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$583",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "JW Marriott Abu Dhabi Suites",
+      "image": "/hotels/abu dhabi/jw-marriott-abu-dhabi-2.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "rating": 5,
+      "reviewScore": "8.0",
+      "reviewLabel": "Excellent",
+      "price": "$436",
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Breakfast",
+        "Spa"
+      ],
+      "address": "7 Sunset Boulevard, Khalidiya, Abu Dhabi, United Arab Emirates",
+      "checkIn": "Aug 8",
+      "checkOut": "Aug 14",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$436",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$488",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$618",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Radisson Blu Abu Dhabi House",
+      "image": "/hotels/abu dhabi/radisson-blu-abu-dhabi-3.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "rating": 4,
+      "reviewScore": "9.6",
+      "reviewLabel": "Exceptional",
+      "price": "$72",
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "Free WiFi"
+      ],
+      "address": "137 Harbor View Road, Khalidiya, Abu Dhabi, United Arab Emirates",
+      "checkIn": "Sep 12",
+      "checkOut": "Sep 16",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$72",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$120",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "The Westin Abu Dhabi Plaza",
+      "image": "/hotels/abu dhabi/the-westin-abu-dhabi-4.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "rating": 5,
+      "reviewScore": "8.0",
+      "reviewLabel": "Excellent",
+      "price": "$242",
+      "amenities": [
+        "Spa",
+        "Free WiFi",
+        "Gym"
+      ],
+      "address": "67 Marina Road, Saadiyat Island, Abu Dhabi, United Arab Emirates",
+      "checkIn": "Sep 17",
+      "checkOut": "Sep 22",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$242",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$351",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "The Peninsula Abu Dhabi House",
+      "image": "/hotels/abu dhabi/the-peninsula-abu-dhabi-5.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "rating": 3,
+      "reviewScore": "8.1",
+      "reviewLabel": "Excellent",
+      "price": "$312",
+      "amenities": [
+        "Free WiFi",
+        "Gym",
+        "Breakfast",
+        "Pool",
+        "Spa"
+      ],
+      "address": "158 Marina Road, Al Maryah Island, Abu Dhabi, United Arab Emirates",
+      "checkIn": "Oct 9",
+      "checkOut": "Oct 14",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$312",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$384",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$492",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Park Plaza Nairobi Plaza",
+      "image": "/hotels/nairobi/park-plaza-nairobi-0.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "rating": 4,
+      "reviewScore": "7.8",
+      "reviewLabel": "Very Good",
+      "price": "$206",
+      "amenities": [
+        "Gym",
+        "Free WiFi",
+        "Spa",
+        "Breakfast"
+      ],
+      "address": "126 Liberty Lane, Westlands, Nairobi, Kenya",
+      "checkIn": "Aug 19",
+      "checkOut": "Aug 22",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$206",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$292",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Imperial Nairobi Gardens",
+      "image": "/hotels/nairobi/imperial-nairobi-1.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "rating": 4,
+      "reviewScore": "8.3",
+      "reviewLabel": "Excellent",
+      "price": "$132",
+      "amenities": [
+        "Breakfast",
+        "Spa"
+      ],
+      "address": "46 High Street, Upper Hill, Nairobi, Kenya",
+      "checkIn": "Aug 14",
+      "checkOut": "Aug 18",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$132",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$240",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$334",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "The Savoy Nairobi House",
+      "image": "/hotels/nairobi/the-savoy-nairobi-2.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "rating": 4,
+      "reviewScore": "7.4",
+      "reviewLabel": "Very Good",
+      "price": "$375",
+      "amenities": [
+        "Spa",
+        "Pool",
+        "Gym"
+      ],
+      "address": "102 Central Boulevard, Westlands, Nairobi, Kenya",
+      "checkIn": "Sep 14",
+      "checkOut": "Sep 18",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$375",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$438",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$577",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Marriott Nairobi Suites",
+      "image": "/hotels/nairobi/marriott-nairobi-3.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "rating": 5,
+      "reviewScore": "8.4",
+      "reviewLabel": "Excellent",
+      "price": "$133",
+      "amenities": [
+        "Gym",
+        "Breakfast",
+        "Free WiFi"
+      ],
+      "address": "127 Central Boulevard, Gigiri, Nairobi, Kenya",
+      "checkIn": "Aug 31",
+      "checkOut": "Sep 4",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$133",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$216",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$241",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Grand Nairobi Gardens",
+      "image": "/hotels/nairobi/grand-nairobi-4.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "rating": 5,
+      "reviewScore": "8.6",
+      "reviewLabel": "Excellent",
+      "price": "$175",
+      "amenities": [
+        "Breakfast",
+        "Free WiFi",
+        "Spa",
+        "Pool",
+        "Gym"
+      ],
+      "address": "146 Riverside Drive, Westlands, Nairobi, Kenya",
+      "checkIn": "Aug 15",
+      "checkOut": "Aug 16",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$175",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$226",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Park Plaza Singapore Palace",
+      "image": "/hotels/singapore/park-plaza-singapore-0.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "country": "Singapore",
+      "rating": 5,
+      "reviewScore": "8.2",
+      "reviewLabel": "Excellent",
+      "price": "$494",
+      "amenities": [
+        "Spa",
+        "Breakfast"
+      ],
+      "address": "128 Riverside Drive, Clarke Quay, Singapore, Singapore",
+      "checkIn": "Aug 3",
+      "checkOut": "Aug 9",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$494",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$550",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "JW Marriott Singapore Suites",
+      "image": "/hotels/singapore/jw-marriott-singapore-1.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "country": "Singapore",
+      "rating": 3,
+      "reviewScore": "9.5",
+      "reviewLabel": "Exceptional",
+      "price": "$373",
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Breakfast"
+      ],
+      "address": "51 Victoria Street, Clarke Quay, Singapore, Singapore",
+      "checkIn": "Oct 15",
+      "checkOut": "Oct 18",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$373",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$457",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Royal Singapore Suites",
+      "image": "/hotels/singapore/royal-singapore-2.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "country": "Singapore",
+      "rating": 5,
+      "reviewScore": "8.2",
+      "reviewLabel": "Excellent",
+      "price": "$330",
+      "amenities": [
+        "Breakfast",
+        "Pool",
+        "Gym"
+      ],
+      "address": "84 Central Boulevard, Marina Bay, Singapore, Singapore",
+      "checkIn": "Jul 9",
+      "checkOut": "Jul 13",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$330",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$394",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "The Peninsula Singapore Suites",
+      "image": "/hotels/singapore/the-peninsula-singapore-3.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "country": "Singapore",
+      "rating": 5,
+      "reviewScore": "9.2",
+      "reviewLabel": "Exceptional",
+      "price": "$101",
+      "amenities": [
+        "Pool",
+        "Breakfast"
+      ],
+      "address": "7 Sunset Boulevard, Sentosa, Singapore, Singapore",
+      "checkIn": "Oct 7",
+      "checkOut": "Oct 13",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$101",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$175",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Hyatt Regency Singapore Residences",
+      "image": "/hotels/singapore/hyatt-regency-singapore-4.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "country": "Singapore",
+      "rating": 5,
+      "reviewScore": "7.7",
+      "reviewLabel": "Very Good",
+      "price": "$112",
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "Free WiFi",
+        "Pool",
+        "Gym"
+      ],
+      "address": "73 King's Road, Clarke Quay, Singapore, Singapore",
+      "checkIn": "Aug 16",
+      "checkOut": "Aug 19",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$112",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$166",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$268",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Fairmont Hong Kong Residences",
+      "image": "/hotels/hong kong/fairmont-hong-kong-0.jpg",
+      "cityCode": "HKG",
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "rating": 5,
+      "reviewScore": "7.9",
+      "reviewLabel": "Very Good",
+      "price": "$297",
+      "amenities": [
+        "Gym",
+        "Spa",
+        "Breakfast",
+        "Free WiFi",
+        "Pool"
+      ],
+      "address": "132 Liberty Lane, Wan Chai, Hong Kong, Hong Kong",
+      "checkIn": "Oct 2",
+      "checkOut": "Oct 8",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$297",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$417",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "The Savoy Hong Kong Gardens",
+      "image": "/hotels/hong kong/the-savoy-hong-kong-1.jpg",
+      "cityCode": "HKG",
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "rating": 5,
+      "reviewScore": "7.3",
+      "reviewLabel": "Very Good",
+      "price": "$74",
+      "amenities": [
+        "Spa",
+        "Gym"
+      ],
+      "address": "103 Central Boulevard, Tsim Sha Tsui, Hong Kong, Hong Kong",
+      "checkIn": "Aug 7",
+      "checkOut": "Aug 11",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$74",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$145",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Waldorf Hong Kong Plaza",
+      "image": "/hotels/hong kong/waldorf-hong-kong-2.jpg",
+      "cityCode": "HKG",
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "rating": 5,
+      "reviewScore": "7.6",
+      "reviewLabel": "Very Good",
+      "price": "$409",
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Gym"
+      ],
+      "address": "132 Harbor View Road, Wan Chai, Hong Kong, Hong Kong",
+      "checkIn": "Aug 9",
+      "checkOut": "Aug 15",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$409",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$460",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Conrad Hong Kong Residences",
+      "image": "/hotels/hong kong/conrad-hong-kong-3.jpg",
+      "cityCode": "HKG",
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "rating": 4,
+      "reviewScore": "8.6",
+      "reviewLabel": "Excellent",
+      "price": "$104",
+      "amenities": [
+        "Gym",
+        "Spa",
+        "Free WiFi"
+      ],
+      "address": "21 Liberty Lane, Central, Hong Kong, Hong Kong",
+      "checkIn": "Sep 12",
+      "checkOut": "Sep 18",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$104",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$206",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$218",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "JW Marriott Manila Suites",
+      "image": "/hotels/manila/jw-marriott-manila-0.jpg",
+      "cityCode": "MNL",
+      "city": "Manila",
+      "country": "Philippines",
+      "rating": 3,
+      "reviewScore": "8.5",
+      "reviewLabel": "Excellent",
+      "price": "$180",
+      "amenities": [
+        "Gym",
+        "Free WiFi",
+        "Spa",
+        "Breakfast"
+      ],
+      "address": "82 Liberty Lane, Bonifacio Global City, Manila, Philippines",
+      "checkIn": "Oct 21",
+      "checkOut": "Oct 25",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$180",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$223",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$374",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Four Seasons Manila Palace",
+      "image": "/hotels/manila/four-seasons-manila-1.jpg",
+      "cityCode": "MNL",
+      "city": "Manila",
+      "country": "Philippines",
+      "rating": 5,
+      "reviewScore": "9.3",
+      "reviewLabel": "Exceptional",
+      "price": "$159",
+      "amenities": [
+        "Gym",
+        "Spa",
+        "Breakfast",
+        "Pool",
+        "Free WiFi"
+      ],
+      "address": "57 High Street, Makati, Manila, Philippines",
+      "checkIn": "Jul 3",
+      "checkOut": "Jul 8",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$159",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$228",
+          "image": "/rooms/presidential-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$363",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "St. Regis Manila Residences",
+      "image": "/hotels/manila/st-regis-manila-2.jpg",
+      "cityCode": "MNL",
+      "city": "Manila",
+      "country": "Philippines",
+      "rating": 4,
+      "reviewScore": "8.2",
+      "reviewLabel": "Excellent",
+      "price": "$458",
+      "amenities": [
+        "Free WiFi",
+        "Gym",
+        "Breakfast"
+      ],
+      "address": "166 Central Boulevard, Ermita, Manila, Philippines",
+      "checkIn": "Aug 27",
+      "checkOut": "Sep 1",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$458",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$532",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$592",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Marriott Manila House",
+      "image": "/hotels/manila/marriott-manila-3.jpg",
+      "cityCode": "MNL",
+      "city": "Manila",
+      "country": "Philippines",
+      "rating": 3,
+      "reviewScore": "8.1",
+      "reviewLabel": "Excellent",
+      "price": "$411",
+      "amenities": [
+        "Free WiFi",
+        "Spa",
+        "Pool",
+        "Gym",
+        "Breakfast"
+      ],
+      "address": "180 Harbor View Road, Makati, Manila, Philippines",
+      "checkIn": "Aug 20",
+      "checkOut": "Aug 25",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$411",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$496",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$539",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Sofitel Sydney Residences",
+      "image": "/hotels/sydney/sofitel-sydney-0.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "country": "Australia",
+      "rating": 4,
+      "reviewScore": "8.3",
+      "reviewLabel": "Excellent",
+      "price": "$227",
+      "amenities": [
+        "Pool",
+        "Breakfast",
+        "Free WiFi",
+        "Spa",
+        "Gym"
+      ],
+      "address": "41 Park Avenue, Darling Harbour, Sydney, Australia",
+      "checkIn": "Oct 17",
+      "checkOut": "Oct 22",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$227",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$280",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$307",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Marriott Sydney Plaza",
+      "image": "/hotels/sydney/marriott-sydney-1.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "country": "Australia",
+      "rating": 3,
+      "reviewScore": "8.5",
+      "reviewLabel": "Excellent",
+      "price": "$427",
+      "amenities": [
+        "Spa",
+        "Breakfast",
+        "Free WiFi",
+        "Pool"
+      ],
+      "address": "7 Liberty Lane, Circular Quay, Sydney, Australia",
+      "checkIn": "Oct 21",
+      "checkOut": "Oct 27",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$427",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$526",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "The Ritz Sydney Suites",
+      "image": "/hotels/sydney/the-ritz-sydney-2.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "country": "Australia",
+      "rating": 4,
+      "reviewScore": "9.4",
+      "reviewLabel": "Exceptional",
+      "price": "$367",
+      "amenities": [
+        "Breakfast",
+        "Pool"
+      ],
+      "address": "122 Marina Road, Circular Quay, Sydney, Australia",
+      "checkIn": "Oct 3",
+      "checkOut": "Oct 5",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$367",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$474",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$603",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Royal Sydney Residences",
+      "image": "/hotels/sydney/royal-sydney-3.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "country": "Australia",
+      "rating": 5,
+      "reviewScore": "9.2",
+      "reviewLabel": "Exceptional",
+      "price": "$225",
+      "amenities": [
+        "Pool",
+        "Free WiFi"
+      ],
+      "address": "160 Park Avenue, The Rocks, Sydney, Australia",
+      "checkIn": "Jul 29",
+      "checkOut": "Jul 30",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$225",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$265",
+          "image": "/rooms/presidential-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$447",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "JW Marriott New York Palace",
+      "image": "/hotels/new york/jw-marriott-new-york-0.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "country": "United States",
+      "rating": 4,
+      "reviewScore": "8.1",
+      "reviewLabel": "Excellent",
+      "price": "$81",
+      "amenities": [
+        "Breakfast",
+        "Pool",
+        "Spa",
+        "Free WiFi"
+      ],
+      "address": "79 King's Road, Tribeca, New York, United States",
+      "checkIn": "Jul 1",
+      "checkOut": "Jul 6",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$81",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$195",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Kempinski New York Tower",
+      "image": "/hotels/new york/kempinski-new-york-1.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "country": "United States",
+      "rating": 5,
+      "reviewScore": "9.2",
+      "reviewLabel": "Exceptional",
+      "price": "$209",
+      "amenities": [
+        "Free WiFi",
+        "Pool",
+        "Spa",
+        "Breakfast"
+      ],
+      "address": "1 High Street, Midtown Manhattan, New York, United States",
+      "checkIn": "Aug 28",
+      "checkOut": "Sep 2",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$209",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$279",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$373",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Le Méridien New York Suites",
+      "image": "/hotels/new york/le-m-ridien-new-york-2.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "country": "United States",
+      "rating": 4,
+      "reviewScore": "8.1",
+      "reviewLabel": "Excellent",
+      "price": "$447",
+      "amenities": [
+        "Breakfast",
+        "Free WiFi",
+        "Spa",
+        "Gym",
+        "Pool"
+      ],
+      "address": "62 Victoria Street, Tribeca, New York, United States",
+      "checkIn": "Jul 11",
+      "checkOut": "Jul 16",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$447",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$553",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$567",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Hilton Garden New York Plaza",
+      "image": "/hotels/new york/hilton-garden-new-york-3.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "country": "United States",
+      "rating": 5,
+      "reviewScore": "8.6",
+      "reviewLabel": "Excellent",
+      "price": "$168",
+      "amenities": [
+        "Breakfast",
+        "Free WiFi"
+      ],
+      "address": "72 Central Boulevard, Midtown Manhattan, New York, United States",
+      "checkIn": "Sep 15",
+      "checkOut": "Sep 17",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$168",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$244",
+          "image": "/rooms/presidential-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$344",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Park Plaza New York House",
+      "image": "/hotels/new york/park-plaza-new-york-4.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "country": "United States",
+      "rating": 4,
+      "reviewScore": "7.2",
+      "reviewLabel": "Very Good",
+      "price": "$200",
+      "amenities": [
+        "Gym",
+        "Pool"
+      ],
+      "address": "129 Sunset Boulevard, Tribeca, New York, United States",
+      "checkIn": "Oct 24",
+      "checkOut": "Oct 27",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$200",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$317",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Park Plaza Atlanta Plaza",
+      "image": "/hotels/atlanta/park-plaza-atlanta-0.jpg",
+      "cityCode": "ATL",
+      "city": "Atlanta",
+      "country": "United States",
+      "rating": 3,
+      "reviewScore": "9.4",
+      "reviewLabel": "Exceptional",
+      "price": "$498",
+      "amenities": [
+        "Spa",
+        "Pool",
+        "Free WiFi",
+        "Breakfast"
+      ],
+      "address": "126 Riverside Drive, Old Fourth Ward, Atlanta, United States",
+      "checkIn": "Aug 27",
+      "checkOut": "Aug 29",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$498",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$584",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$660",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Fairmont Atlanta House",
+      "image": "/hotels/atlanta/fairmont-atlanta-1.jpg",
+      "cityCode": "ATL",
+      "city": "Atlanta",
+      "country": "United States",
+      "rating": 5,
+      "reviewScore": "8.0",
+      "reviewLabel": "Excellent",
+      "price": "$243",
+      "amenities": [
+        "Gym",
+        "Breakfast",
+        "Pool",
+        "Free WiFi",
+        "Spa"
+      ],
+      "address": "83 Victoria Street, Midtown, Atlanta, United States",
+      "checkIn": "Sep 9",
+      "checkOut": "Sep 12",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$243",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$294",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Imperial Atlanta Tower",
+      "image": "/hotels/atlanta/imperial-atlanta-2.jpg",
+      "cityCode": "ATL",
+      "city": "Atlanta",
+      "country": "United States",
+      "rating": 5,
+      "reviewScore": "7.5",
+      "reviewLabel": "Very Good",
+      "price": "$405",
+      "amenities": [
+        "Free WiFi",
+        "Spa",
+        "Pool",
+        "Gym",
+        "Breakfast"
+      ],
+      "address": "35 Victoria Street, Midtown, Atlanta, United States",
+      "checkIn": "Oct 13",
+      "checkOut": "Oct 17",
+      "guests": "4 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$405",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$486",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Grand Atlanta House",
+      "image": "/hotels/atlanta/grand-atlanta-3.jpg",
+      "cityCode": "ATL",
+      "city": "Atlanta",
+      "country": "United States",
+      "rating": 4,
+      "reviewScore": "7.8",
+      "reviewLabel": "Very Good",
+      "price": "$276",
+      "amenities": [
+        "Gym",
+        "Free WiFi",
+        "Spa",
+        "Breakfast",
+        "Pool"
+      ],
+      "address": "99 High Street, Midtown, Atlanta, United States",
+      "checkIn": "Jul 9",
+      "checkOut": "Jul 13",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$276",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$385",
+          "image": "/rooms/executive-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Sheraton Atlanta Palace",
+      "image": "/hotels/atlanta/sheraton-atlanta-4.jpg",
+      "cityCode": "ATL",
+      "city": "Atlanta",
+      "country": "United States",
+      "rating": 4,
+      "reviewScore": "9.4",
+      "reviewLabel": "Exceptional",
+      "price": "$174",
+      "amenities": [
+        "Gym",
+        "Spa",
+        "Breakfast"
+      ],
+      "address": "1 Harbor View Road, Midtown, Atlanta, United States",
+      "checkIn": "Oct 18",
+      "checkOut": "Oct 19",
+      "guests": "1 Adult",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$174",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$286",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$304",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Park Plaza Montreal House",
+      "image": "/hotels/montreal/park-plaza-montreal-0.jpg",
+      "cityCode": "YUL",
+      "city": "Montreal",
+      "country": "Canada",
+      "rating": 3,
+      "reviewScore": "8.1",
+      "reviewLabel": "Excellent",
+      "price": "$309",
+      "amenities": [
+        "Gym",
+        "Free WiFi",
+        "Breakfast"
+      ],
+      "address": "80 Harbor View Road, Downtown, Montreal, Canada",
+      "checkIn": "Aug 31",
+      "checkOut": "Sep 6",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$309",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$415",
+          "image": "/rooms/deluxe-room.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$549",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Hyatt Regency Montreal Suites",
+      "image": "/hotels/montreal/hyatt-regency-montreal-1.jpg",
+      "cityCode": "YUL",
+      "city": "Montreal",
+      "country": "Canada",
+      "rating": 5,
+      "reviewScore": "8.9",
+      "reviewLabel": "Excellent",
+      "price": "$139",
+      "amenities": [
+        "Gym",
+        "Breakfast",
+        "Free WiFi",
+        "Spa",
+        "Pool"
+      ],
+      "address": "17 Victoria Street, Old Montreal, Montreal, Canada",
+      "checkIn": "Aug 15",
+      "checkOut": "Aug 16",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$139",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$179",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Twin Room",
+          "bedInfo": "Twin Beds · Garden View",
+          "price": "$251",
+          "image": "/rooms/twin-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Royal Montreal Tower",
+      "image": "/hotels/montreal/royal-montreal-2.jpg",
+      "cityCode": "YUL",
+      "city": "Montreal",
+      "country": "Canada",
+      "rating": 3,
+      "reviewScore": "9.1",
+      "reviewLabel": "Exceptional",
+      "price": "$147",
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "Pool",
+        "Gym"
+      ],
+      "address": "159 High Street, Griffintown, Montreal, Canada",
+      "checkIn": "Oct 4",
+      "checkOut": "Oct 9",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$147",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$189",
+          "image": "/rooms/junior-suite.jpg"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Hilton Garden Montreal Gardens",
+      "image": "/hotels/montreal/hilton-garden-montreal-3.jpg",
+      "cityCode": "YUL",
+      "city": "Montreal",
+      "country": "Canada",
+      "rating": 4,
+      "reviewScore": "7.9",
+      "reviewLabel": "Very Good",
+      "price": "$150",
+      "amenities": [
+        "Spa",
+        "Breakfast",
+        "Gym"
+      ],
+      "address": "179 Riverside Drive, Downtown, Montreal, Canada",
+      "checkIn": "Aug 20",
+      "checkOut": "Aug 25",
+      "guests": "3 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Classic Room",
+          "bedInfo": "Queen Bed · Street View",
+          "price": "$150",
+          "image": "/rooms/classic-room.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Deluxe Room",
+          "bedInfo": "King Bed · City View",
+          "price": "$263",
+          "image": "/rooms/deluxe-room.jpg"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Crowne Plaza Montreal Palace",
+      "image": "/hotels/montreal/crowne-plaza-montreal-4.jpg",
+      "cityCode": "YUL",
+      "city": "Montreal",
+      "country": "Canada",
+      "rating": 4,
+      "reviewScore": "7.3",
+      "reviewLabel": "Very Good",
+      "price": "$281",
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Pool",
+        "Gym",
+        "Spa"
+      ],
+      "address": "132 Sunset Boulevard, Griffintown, Montreal, Canada",
+      "checkIn": "Aug 17",
+      "checkOut": "Aug 23",
+      "guests": "2 Adults",
+      "rooms": [
+        {
+          "id": 1,
+          "name": "Executive Suite",
+          "bedInfo": "King Bed · Park View",
+          "price": "$281",
+          "image": "/rooms/executive-suite.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Junior Suite",
+          "bedInfo": "King Bed · City View",
+          "price": "$371",
+          "image": "/rooms/junior-suite.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Presidential Suite",
+          "bedInfo": "King Bed · Skyline View",
+          "price": "$515",
+          "image": "/rooms/presidential-suite.jpg"
+        }
+      ]
+    }
+  ]
+}
