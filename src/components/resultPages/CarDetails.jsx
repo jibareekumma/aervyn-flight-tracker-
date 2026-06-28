@@ -1,8 +1,6 @@
 
 
 
-
-
 import favoriteIcon from "/icons/favorite_icon.png"
 import shareIcon from "/icons/share_icon.png"
 import rightArrow from "/icons/right_arr.png"
@@ -11,8 +9,14 @@ import locationIcon from "/icons/location.png"
 import "../../css/CarDetail.css"
 import { useEffect, useState } from "react"
 
-const CarDetails = function ({ isOpen, onClose, 
-    selectedCar, sheetClose }) {
+const CarDetails = function ({
+    isOpen,
+    onClose,
+    selectedCar,
+    sheetClose,
+    imageErrors,
+    onImageError
+}) {
 
     const [displayCar, setDisplayCar] = useState(null);
 
@@ -27,6 +31,25 @@ const CarDetails = function ({ isOpen, onClose,
             document.body.style.overflow = ""
         }
     }, [selectedCar])
+
+    const renderImage = function (imagePath, altText, className) {
+        if (imageErrors[imagePath]) {
+            return (
+                <div className={`image-fallback ${className || ''}`}>
+                    <span>{altText}</span>
+                </div>
+            )
+        }
+        return (
+            <img
+                src={imagePath}
+                alt={altText}
+                loading="lazy"
+                className={className}
+                onError={() => onImageError(imagePath)}
+            />
+        )
+    }
 
     return <>
 
@@ -45,9 +68,7 @@ const CarDetails = function ({ isOpen, onClose,
 
                     {/* ── HEADER ── car image, name, type, specs */}
                     <div className='car-header'>
-                        <img src = {displayCar.image} alt="Image of car" 
-                        loading = "lazy" className = "car-image"
-                        />
+                        {renderImage(displayCar.image, "Image of car", "car-image")}
                         <div className="car-text">
                             <h5>{displayCar.name}</h5>
                             <p className='car-type'>{displayCar.type}</p>
@@ -105,9 +126,7 @@ const CarDetails = function ({ isOpen, onClose,
                         <h4>Similar Cars</h4>
                         {displayCar.similarCars.map(car => (
                             <div className='similar-car-item' key={car.id}>
-                                <div className='similar-car-placeholder'>
-                                    <span>Car Image</span>
-                                </div>
+                                {renderImage(car.image, car.name, "similar-car-image")}
                                 <div className='similar-car-info'>
                                     <h6>{car.name}</h6>
                                     <p>{car.type}</p>
@@ -170,8 +189,7 @@ const CarDetails = function ({ isOpen, onClose,
                     {/* ── TOP ── car image, name, type, specs, favorite/share icons */}
                     <div className='car-modal-top'>
                         <div className='car-modal-top-left'>
-                            <img src={displayCar.image} alt="Image of car"
-                                loading="lazy" className="car-modal-image" />
+                            {renderImage(displayCar.image, "Image of car", "car-modal-image")}
                             <div className="car-modal-text">
                                 <h5>{displayCar.name}</h5>
                                 <p className='car-type'>{displayCar.type}</p>
@@ -244,9 +262,7 @@ const CarDetails = function ({ isOpen, onClose,
                                 <h4>Similar Cars</h4>
                                 {displayCar.similarCars.map(car => (
                                     <div className='similar-car-item' key={car.id}>
-                                        <div className='similar-car-placeholder'>
-                                            <span>Car Image</span>
-                                        </div>
+                                        {renderImage(car.image, car.name, "similar-car-image")}
                                         <div className='similar-car-info'>
                                             <h6>{car.name}</h6>
                                             <p>{car.type}</p>

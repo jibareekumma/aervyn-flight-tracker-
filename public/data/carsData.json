@@ -1,0 +1,2884 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Jeep Wrangler",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "4",
+      "price": "72",
+      "image": "/cars/lagos/jeep-wrangler-lagos.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "pickupLocation": "Murtala Muhammed International Airport (LOS)",
+      "pickupDate": "Fri, Aug 28 12:00 PM",
+      "returnLocation": "Murtala Muhammed International Airport (LOS)",
+      "returnDate": "Wed, Sep 2 9:00 AM",
+      "features": [
+        "Apple CarPlay",
+        "Cruise Control",
+        "Roof Rack",
+        "All-Wheel Drive"
+      ],
+      "similarCars": [
+        {
+          "id": 5,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "56",
+          "image": "/cars/lagos/ford-explorer-lagos.jpg"
+        },
+        {
+          "id": 4,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "99",
+          "image": "/cars/lagos/bmw-x5-lagos.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Kia Sportage",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "53",
+      "image": "/cars/lagos/kia-sportage-lagos.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "pickupLocation": "Murtala Muhammed International Airport (LOS)",
+      "pickupDate": "Thu, Aug 6 12:00 PM",
+      "returnLocation": "Murtala Muhammed International Airport (LOS)",
+      "returnDate": "Fri, Aug 7 9:00 AM",
+      "features": [
+        "Parking Sensors",
+        "Bluetooth",
+        "Apple CarPlay",
+        "All-Wheel Drive",
+        "USB Charging Ports"
+      ],
+      "similarCars": [
+        {
+          "id": 6,
+          "name": "Peugeot 208",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "32",
+          "image": "/cars/lagos/peugeot-208-lagos.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Jeep Wrangler",
+          "type": "SUV",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "72",
+          "image": "/cars/lagos/jeep-wrangler-lagos.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Audi A4",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "76",
+      "image": "/cars/lagos/audi-a4-lagos.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "pickupLocation": "Murtala Muhammed International Airport (LOS)",
+      "pickupDate": "Tue, Jul 7 8:00 AM",
+      "returnLocation": "Murtala Muhammed International Airport (LOS)",
+      "returnDate": "Mon, Jul 13 3:00 PM",
+      "features": [
+        "Leather Seats",
+        "Parking Sensors",
+        "Backup Camera",
+        "Keyless Entry",
+        "All-Wheel Drive"
+      ],
+      "similarCars": [
+        {
+          "id": 1,
+          "name": "Jeep Wrangler",
+          "type": "SUV",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "72",
+          "image": "/cars/lagos/jeep-wrangler-lagos.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "53",
+          "image": "/cars/lagos/kia-sportage-lagos.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "BMW X5",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "99",
+      "image": "/cars/lagos/bmw-x5-lagos.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "pickupLocation": "Murtala Muhammed International Airport (LOS)",
+      "pickupDate": "Fri, Sep 11 4:00 PM",
+      "returnLocation": "Murtala Muhammed International Airport (LOS)",
+      "returnDate": "Thu, Sep 17 12:00 PM",
+      "features": [
+        "Heated Seats",
+        "Keyless Entry",
+        "Parking Sensors",
+        "Cruise Control",
+        "Leather Seats",
+        "Apple CarPlay"
+      ],
+      "similarCars": [
+        {
+          "id": 5,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "56",
+          "image": "/cars/lagos/ford-explorer-lagos.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "76",
+          "image": "/cars/lagos/audi-a4-lagos.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ford Explorer",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "7",
+      "price": "56",
+      "image": "/cars/lagos/ford-explorer-lagos.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "pickupLocation": "Murtala Muhammed International Airport (LOS)",
+      "pickupDate": "Sun, Aug 16 9:00 AM",
+      "returnLocation": "Murtala Muhammed International Airport (LOS)",
+      "returnDate": "Fri, Aug 21 12:00 PM",
+      "features": [
+        "Roof Rack",
+        "Heated Seats",
+        "Air Conditioning",
+        "Leather Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 3,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "76",
+          "image": "/cars/lagos/audi-a4-lagos.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Jeep Wrangler",
+          "type": "SUV",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "72",
+          "image": "/cars/lagos/jeep-wrangler-lagos.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Peugeot 208",
+      "type": "Hatchback",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "5",
+      "price": "32",
+      "image": "/cars/lagos/peugeot-208-lagos.jpg",
+      "cityCode": "LOS",
+      "city": "Lagos",
+      "pickupLocation": "Murtala Muhammed International Airport (LOS)",
+      "pickupDate": "Thu, Jul 2 3:00 PM",
+      "returnLocation": "Murtala Muhammed International Airport (LOS)",
+      "returnDate": "Thu, Jul 9 4:00 PM",
+      "features": [
+        "USB Charging Ports",
+        "Parking Sensors",
+        "Keyless Entry",
+        "Backup Camera",
+        "Heated Seats",
+        "Cruise Control"
+      ],
+      "similarCars": [
+        {
+          "id": 1,
+          "name": "Jeep Wrangler",
+          "type": "SUV",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "72",
+          "image": "/cars/lagos/jeep-wrangler-lagos.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "76",
+          "image": "/cars/lagos/audi-a4-lagos.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Toyota Hiace",
+      "type": "Van",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "12",
+      "price": "70",
+      "image": "/cars/london/toyota-hiace-london.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "pickupLocation": "London Heathrow Airport (LHR)",
+      "pickupDate": "Tue, Aug 25 12:00 PM",
+      "returnLocation": "London Heathrow Airport (LHR)",
+      "returnDate": "Sat, Aug 29 2:00 PM",
+      "features": [
+        "Apple CarPlay",
+        "Heated Seats",
+        "Bluetooth",
+        "All-Wheel Drive",
+        "Roof Rack",
+        "Parking Sensors"
+      ],
+      "similarCars": [
+        {
+          "id": 9,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "91",
+          "image": "/cars/london/bmw-x5-london.jpg"
+        },
+        {
+          "id": 8,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "74",
+          "image": "/cars/london/bmw-3-series-london.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "BMW 3 Series",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "74",
+      "image": "/cars/london/bmw-3-series-london.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "pickupLocation": "London Heathrow Airport (LHR)",
+      "pickupDate": "Sat, Jul 4 2:00 PM",
+      "returnLocation": "London Heathrow Airport (LHR)",
+      "returnDate": "Fri, Jul 10 9:00 AM",
+      "features": [
+        "Backup Camera",
+        "Air Conditioning",
+        "Keyless Entry",
+        "All-Wheel Drive",
+        "Sunroof"
+      ],
+      "similarCars": [
+        {
+          "id": 10,
+          "name": "Peugeot 208",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "28",
+          "image": "/cars/london/peugeot-208-london.jpg"
+        },
+        {
+          "id": 9,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "91",
+          "image": "/cars/london/bmw-x5-london.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "BMW X5",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "91",
+      "image": "/cars/london/bmw-x5-london.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "pickupLocation": "London Heathrow Airport (LHR)",
+      "pickupDate": "Sat, Jul 11 4:00 PM",
+      "returnLocation": "London Heathrow Airport (LHR)",
+      "returnDate": "Fri, Jul 17 8:00 AM",
+      "features": [
+        "All-Wheel Drive",
+        "Parking Sensors",
+        "GPS Navigation",
+        "Cruise Control"
+      ],
+      "similarCars": [
+        {
+          "id": 10,
+          "name": "Peugeot 208",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "28",
+          "image": "/cars/london/peugeot-208-london.jpg"
+        },
+        {
+          "id": 11,
+          "name": "Toyota RAV4",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "48",
+          "image": "/cars/london/toyota-rav4-london.jpg"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Peugeot 208",
+      "type": "Hatchback",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "5",
+      "price": "28",
+      "image": "/cars/london/peugeot-208-london.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "pickupLocation": "London Heathrow Airport (LHR)",
+      "pickupDate": "Thu, Sep 3 11:00 AM",
+      "returnLocation": "London Heathrow Airport (LHR)",
+      "returnDate": "Sun, Sep 6 4:00 PM",
+      "features": [
+        "Cruise Control",
+        "Leather Seats",
+        "All-Wheel Drive",
+        "Heated Seats",
+        "GPS Navigation"
+      ],
+      "similarCars": [
+        {
+          "id": 9,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "91",
+          "image": "/cars/london/bmw-x5-london.jpg"
+        },
+        {
+          "id": 8,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "74",
+          "image": "/cars/london/bmw-3-series-london.jpg"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Toyota RAV4",
+      "type": "SUV",
+      "fuelType": "Hybrid",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "48",
+      "image": "/cars/london/toyota-rav4-london.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "pickupLocation": "London Heathrow Airport (LHR)",
+      "pickupDate": "Tue, Aug 11 4:00 PM",
+      "returnLocation": "London Heathrow Airport (LHR)",
+      "returnDate": "Sun, Aug 16 12:00 PM",
+      "features": [
+        "Cruise Control",
+        "Bluetooth",
+        "All-Wheel Drive",
+        "Air Conditioning",
+        "Keyless Entry",
+        "Backup Camera"
+      ],
+      "similarCars": [
+        {
+          "id": 12,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "64",
+          "image": "/cars/london/ford-explorer-london.jpg"
+        },
+        {
+          "id": 9,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "91",
+          "image": "/cars/london/bmw-x5-london.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Ford Explorer",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "7",
+      "price": "64",
+      "image": "/cars/london/ford-explorer-london.jpg",
+      "cityCode": "LHR",
+      "city": "London",
+      "pickupLocation": "London Heathrow Airport (LHR)",
+      "pickupDate": "Mon, Aug 3 12:00 PM",
+      "returnLocation": "London Heathrow Airport (LHR)",
+      "returnDate": "Sun, Aug 9 10:00 AM",
+      "features": [
+        "Backup Camera",
+        "USB Charging Ports",
+        "Leather Seats",
+        "Cruise Control",
+        "Sunroof"
+      ],
+      "similarCars": [
+        {
+          "id": 8,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "74",
+          "image": "/cars/london/bmw-3-series-london.jpg"
+        },
+        {
+          "id": 9,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "91",
+          "image": "/cars/london/bmw-x5-london.jpg"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "BMW X5",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "96",
+      "image": "/cars/dubai/bmw-x5-dubai.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "pickupLocation": "Dubai International Airport (DXB)",
+      "pickupDate": "Mon, Sep 14 2:00 PM",
+      "returnLocation": "Dubai International Airport (DXB)",
+      "returnDate": "Sat, Sep 19 9:00 AM",
+      "features": [
+        "Bluetooth",
+        "Cruise Control",
+        "Backup Camera",
+        "All-Wheel Drive",
+        "Sunroof"
+      ],
+      "similarCars": [
+        {
+          "id": 14,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "78",
+          "image": "/cars/dubai/bmw-3-series-dubai.jpg"
+        },
+        {
+          "id": 15,
+          "name": "Tesla Model 3",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "53",
+          "image": "/cars/dubai/tesla-model-3-dubai.jpg"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "BMW 3 Series",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "78",
+      "image": "/cars/dubai/bmw-3-series-dubai.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "pickupLocation": "Dubai International Airport (DXB)",
+      "pickupDate": "Sat, Aug 15 12:00 PM",
+      "returnLocation": "Dubai International Airport (DXB)",
+      "returnDate": "Sat, Aug 22 10:00 AM",
+      "features": [
+        "All-Wheel Drive",
+        "Roof Rack",
+        "Leather Seats",
+        "Apple CarPlay",
+        "Bluetooth"
+      ],
+      "similarCars": [
+        {
+          "id": 17,
+          "name": "Peugeot 208",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "24",
+          "image": "/cars/dubai/peugeot-208-dubai.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Range Rover Evoque",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "113",
+          "image": "/cars/dubai/range-rover-evoque-dubai.jpg"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Tesla Model 3",
+      "type": "Electric",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "53",
+      "image": "/cars/dubai/tesla-model-3-dubai.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "pickupLocation": "Dubai International Airport (DXB)",
+      "pickupDate": "Sun, Jul 19 3:00 PM",
+      "returnLocation": "Dubai International Airport (DXB)",
+      "returnDate": "Sun, Jul 26 9:00 AM",
+      "features": [
+        "Cruise Control",
+        "Parking Sensors",
+        "Backup Camera",
+        "Leather Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 13,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "96",
+          "image": "/cars/dubai/bmw-x5-dubai.jpg"
+        },
+        {
+          "id": 14,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "78",
+          "image": "/cars/dubai/bmw-3-series-dubai.jpg"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Range Rover Evoque",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "113",
+      "image": "/cars/dubai/range-rover-evoque-dubai.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "pickupLocation": "Dubai International Airport (DXB)",
+      "pickupDate": "Sat, Sep 12 9:00 AM",
+      "returnLocation": "Dubai International Airport (DXB)",
+      "returnDate": "Sun, Sep 13 4:00 PM",
+      "features": [
+        "USB Charging Ports",
+        "Bluetooth",
+        "Cruise Control",
+        "Parking Sensors",
+        "Backup Camera",
+        "Keyless Entry"
+      ],
+      "similarCars": [
+        {
+          "id": 15,
+          "name": "Tesla Model 3",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "53",
+          "image": "/cars/dubai/tesla-model-3-dubai.jpg"
+        },
+        {
+          "id": 17,
+          "name": "Peugeot 208",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "24",
+          "image": "/cars/dubai/peugeot-208-dubai.jpg"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Peugeot 208",
+      "type": "Hatchback",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "5",
+      "price": "24",
+      "image": "/cars/dubai/peugeot-208-dubai.jpg",
+      "cityCode": "DXB",
+      "city": "Dubai",
+      "pickupLocation": "Dubai International Airport (DXB)",
+      "pickupDate": "Sat, Jul 25 4:00 PM",
+      "returnLocation": "Dubai International Airport (DXB)",
+      "returnDate": "Sun, Jul 26 11:00 AM",
+      "features": [
+        "Backup Camera",
+        "USB Charging Ports",
+        "Cruise Control",
+        "Bluetooth",
+        "Air Conditioning",
+        "All-Wheel Drive"
+      ],
+      "similarCars": [
+        {
+          "id": 15,
+          "name": "Tesla Model 3",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "53",
+          "image": "/cars/dubai/tesla-model-3-dubai.jpg"
+        },
+        {
+          "id": 13,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "96",
+          "image": "/cars/dubai/bmw-x5-dubai.jpg"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Nissan Leaf",
+      "type": "Electric",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "42",
+      "image": "/cars/new york/nissan-leaf-new-york.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "pickupLocation": "John F. Kennedy International Airport (JFK)",
+      "pickupDate": "Wed, Aug 26 10:00 AM",
+      "returnLocation": "John F. Kennedy International Airport (JFK)",
+      "returnDate": "Wed, Sep 2 9:00 AM",
+      "features": [
+        "Backup Camera",
+        "USB Charging Ports",
+        "Roof Rack",
+        "All-Wheel Drive"
+      ],
+      "similarCars": [
+        {
+          "id": 19,
+          "name": "Peugeot 208",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "24",
+          "image": "/cars/new york/peugeot-208-new-york.jpg"
+        },
+        {
+          "id": 22,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "50",
+          "image": "/cars/new york/kia-sportage-new-york.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Peugeot 208",
+      "type": "Hatchback",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "5",
+      "price": "24",
+      "image": "/cars/new york/peugeot-208-new-york.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "pickupLocation": "John F. Kennedy International Airport (JFK)",
+      "pickupDate": "Thu, Jul 30 4:00 PM",
+      "returnLocation": "John F. Kennedy International Airport (JFK)",
+      "returnDate": "Sun, Aug 2 8:00 AM",
+      "features": [
+        "All-Wheel Drive",
+        "Leather Seats",
+        "Keyless Entry",
+        "Cruise Control"
+      ],
+      "similarCars": [
+        {
+          "id": 22,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "50",
+          "image": "/cars/new york/kia-sportage-new-york.jpg"
+        },
+        {
+          "id": 20,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "83",
+          "image": "/cars/new york/audi-a4-new-york.jpg"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Audi A4",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "83",
+      "image": "/cars/new york/audi-a4-new-york.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "pickupLocation": "John F. Kennedy International Airport (JFK)",
+      "pickupDate": "Sun, Aug 23 11:00 AM",
+      "returnLocation": "John F. Kennedy International Airport (JFK)",
+      "returnDate": "Thu, Aug 27 8:00 AM",
+      "features": [
+        "All-Wheel Drive",
+        "Leather Seats",
+        "Parking Sensors",
+        "Keyless Entry",
+        "Cruise Control",
+        "Apple CarPlay"
+      ],
+      "similarCars": [
+        {
+          "id": 19,
+          "name": "Peugeot 208",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "24",
+          "image": "/cars/new york/peugeot-208-new-york.jpg"
+        },
+        {
+          "id": 22,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "50",
+          "image": "/cars/new york/kia-sportage-new-york.jpg"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Mercedes-Benz C-Class",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "81",
+      "image": "/cars/new york/mercedes-benz-c-class-new-york.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "pickupLocation": "John F. Kennedy International Airport (JFK)",
+      "pickupDate": "Mon, Aug 24 12:00 PM",
+      "returnLocation": "John F. Kennedy International Airport (JFK)",
+      "returnDate": "Wed, Aug 26 12:00 PM",
+      "features": [
+        "Parking Sensors",
+        "USB Charging Ports",
+        "Roof Rack",
+        "Cruise Control"
+      ],
+      "similarCars": [
+        {
+          "id": 20,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "83",
+          "image": "/cars/new york/audi-a4-new-york.jpg"
+        },
+        {
+          "id": 19,
+          "name": "Peugeot 208",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "24",
+          "image": "/cars/new york/peugeot-208-new-york.jpg"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Kia Sportage",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "50",
+      "image": "/cars/new york/kia-sportage-new-york.jpg",
+      "cityCode": "JFK",
+      "city": "New York",
+      "pickupLocation": "John F. Kennedy International Airport (JFK)",
+      "pickupDate": "Tue, Sep 15 12:00 PM",
+      "returnLocation": "John F. Kennedy International Airport (JFK)",
+      "returnDate": "Sun, Sep 20 4:00 PM",
+      "features": [
+        "Heated Seats",
+        "GPS Navigation",
+        "Sunroof",
+        "Leather Seats",
+        "Apple CarPlay",
+        "Bluetooth"
+      ],
+      "similarCars": [
+        {
+          "id": 18,
+          "name": "Nissan Leaf",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "42",
+          "image": "/cars/new york/nissan-leaf-new-york.jpg"
+        },
+        {
+          "id": 21,
+          "name": "Mercedes-Benz C-Class",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "81",
+          "image": "/cars/new york/mercedes-benz-c-class-new-york.jpg"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Hyundai Elantra",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "39",
+      "image": "/cars/paris/hyundai-elantra-paris.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "pickupLocation": "Charles de Gaulle Airport (CDG)",
+      "pickupDate": "Tue, Sep 15 11:00 AM",
+      "returnLocation": "Charles de Gaulle Airport (CDG)",
+      "returnDate": "Sat, Sep 19 12:00 PM",
+      "features": [
+        "Air Conditioning",
+        "Sunroof",
+        "Parking Sensors",
+        "USB Charging Ports"
+      ],
+      "similarCars": [
+        {
+          "id": 26,
+          "name": "Chevrolet Suburban",
+          "type": "SUV",
+          "seats": "8",
+          "transmission": "Automatic",
+          "price": "65",
+          "image": "/cars/paris/chevrolet-suburban-paris.jpg"
+        },
+        {
+          "id": 24,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "70",
+          "image": "/cars/paris/bmw-3-series-paris.jpg"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "BMW 3 Series",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "70",
+      "image": "/cars/paris/bmw-3-series-paris.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "pickupLocation": "Charles de Gaulle Airport (CDG)",
+      "pickupDate": "Tue, Aug 11 4:00 PM",
+      "returnLocation": "Charles de Gaulle Airport (CDG)",
+      "returnDate": "Thu, Aug 13 4:00 PM",
+      "features": [
+        "Heated Seats",
+        "Roof Rack",
+        "GPS Navigation",
+        "Keyless Entry",
+        "Apple CarPlay",
+        "All-Wheel Drive"
+      ],
+      "similarCars": [
+        {
+          "id": 28,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "59",
+          "image": "/cars/paris/ford-explorer-paris.jpg"
+        },
+        {
+          "id": 23,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "39",
+          "image": "/cars/paris/hyundai-elantra-paris.jpg"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Toyota Corolla",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "42",
+      "image": "/cars/paris/toyota-corolla-paris.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "pickupLocation": "Charles de Gaulle Airport (CDG)",
+      "pickupDate": "Mon, Jun 29 3:00 PM",
+      "returnLocation": "Charles de Gaulle Airport (CDG)",
+      "returnDate": "Fri, Jul 3 2:00 PM",
+      "features": [
+        "Roof Rack",
+        "Air Conditioning",
+        "Backup Camera",
+        "Leather Seats",
+        "Bluetooth",
+        "Keyless Entry"
+      ],
+      "similarCars": [
+        {
+          "id": 28,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "59",
+          "image": "/cars/paris/ford-explorer-paris.jpg"
+        },
+        {
+          "id": 24,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "70",
+          "image": "/cars/paris/bmw-3-series-paris.jpg"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Chevrolet Suburban",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "8",
+      "price": "65",
+      "image": "/cars/paris/chevrolet-suburban-paris.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "pickupLocation": "Charles de Gaulle Airport (CDG)",
+      "pickupDate": "Mon, Aug 10 11:00 AM",
+      "returnLocation": "Charles de Gaulle Airport (CDG)",
+      "returnDate": "Sun, Aug 16 2:00 PM",
+      "features": [
+        "USB Charging Ports",
+        "Apple CarPlay",
+        "Cruise Control",
+        "Parking Sensors",
+        "Keyless Entry",
+        "GPS Navigation"
+      ],
+      "similarCars": [
+        {
+          "id": 27,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "41",
+          "image": "/cars/paris/kia-sportage-paris.jpg"
+        },
+        {
+          "id": 28,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "59",
+          "image": "/cars/paris/ford-explorer-paris.jpg"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Kia Sportage",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "41",
+      "image": "/cars/paris/kia-sportage-paris.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "pickupLocation": "Charles de Gaulle Airport (CDG)",
+      "pickupDate": "Wed, Jul 8 10:00 AM",
+      "returnLocation": "Charles de Gaulle Airport (CDG)",
+      "returnDate": "Sun, Jul 12 8:00 AM",
+      "features": [
+        "Leather Seats",
+        "Backup Camera",
+        "Parking Sensors",
+        "USB Charging Ports"
+      ],
+      "similarCars": [
+        {
+          "id": 26,
+          "name": "Chevrolet Suburban",
+          "type": "SUV",
+          "seats": "8",
+          "transmission": "Automatic",
+          "price": "65",
+          "image": "/cars/paris/chevrolet-suburban-paris.jpg"
+        },
+        {
+          "id": 28,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "59",
+          "image": "/cars/paris/ford-explorer-paris.jpg"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Ford Explorer",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "7",
+      "price": "59",
+      "image": "/cars/paris/ford-explorer-paris.jpg",
+      "cityCode": "CDG",
+      "city": "Paris",
+      "pickupLocation": "Charles de Gaulle Airport (CDG)",
+      "pickupDate": "Wed, Jul 1 8:00 AM",
+      "returnLocation": "Charles de Gaulle Airport (CDG)",
+      "returnDate": "Mon, Jul 6 3:00 PM",
+      "features": [
+        "Cruise Control",
+        "Apple CarPlay",
+        "Heated Seats",
+        "All-Wheel Drive",
+        "Sunroof",
+        "Leather Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 27,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "41",
+          "image": "/cars/paris/kia-sportage-paris.jpg"
+        },
+        {
+          "id": 23,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "39",
+          "image": "/cars/paris/hyundai-elantra-paris.jpg"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "BMW X5",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "90",
+      "image": "/cars/singapore/bmw-x5-singapore.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "pickupLocation": "Singapore Changi Airport (SIN)",
+      "pickupDate": "Tue, Jul 28 4:00 PM",
+      "returnLocation": "Singapore Changi Airport (SIN)",
+      "returnDate": "Tue, Aug 4 3:00 PM",
+      "features": [
+        "Sunroof",
+        "Keyless Entry",
+        "Bluetooth",
+        "Parking Sensors"
+      ],
+      "similarCars": [
+        {
+          "id": 32,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "79",
+          "image": "/cars/singapore/audi-a4-singapore.jpg"
+        },
+        {
+          "id": 33,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "30",
+          "image": "/cars/singapore/hyundai-elantra-singapore.jpg"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Range Rover Evoque",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "108",
+      "image": "/cars/singapore/range-rover-evoque-singapore.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "pickupLocation": "Singapore Changi Airport (SIN)",
+      "pickupDate": "Sat, Aug 8 11:00 AM",
+      "returnLocation": "Singapore Changi Airport (SIN)",
+      "returnDate": "Sun, Aug 9 12:00 PM",
+      "features": [
+        "Keyless Entry",
+        "Heated Seats",
+        "Sunroof",
+        "Leather Seats",
+        "Backup Camera",
+        "All-Wheel Drive"
+      ],
+      "similarCars": [
+        {
+          "id": 31,
+          "name": "Honda CR-V",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "53",
+          "image": "/cars/singapore/honda-cr-v-singapore.jpg"
+        },
+        {
+          "id": 33,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "30",
+          "image": "/cars/singapore/hyundai-elantra-singapore.jpg"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Honda CR-V",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "53",
+      "image": "/cars/singapore/honda-cr-v-singapore.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "pickupLocation": "Singapore Changi Airport (SIN)",
+      "pickupDate": "Sun, Sep 6 4:00 PM",
+      "returnLocation": "Singapore Changi Airport (SIN)",
+      "returnDate": "Thu, Sep 10 8:00 AM",
+      "features": [
+        "Roof Rack",
+        "Backup Camera",
+        "Bluetooth",
+        "Air Conditioning",
+        "Apple CarPlay"
+      ],
+      "similarCars": [
+        {
+          "id": 30,
+          "name": "Range Rover Evoque",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "108",
+          "image": "/cars/singapore/range-rover-evoque-singapore.jpg"
+        },
+        {
+          "id": 29,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "90",
+          "image": "/cars/singapore/bmw-x5-singapore.jpg"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Audi A4",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "79",
+      "image": "/cars/singapore/audi-a4-singapore.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "pickupLocation": "Singapore Changi Airport (SIN)",
+      "pickupDate": "Mon, Sep 14 12:00 PM",
+      "returnLocation": "Singapore Changi Airport (SIN)",
+      "returnDate": "Wed, Sep 16 12:00 PM",
+      "features": [
+        "Roof Rack",
+        "Backup Camera",
+        "Keyless Entry",
+        "All-Wheel Drive",
+        "GPS Navigation",
+        "Bluetooth"
+      ],
+      "similarCars": [
+        {
+          "id": 29,
+          "name": "BMW X5",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "90",
+          "image": "/cars/singapore/bmw-x5-singapore.jpg"
+        },
+        {
+          "id": 30,
+          "name": "Range Rover Evoque",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "108",
+          "image": "/cars/singapore/range-rover-evoque-singapore.jpg"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Hyundai Elantra",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "30",
+      "image": "/cars/singapore/hyundai-elantra-singapore.jpg",
+      "cityCode": "SIN",
+      "city": "Singapore",
+      "pickupLocation": "Singapore Changi Airport (SIN)",
+      "pickupDate": "Tue, Jul 7 8:00 AM",
+      "returnLocation": "Singapore Changi Airport (SIN)",
+      "returnDate": "Thu, Jul 9 2:00 PM",
+      "features": [
+        "Air Conditioning",
+        "Cruise Control",
+        "Keyless Entry",
+        "Roof Rack",
+        "GPS Navigation",
+        "Heated Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 31,
+          "name": "Honda CR-V",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "53",
+          "image": "/cars/singapore/honda-cr-v-singapore.jpg"
+        },
+        {
+          "id": 30,
+          "name": "Range Rover Evoque",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "108",
+          "image": "/cars/singapore/range-rover-evoque-singapore.jpg"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Nissan Leaf",
+      "type": "Electric",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "48",
+      "image": "/cars/abu dhabi/nissan-leaf-abu-dhabi.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "pickupLocation": "Abu Dhabi International Airport (AUH)",
+      "pickupDate": "Mon, Jul 20 9:00 AM",
+      "returnLocation": "Abu Dhabi International Airport (AUH)",
+      "returnDate": "Sun, Jul 26 11:00 AM",
+      "features": [
+        "Heated Seats",
+        "Sunroof",
+        "Bluetooth",
+        "Apple CarPlay",
+        "GPS Navigation"
+      ],
+      "similarCars": [
+        {
+          "id": 35,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "73",
+          "image": "/cars/abu dhabi/bmw-3-series-abu-dhabi.jpg"
+        },
+        {
+          "id": 38,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "84",
+          "image": "/cars/abu dhabi/audi-a4-abu-dhabi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "BMW 3 Series",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "73",
+      "image": "/cars/abu dhabi/bmw-3-series-abu-dhabi.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "pickupLocation": "Abu Dhabi International Airport (AUH)",
+      "pickupDate": "Sun, Aug 16 9:00 AM",
+      "returnLocation": "Abu Dhabi International Airport (AUH)",
+      "returnDate": "Fri, Aug 21 3:00 PM",
+      "features": [
+        "Leather Seats",
+        "Air Conditioning",
+        "Cruise Control",
+        "USB Charging Ports"
+      ],
+      "similarCars": [
+        {
+          "id": 39,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "64",
+          "image": "/cars/abu dhabi/ford-explorer-abu-dhabi.jpg"
+        },
+        {
+          "id": 36,
+          "name": "Mini Cooper",
+          "type": "Hatchback",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "43",
+          "image": "/cars/abu dhabi/mini-cooper-abu-dhabi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Mini Cooper",
+      "type": "Hatchback",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "4",
+      "price": "43",
+      "image": "/cars/abu dhabi/mini-cooper-abu-dhabi.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "pickupLocation": "Abu Dhabi International Airport (AUH)",
+      "pickupDate": "Sat, Aug 8 10:00 AM",
+      "returnLocation": "Abu Dhabi International Airport (AUH)",
+      "returnDate": "Mon, Aug 10 4:00 PM",
+      "features": [
+        "Sunroof",
+        "Air Conditioning",
+        "Keyless Entry",
+        "GPS Navigation",
+        "Heated Seats",
+        "Bluetooth"
+      ],
+      "similarCars": [
+        {
+          "id": 38,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "84",
+          "image": "/cars/abu dhabi/audi-a4-abu-dhabi.jpg"
+        },
+        {
+          "id": 39,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "64",
+          "image": "/cars/abu dhabi/ford-explorer-abu-dhabi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Toyota RAV4",
+      "type": "SUV",
+      "fuelType": "Hybrid",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "48",
+      "image": "/cars/abu dhabi/toyota-rav4-abu-dhabi.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "pickupLocation": "Abu Dhabi International Airport (AUH)",
+      "pickupDate": "Sat, Aug 15 3:00 PM",
+      "returnLocation": "Abu Dhabi International Airport (AUH)",
+      "returnDate": "Sun, Aug 16 8:00 AM",
+      "features": [
+        "Parking Sensors",
+        "Cruise Control",
+        "Heated Seats",
+        "Air Conditioning"
+      ],
+      "similarCars": [
+        {
+          "id": 34,
+          "name": "Nissan Leaf",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "48",
+          "image": "/cars/abu dhabi/nissan-leaf-abu-dhabi.jpg"
+        },
+        {
+          "id": 36,
+          "name": "Mini Cooper",
+          "type": "Hatchback",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "43",
+          "image": "/cars/abu dhabi/mini-cooper-abu-dhabi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Audi A4",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "84",
+      "image": "/cars/abu dhabi/audi-a4-abu-dhabi.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "pickupLocation": "Abu Dhabi International Airport (AUH)",
+      "pickupDate": "Tue, Aug 25 2:00 PM",
+      "returnLocation": "Abu Dhabi International Airport (AUH)",
+      "returnDate": "Mon, Aug 31 12:00 PM",
+      "features": [
+        "Backup Camera",
+        "Heated Seats",
+        "GPS Navigation",
+        "Keyless Entry"
+      ],
+      "similarCars": [
+        {
+          "id": 39,
+          "name": "Ford Explorer",
+          "type": "SUV",
+          "seats": "7",
+          "transmission": "Automatic",
+          "price": "64",
+          "image": "/cars/abu dhabi/ford-explorer-abu-dhabi.jpg"
+        },
+        {
+          "id": 35,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "73",
+          "image": "/cars/abu dhabi/bmw-3-series-abu-dhabi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Ford Explorer",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "7",
+      "price": "64",
+      "image": "/cars/abu dhabi/ford-explorer-abu-dhabi.jpg",
+      "cityCode": "AUH",
+      "city": "Abu Dhabi",
+      "pickupLocation": "Abu Dhabi International Airport (AUH)",
+      "pickupDate": "Fri, Jul 10 9:00 AM",
+      "returnLocation": "Abu Dhabi International Airport (AUH)",
+      "returnDate": "Fri, Jul 17 8:00 AM",
+      "features": [
+        "Cruise Control",
+        "Bluetooth",
+        "Air Conditioning",
+        "Backup Camera"
+      ],
+      "similarCars": [
+        {
+          "id": 34,
+          "name": "Nissan Leaf",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "48",
+          "image": "/cars/abu dhabi/nissan-leaf-abu-dhabi.jpg"
+        },
+        {
+          "id": 36,
+          "name": "Mini Cooper",
+          "type": "Hatchback",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "43",
+          "image": "/cars/abu dhabi/mini-cooper-abu-dhabi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Range Rover Evoque",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "100",
+      "image": "/cars/sydney/range-rover-evoque-sydney.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "pickupLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "pickupDate": "Wed, Aug 26 3:00 PM",
+      "returnLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "returnDate": "Sat, Aug 29 12:00 PM",
+      "features": [
+        "Parking Sensors",
+        "GPS Navigation",
+        "Sunroof",
+        "Backup Camera",
+        "Leather Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 42,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "41",
+          "image": "/cars/sydney/hyundai-elantra-sydney.jpg"
+        },
+        {
+          "id": 43,
+          "name": "Honda CR-V",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "57",
+          "image": "/cars/sydney/honda-cr-v-sydney.jpg"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "BMW 3 Series",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "82",
+      "image": "/cars/sydney/bmw-3-series-sydney.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "pickupLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "pickupDate": "Wed, Sep 9 10:00 AM",
+      "returnLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "returnDate": "Thu, Sep 10 12:00 PM",
+      "features": [
+        "GPS Navigation",
+        "Heated Seats",
+        "Apple CarPlay",
+        "USB Charging Ports"
+      ],
+      "similarCars": [
+        {
+          "id": 44,
+          "name": "Volkswagen Golf",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "29",
+          "image": "/cars/sydney/volkswagen-golf-sydney.jpg"
+        },
+        {
+          "id": 42,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "41",
+          "image": "/cars/sydney/hyundai-elantra-sydney.jpg"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Hyundai Elantra",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "41",
+      "image": "/cars/sydney/hyundai-elantra-sydney.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "pickupLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "pickupDate": "Fri, Aug 21 2:00 PM",
+      "returnLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "returnDate": "Wed, Aug 26 2:00 PM",
+      "features": [
+        "USB Charging Ports",
+        "Air Conditioning",
+        "Cruise Control",
+        "Keyless Entry",
+        "Sunroof",
+        "Parking Sensors"
+      ],
+      "similarCars": [
+        {
+          "id": 45,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "51",
+          "image": "/cars/sydney/kia-sportage-sydney.jpg"
+        },
+        {
+          "id": 41,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "82",
+          "image": "/cars/sydney/bmw-3-series-sydney.jpg"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Honda CR-V",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "57",
+      "image": "/cars/sydney/honda-cr-v-sydney.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "pickupLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "pickupDate": "Fri, Aug 21 9:00 AM",
+      "returnLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "returnDate": "Sat, Aug 22 8:00 AM",
+      "features": [
+        "Keyless Entry",
+        "Bluetooth",
+        "Parking Sensors",
+        "Roof Rack",
+        "Sunroof"
+      ],
+      "similarCars": [
+        {
+          "id": 45,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "51",
+          "image": "/cars/sydney/kia-sportage-sydney.jpg"
+        },
+        {
+          "id": 42,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "41",
+          "image": "/cars/sydney/hyundai-elantra-sydney.jpg"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Volkswagen Golf",
+      "type": "Hatchback",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "5",
+      "price": "29",
+      "image": "/cars/sydney/volkswagen-golf-sydney.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "pickupLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "pickupDate": "Thu, Aug 27 10:00 AM",
+      "returnLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "returnDate": "Mon, Aug 31 8:00 AM",
+      "features": [
+        "GPS Navigation",
+        "Keyless Entry",
+        "Bluetooth",
+        "Leather Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 42,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "41",
+          "image": "/cars/sydney/hyundai-elantra-sydney.jpg"
+        },
+        {
+          "id": 41,
+          "name": "BMW 3 Series",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "82",
+          "image": "/cars/sydney/bmw-3-series-sydney.jpg"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Kia Sportage",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "51",
+      "image": "/cars/sydney/kia-sportage-sydney.jpg",
+      "cityCode": "SYD",
+      "city": "Sydney",
+      "pickupLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "pickupDate": "Thu, Jul 9 4:00 PM",
+      "returnLocation": "Sydney Kingsford Smith Airport (SYD)",
+      "returnDate": "Tue, Jul 14 12:00 PM",
+      "features": [
+        "Cruise Control",
+        "Air Conditioning",
+        "Parking Sensors",
+        "Sunroof",
+        "Leather Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 44,
+          "name": "Volkswagen Golf",
+          "type": "Hatchback",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "29",
+          "image": "/cars/sydney/volkswagen-golf-sydney.jpg"
+        },
+        {
+          "id": 42,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "41",
+          "image": "/cars/sydney/hyundai-elantra-sydney.jpg"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Tesla Model 3",
+      "type": "Electric",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "54",
+      "image": "/cars/nairobi/tesla-model-3-nairobi.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "pickupLocation": "Jomo Kenyatta International Airport (NBO)",
+      "pickupDate": "Sat, Sep 19 9:00 AM",
+      "returnLocation": "Jomo Kenyatta International Airport (NBO)",
+      "returnDate": "Fri, Sep 25 11:00 AM",
+      "features": [
+        "Keyless Entry",
+        "GPS Navigation",
+        "Apple CarPlay",
+        "Backup Camera",
+        "Bluetooth",
+        "Air Conditioning"
+      ],
+      "similarCars": [
+        {
+          "id": 48,
+          "name": "Honda CR-V",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "56",
+          "image": "/cars/nairobi/honda-cr-v-nairobi.jpg"
+        },
+        {
+          "id": 47,
+          "name": "Mercedes-Benz GLE",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "103",
+          "image": "/cars/nairobi/mercedes-benz-gle-nairobi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Mercedes-Benz GLE",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "103",
+      "image": "/cars/nairobi/mercedes-benz-gle-nairobi.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "pickupLocation": "Jomo Kenyatta International Airport (NBO)",
+      "pickupDate": "Mon, Aug 3 8:00 AM",
+      "returnLocation": "Jomo Kenyatta International Airport (NBO)",
+      "returnDate": "Mon, Aug 10 10:00 AM",
+      "features": [
+        "Keyless Entry",
+        "GPS Navigation",
+        "Backup Camera",
+        "Parking Sensors",
+        "Apple CarPlay"
+      ],
+      "similarCars": [
+        {
+          "id": 50,
+          "name": "Mercedes-Benz C-Class",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "87",
+          "image": "/cars/nairobi/mercedes-benz-c-class-nairobi.jpg"
+        },
+        {
+          "id": 48,
+          "name": "Honda CR-V",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "56",
+          "image": "/cars/nairobi/honda-cr-v-nairobi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Honda CR-V",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "56",
+      "image": "/cars/nairobi/honda-cr-v-nairobi.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "pickupLocation": "Jomo Kenyatta International Airport (NBO)",
+      "pickupDate": "Thu, Jul 23 4:00 PM",
+      "returnLocation": "Jomo Kenyatta International Airport (NBO)",
+      "returnDate": "Fri, Jul 24 4:00 PM",
+      "features": [
+        "USB Charging Ports",
+        "GPS Navigation",
+        "Heated Seats",
+        "Sunroof",
+        "All-Wheel Drive"
+      ],
+      "similarCars": [
+        {
+          "id": 47,
+          "name": "Mercedes-Benz GLE",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "103",
+          "image": "/cars/nairobi/mercedes-benz-gle-nairobi.jpg"
+        },
+        {
+          "id": 46,
+          "name": "Tesla Model 3",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "54",
+          "image": "/cars/nairobi/tesla-model-3-nairobi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Honda Civic",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "5",
+      "price": "28",
+      "image": "/cars/nairobi/honda-civic-nairobi.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "pickupLocation": "Jomo Kenyatta International Airport (NBO)",
+      "pickupDate": "Tue, Aug 11 3:00 PM",
+      "returnLocation": "Jomo Kenyatta International Airport (NBO)",
+      "returnDate": "Thu, Aug 13 4:00 PM",
+      "features": [
+        "Sunroof",
+        "Apple CarPlay",
+        "Roof Rack",
+        "Bluetooth",
+        "Backup Camera"
+      ],
+      "similarCars": [
+        {
+          "id": 48,
+          "name": "Honda CR-V",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "56",
+          "image": "/cars/nairobi/honda-cr-v-nairobi.jpg"
+        },
+        {
+          "id": 50,
+          "name": "Mercedes-Benz C-Class",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "87",
+          "image": "/cars/nairobi/mercedes-benz-c-class-nairobi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Mercedes-Benz C-Class",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "87",
+      "image": "/cars/nairobi/mercedes-benz-c-class-nairobi.jpg",
+      "cityCode": "NBO",
+      "city": "Nairobi",
+      "pickupLocation": "Jomo Kenyatta International Airport (NBO)",
+      "pickupDate": "Thu, Aug 27 12:00 PM",
+      "returnLocation": "Jomo Kenyatta International Airport (NBO)",
+      "returnDate": "Mon, Aug 31 2:00 PM",
+      "features": [
+        "Cruise Control",
+        "Backup Camera",
+        "Air Conditioning",
+        "USB Charging Ports"
+      ],
+      "similarCars": [
+        {
+          "id": 46,
+          "name": "Tesla Model 3",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "54",
+          "image": "/cars/nairobi/tesla-model-3-nairobi.jpg"
+        },
+        {
+          "id": 47,
+          "name": "Mercedes-Benz GLE",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "103",
+          "image": "/cars/nairobi/mercedes-benz-gle-nairobi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Jeep Wrangler",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "4",
+      "price": "63",
+      "image": "/cars/madrid/jeep-wrangler-madrid.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "pickupLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "pickupDate": "Sat, Aug 1 8:00 AM",
+      "returnLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "returnDate": "Sun, Aug 2 8:00 AM",
+      "features": [
+        "Cruise Control",
+        "Keyless Entry",
+        "USB Charging Ports",
+        "Parking Sensors"
+      ],
+      "similarCars": [
+        {
+          "id": 55,
+          "name": "Audi A4",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "84",
+          "image": "/cars/madrid/audi-a4-madrid.jpg"
+        },
+        {
+          "id": 56,
+          "name": "Honda Civic",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "31",
+          "image": "/cars/madrid/honda-civic-madrid.jpg"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Nissan Leaf",
+      "type": "Electric",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "42",
+      "image": "/cars/madrid/nissan-leaf-madrid.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "pickupLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "pickupDate": "Fri, Sep 11 11:00 AM",
+      "returnLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "returnDate": "Fri, Sep 18 2:00 PM",
+      "features": [
+        "Sunroof",
+        "Heated Seats",
+        "Bluetooth",
+        "Roof Rack",
+        "Air Conditioning",
+        "All-Wheel Drive"
+      ],
+      "similarCars": [
+        {
+          "id": 51,
+          "name": "Jeep Wrangler",
+          "type": "SUV",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "63",
+          "image": "/cars/madrid/jeep-wrangler-madrid.jpg"
+        },
+        {
+          "id": 54,
+          "name": "Mercedes-Benz C-Class",
+          "type": "Luxury",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "81",
+          "image": "/cars/madrid/mercedes-benz-c-class-madrid.jpg"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Toyota Corolla",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "32",
+      "image": "/cars/madrid/toyota-corolla-madrid.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "pickupLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "pickupDate": "Wed, Sep 9 4:00 PM",
+      "returnLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "returnDate": "Sat, Sep 12 3:00 PM",
+      "features": [
+        "Sunroof",
+        "Backup Camera",
+        "Heated Seats",
+        "Leather Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 52,
+          "name": "Nissan Leaf",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "42",
+          "image": "/cars/madrid/nissan-leaf-madrid.jpg"
+        },
+        {
+          "id": 56,
+          "name": "Honda Civic",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "31",
+          "image": "/cars/madrid/honda-civic-madrid.jpg"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Mercedes-Benz C-Class",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "81",
+      "image": "/cars/madrid/mercedes-benz-c-class-madrid.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "pickupLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "pickupDate": "Mon, Aug 17 3:00 PM",
+      "returnLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "returnDate": "Wed, Aug 19 8:00 AM",
+      "features": [
+        "USB Charging Ports",
+        "Parking Sensors",
+        "Backup Camera",
+        "Leather Seats",
+        "Apple CarPlay"
+      ],
+      "similarCars": [
+        {
+          "id": 53,
+          "name": "Toyota Corolla",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "32",
+          "image": "/cars/madrid/toyota-corolla-madrid.jpg"
+        },
+        {
+          "id": 52,
+          "name": "Nissan Leaf",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "42",
+          "image": "/cars/madrid/nissan-leaf-madrid.jpg"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Audi A4",
+      "type": "Luxury",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "84",
+      "image": "/cars/madrid/audi-a4-madrid.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "pickupLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "pickupDate": "Mon, Sep 7 2:00 PM",
+      "returnLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "returnDate": "Sat, Sep 12 12:00 PM",
+      "features": [
+        "USB Charging Ports",
+        "GPS Navigation",
+        "Bluetooth",
+        "Cruise Control",
+        "Heated Seats",
+        "Backup Camera"
+      ],
+      "similarCars": [
+        {
+          "id": 56,
+          "name": "Honda Civic",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "31",
+          "image": "/cars/madrid/honda-civic-madrid.jpg"
+        },
+        {
+          "id": 51,
+          "name": "Jeep Wrangler",
+          "type": "SUV",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "63",
+          "image": "/cars/madrid/jeep-wrangler-madrid.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Honda Civic",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "5",
+      "price": "31",
+      "image": "/cars/madrid/honda-civic-madrid.jpg",
+      "cityCode": "MAD",
+      "city": "Madrid",
+      "pickupLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "pickupDate": "Sat, Aug 8 11:00 AM",
+      "returnLocation": "Adolfo Suarez Madrid-Barajas Airport (MAD)",
+      "returnDate": "Wed, Aug 12 2:00 PM",
+      "features": [
+        "Apple CarPlay",
+        "Bluetooth",
+        "GPS Navigation",
+        "Cruise Control"
+      ],
+      "similarCars": [
+        {
+          "id": 51,
+          "name": "Jeep Wrangler",
+          "type": "SUV",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "63",
+          "image": "/cars/madrid/jeep-wrangler-madrid.jpg"
+        },
+        {
+          "id": 53,
+          "name": "Toyota Corolla",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "32",
+          "image": "/cars/madrid/toyota-corolla-madrid.jpg"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Jeep Wrangler",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "4",
+      "price": "70",
+      "image": "/cars/frankfurt/jeep-wrangler-frankfurt.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "pickupLocation": "Frankfurt Airport (FRA)",
+      "pickupDate": "Sun, Aug 9 4:00 PM",
+      "returnLocation": "Frankfurt Airport (FRA)",
+      "returnDate": "Sun, Aug 16 9:00 AM",
+      "features": [
+        "Roof Rack",
+        "Heated Seats",
+        "Leather Seats",
+        "Bluetooth"
+      ],
+      "similarCars": [
+        {
+          "id": 59,
+          "name": "Toyota RAV4",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "50",
+          "image": "/cars/frankfurt/toyota-rav4-frankfurt.jpg"
+        },
+        {
+          "id": 61,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "36",
+          "image": "/cars/frankfurt/hyundai-elantra-frankfurt.jpg"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Nissan Leaf",
+      "type": "Electric",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "40",
+      "image": "/cars/frankfurt/nissan-leaf-frankfurt.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "pickupLocation": "Frankfurt Airport (FRA)",
+      "pickupDate": "Fri, Sep 11 4:00 PM",
+      "returnLocation": "Frankfurt Airport (FRA)",
+      "returnDate": "Fri, Sep 18 4:00 PM",
+      "features": [
+        "Backup Camera",
+        "Sunroof",
+        "Bluetooth",
+        "GPS Navigation"
+      ],
+      "similarCars": [
+        {
+          "id": 60,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "50",
+          "image": "/cars/frankfurt/kia-sportage-frankfurt.jpg"
+        },
+        {
+          "id": 61,
+          "name": "Hyundai Elantra",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "36",
+          "image": "/cars/frankfurt/hyundai-elantra-frankfurt.jpg"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Toyota RAV4",
+      "type": "SUV",
+      "fuelType": "Hybrid",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "50",
+      "image": "/cars/frankfurt/toyota-rav4-frankfurt.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "pickupLocation": "Frankfurt Airport (FRA)",
+      "pickupDate": "Mon, Jul 6 3:00 PM",
+      "returnLocation": "Frankfurt Airport (FRA)",
+      "returnDate": "Sun, Jul 12 3:00 PM",
+      "features": [
+        "Roof Rack",
+        "Bluetooth",
+        "GPS Navigation",
+        "All-Wheel Drive",
+        "Backup Camera"
+      ],
+      "similarCars": [
+        {
+          "id": 57,
+          "name": "Jeep Wrangler",
+          "type": "SUV",
+          "seats": "4",
+          "transmission": "Manual",
+          "price": "70",
+          "image": "/cars/frankfurt/jeep-wrangler-frankfurt.jpg"
+        },
+        {
+          "id": 58,
+          "name": "Nissan Leaf",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "40",
+          "image": "/cars/frankfurt/nissan-leaf-frankfurt.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Kia Sportage",
+      "type": "SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "50",
+      "image": "/cars/frankfurt/kia-sportage-frankfurt.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "pickupLocation": "Frankfurt Airport (FRA)",
+      "pickupDate": "Mon, Aug 31 12:00 PM",
+      "returnLocation": "Frankfurt Airport (FRA)",
+      "returnDate": "Tue, Sep 1 2:00 PM",
+      "features": [
+        "Bluetooth",
+        "Heated Seats",
+        "Backup Camera",
+        "Cruise Control",
+        "Sunroof"
+      ],
+      "similarCars": [
+        {
+          "id": 58,
+          "name": "Nissan Leaf",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "40",
+          "image": "/cars/frankfurt/nissan-leaf-frankfurt.jpg"
+        },
+        {
+          "id": 59,
+          "name": "Toyota RAV4",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "50",
+          "image": "/cars/frankfurt/toyota-rav4-frankfurt.jpg"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Hyundai Elantra",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "36",
+      "image": "/cars/frankfurt/hyundai-elantra-frankfurt.jpg",
+      "cityCode": "FRA",
+      "city": "Frankfurt",
+      "pickupLocation": "Frankfurt Airport (FRA)",
+      "pickupDate": "Sun, Sep 6 2:00 PM",
+      "returnLocation": "Frankfurt Airport (FRA)",
+      "returnDate": "Thu, Sep 10 12:00 PM",
+      "features": [
+        "GPS Navigation",
+        "Backup Camera",
+        "USB Charging Ports",
+        "Air Conditioning"
+      ],
+      "similarCars": [
+        {
+          "id": 59,
+          "name": "Toyota RAV4",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "50",
+          "image": "/cars/frankfurt/toyota-rav4-frankfurt.jpg"
+        },
+        {
+          "id": 60,
+          "name": "Kia Sportage",
+          "type": "SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "50",
+          "image": "/cars/frankfurt/kia-sportage-frankfurt.jpg"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Toyota Corolla",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "34",
+      "image": "/cars/abuja/toyota-corolla-abuja.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "pickupLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "pickupDate": "Sun, Aug 16 8:00 AM",
+      "returnLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "returnDate": "Sat, Aug 22 4:00 PM",
+      "features": [
+        "Roof Rack",
+        "Heated Seats",
+        "Backup Camera",
+        "USB Charging Ports",
+        "GPS Navigation",
+        "Cruise Control"
+      ],
+      "similarCars": [
+        {
+          "id": 65,
+          "name": "Mercedes-Benz GLE",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "101",
+          "image": "/cars/abuja/mercedes-benz-gle-abuja.jpg"
+        },
+        {
+          "id": 67,
+          "name": "Tesla Model 3",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "59",
+          "image": "/cars/abuja/tesla-model-3-abuja.jpg"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Hyundai Elantra",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "38",
+      "image": "/cars/abuja/hyundai-elantra-abuja.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "pickupLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "pickupDate": "Sat, Aug 8 10:00 AM",
+      "returnLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "returnDate": "Thu, Aug 13 2:00 PM",
+      "features": [
+        "Sunroof",
+        "Backup Camera",
+        "GPS Navigation",
+        "Bluetooth",
+        "Air Conditioning",
+        "Roof Rack"
+      ],
+      "similarCars": [
+        {
+          "id": 62,
+          "name": "Toyota Corolla",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "34",
+          "image": "/cars/abuja/toyota-corolla-abuja.jpg"
+        },
+        {
+          "id": 67,
+          "name": "Tesla Model 3",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "59",
+          "image": "/cars/abuja/tesla-model-3-abuja.jpg"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Tesla Model Y",
+      "type": "Electric",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "60",
+      "image": "/cars/abuja/tesla-model-y-abuja.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "pickupLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "pickupDate": "Sat, Sep 19 9:00 AM",
+      "returnLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "returnDate": "Thu, Sep 24 2:00 PM",
+      "features": [
+        "Cruise Control",
+        "Bluetooth",
+        "Heated Seats",
+        "Roof Rack",
+        "Leather Seats"
+      ],
+      "similarCars": [
+        {
+          "id": 65,
+          "name": "Mercedes-Benz GLE",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "101",
+          "image": "/cars/abuja/mercedes-benz-gle-abuja.jpg"
+        },
+        {
+          "id": 66,
+          "name": "Honda Civic",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "35",
+          "image": "/cars/abuja/honda-civic-abuja.jpg"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Mercedes-Benz GLE",
+      "type": "Luxury SUV",
+      "fuelType": "Petrol",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "101",
+      "image": "/cars/abuja/mercedes-benz-gle-abuja.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "pickupLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "pickupDate": "Fri, Jul 31 9:00 AM",
+      "returnLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "returnDate": "Fri, Aug 7 11:00 AM",
+      "features": [
+        "Parking Sensors",
+        "Sunroof",
+        "USB Charging Ports",
+        "Air Conditioning",
+        "Keyless Entry"
+      ],
+      "similarCars": [
+        {
+          "id": 64,
+          "name": "Tesla Model Y",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "60",
+          "image": "/cars/abuja/tesla-model-y-abuja.jpg"
+        },
+        {
+          "id": 66,
+          "name": "Honda Civic",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "35",
+          "image": "/cars/abuja/honda-civic-abuja.jpg"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Honda Civic",
+      "type": "Sedan",
+      "fuelType": "Petrol",
+      "transmission": "Manual",
+      "seats": "5",
+      "price": "35",
+      "image": "/cars/abuja/honda-civic-abuja.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "pickupLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "pickupDate": "Wed, Aug 12 4:00 PM",
+      "returnLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "returnDate": "Thu, Aug 13 8:00 AM",
+      "features": [
+        "Air Conditioning",
+        "GPS Navigation",
+        "USB Charging Ports",
+        "Keyless Entry"
+      ],
+      "similarCars": [
+        {
+          "id": 64,
+          "name": "Tesla Model Y",
+          "type": "Electric",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "60",
+          "image": "/cars/abuja/tesla-model-y-abuja.jpg"
+        },
+        {
+          "id": 65,
+          "name": "Mercedes-Benz GLE",
+          "type": "Luxury SUV",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "101",
+          "image": "/cars/abuja/mercedes-benz-gle-abuja.jpg"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Tesla Model 3",
+      "type": "Electric",
+      "fuelType": "Electric",
+      "transmission": "Automatic",
+      "seats": "5",
+      "price": "59",
+      "image": "/cars/abuja/tesla-model-3-abuja.jpg",
+      "cityCode": "ABV",
+      "city": "Abuja",
+      "pickupLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "pickupDate": "Sat, Jul 11 8:00 AM",
+      "returnLocation": "Nnamdi Azikiwe International Airport (ABV)",
+      "returnDate": "Tue, Jul 14 11:00 AM",
+      "features": [
+        "USB Charging Ports",
+        "Keyless Entry",
+        "Apple CarPlay",
+        "All-Wheel Drive",
+        "Parking Sensors",
+        "Sunroof"
+      ],
+      "similarCars": [
+        {
+          "id": 66,
+          "name": "Honda Civic",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Manual",
+          "price": "35",
+          "image": "/cars/abuja/honda-civic-abuja.jpg"
+        },
+        {
+          "id": 62,
+          "name": "Toyota Corolla",
+          "type": "Sedan",
+          "seats": "5",
+          "transmission": "Automatic",
+          "price": "34",
+          "image": "/cars/abuja/toyota-corolla-abuja.jpg"
+        }
+      ]
+    }
+  ]
+}

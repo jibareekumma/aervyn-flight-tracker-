@@ -1,5 +1,6 @@
 
 
+
 import favoriteIcon from "/icons/favorite_icon.png"
 import leftArrow from "/icons/left_arrow_icon.png"
 import rightArrow from "/icons/right_arr.png"
@@ -12,20 +13,24 @@ import mainIcon from "/icons/main-icon.png"
 import calendarIcon from "/icons/bell_icon.png"
 import settingsIcon from "/icons/spin-rotate.png"
 
-import car1 from "/photos/car1.jpeg"
-import car2 from "/photos/car2.jpeg"
-import car3 from "/photos/car3.jpeg"
-
-import { useNavigate } from "react-router-dom"
-import { useState } from "react"
+import { useNavigate, useLocation } from "react-router-dom"
+import { useState, useEffect } from "react"
 import CarDetails from "./CarDetails"
 
 import "../../css/Result.css"
 
 const CarResult = function () {
 
-    const [showOverlay, setShowOverlay] = useState(false);
-    const [selectedCar, setSelectedCar] = useState(null);
+    const [showOverlay, setShowOverlay] = useState(false)
+    const [selectedCar, setSelectedCar] = useState(null)
+
+    const [allCars, setAllCars] = useState([])
+    const [loading, setLoading] = useState(true)
+
+    const [imageErrors, setImageErrors] = useState({})
+
+    const { state } = useLocation()
+    const cityCode = state ? state.cityCode : 'LOS'
 
     const today = new Date().toLocaleDateString('en-US', {
         weekday: 'long',
@@ -35,65 +40,66 @@ const CarResult = function () {
 
     const navigate = useNavigate()
 
-    const cars = [
-        {
-            id: 1,
-            name: "Tesla Model 3",
-            type: "Electric",
-            image: car1,
-            seats: "5",
-            transmission: "Automatic",
-            fuelType: "Electric",
-            price: "55",
-            pickupLocation: "London Heathrow Airport (LHR)",
-            pickupDate: "Mon, Jun 22 10:00 AM",
-            returnLocation: "London Heathrow Airport (LHR)",
-            returnDate: "Thu, Jun 25 10:00 AM",
-            features: ["Air Conditioning", "GPS Navigation", "Bluetooth", "Backup Camera", "Keyless Entry", "Cruise Control"],
-            similarCars: [
-                { id: 1, name: "Toyota RAV4", type: "SUV", seats: "5", transmission: "Automatic", price: "48" },
-                { id: 2, name: "BMW 3 Series", type: "Luxury", seats: "5", transmission: "Automatic", price: "75" }
-            ]
-        },
-        {
-            id: 2,
-            name: "Toyota RAV4",
-            type: "SUV",
-            image: car2,
-            seats: "5",
-            transmission: "Automatic",
-            fuelType: "Hybrid",
-            price: "48",
-            pickupLocation: "London Heathrow Airport (LHR)",
-            pickupDate: "Mon, Jun 22 10:00 AM",
-            returnLocation: "London Heathrow Airport (LHR)",
-            returnDate: "Thu, Jun 25 10:00 AM",
-            features: ["Air Conditioning", "GPS Navigation", "Bluetooth", "All-Wheel Drive", "Roof Rack", "Cruise Control"],
-            similarCars: [
-                { id: 1, name: "Tesla Model 3", type: "Electric", seats: "5", transmission: "Automatic", price: "55" },
-                { id: 2, name: "BMW 3 Series", type: "Luxury", seats: "5", transmission: "Automatic", price: "75" }
-            ]
-        },
-        {
-            id: 3,
-            name: "BMW 3 Series",
-            type: "Luxury",
-            image: car3,
-            seats: "5",
-            transmission: "Automatic",
-            fuelType: "Petrol",
-            price: "75",
-            pickupLocation: "London Heathrow Airport (LHR)",
-            pickupDate: "Mon, Jun 22 10:00 AM",
-            returnLocation: "London Heathrow Airport (LHR)",
-            returnDate: "Thu, Jun 25 10:00 AM",
-            features: ["Air Conditioning", "GPS Navigation", "Bluetooth", "Leather Seats", "Sunroof", "Cruise Control"],
-            similarCars: [
-                { id: 1, name: "Tesla Model 3", type: "Electric", seats: "5", transmission: "Automatic", price: "55" },
-                { id: 2, name: "Toyota RAV4", type: "SUV", seats: "5", transmission: "Automatic", price: "48" }
-            ]
+    useEffect(function () {
+        fetch("/data/carsData.json")
+            .then(function (res) { return res.json() })
+            .then(function (data) {
+                setAllCars(data.cars)
+                setLoading(false)
+            })
+            .catch(function (err) {
+                console.log('Failed to load cars data:', err)
+                setLoading(false)
+            })
+    }, [])
+
+    const matchingCars = allCars.filter(function (car) {
+        return car.cityCode === cityCode
+    })
+
+    const handleImageError = function (imagePath) {
+        setImageErrors(function (prev) {
+            return { ...prev, [imagePath]: true }
+        })
+    }
+
+    const renderCarImage = function (imagePath, altText, className) {
+        if (imageErrors[imagePath]) {
+            return (
+                <div className={`image-fallback ${className || ''}`}>
+                    <span>{altText}</span>
+                </div>
+            )
         }
-    ]
+        return (
+            <img
+                src={imagePath}
+                alt={altText}
+                loading="lazy"
+                className={className}
+                onError={() => handleImageError(imagePath)}
+            />
+        )
+    }
+
+    if (loading) {
+        return (
+            <div className="result-container">
+                <p>Loading cars...</p>
+            </div>
+        )
+    }
+
+    if (matchingCars.length === 0) {
+        return (
+            <div className="result-container">
+                <p>No cars found for this city.
+                    Try Lagos, London, or Dubai.</p>
+            </div>
+        )
+    }
+
+    const cityName = matchingCars[0].city
 
     return <>
 
@@ -146,17 +152,12 @@ const CarResult = function () {
 
                         <div className='text-container'>
                             <div className='locations'>
-                                <h5>Lagos</h5>
-                                <img src={rightArrow}
-                                    alt="Arrow Towards right"
-                                    loading="lazy"
-                                />
-                                <h5>London</h5>
+                                <h5>{cityName}</h5>
                             </div>
                             <div className="dates">
                                 <p>{today}</p>
                                 <span>.</span>
-                                <p>2 Guests</p>
+                                <p>1 Car</p>
                             </div>
                         </div>
                     </div>
@@ -192,21 +193,19 @@ const CarResult = function () {
             </div>
 
             <div className='result-main'>
-                <h6>129 Cars Found</h6>
+                <h6>{matchingCars.length} Cars Found</h6>
 
                 <section className='details-container' 
                     id="details-container">
 
-                    {cars.map(car => (
+                    {matchingCars.map(car => (
                         <div className='car-item-detail' key={car.id}
                             onClick={() => {
                                 setShowOverlay(true)
                                 setSelectedCar(car)
                             }}
                         >
-                            <img src={car.image} alt="Image of car"
-                                loading='lazy' className="item-photo"
-                            />
+                            {renderCarImage(car.image, "Image of car", "item-photo")}
                             <div className="item-details">
                                 <h5>{car.name}</h5>
                                 <p>{car.type}</p>
@@ -238,6 +237,8 @@ const CarResult = function () {
             onClose={() => setShowOverlay(false)}
             selectedCar={selectedCar}
             sheetClose={() => setSelectedCar(null)}
+            imageErrors={imageErrors}
+            onImageError={handleImageError}
         />
 
     </>

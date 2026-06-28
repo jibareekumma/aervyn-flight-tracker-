@@ -36,6 +36,12 @@ const NavigatedSection = function( {activeTabs} ){
         navigate('/hotelResult', { state: { cityCode: hotelCityCode } })
     }
 
+    const [carCityCode, setCarCityCode] = useState("LOS");
+
+    const handleCarSearch = function(){
+        navigate('/carResult', { state: { cityCode: carCityCode } })
+    }
+
     return <>
 
     {activeTabs === "flights" && (
@@ -535,12 +541,24 @@ const NavigatedSection = function( {activeTabs} ){
                     <select
                         name="country-car"
                         id="country-car"
+                        value={carCityCode}
+                        onChange={(e) => setCarCityCode(e.target.value)}
                         style={{ appearance: "none", 
                             WebkitAppearance: "none", paddingLeft: "28px", 
                             paddingRight: "40px" }}
                     >
-                        <option value="USA">New York (JFK)</option>
-                        <option value="NIGERIA">Lagos (LOS)</option>
+                        <option value="LOS">Lagos (LOS)</option>
+<option value="LHR">London (LHR)</option>
+<option value="DXB">Dubai (DXB)</option>
+<option value="JFK">New York (JFK)</option>
+<option value="CDG">Paris (CDG)</option>
+<option value="SIN">Singapore (SIN)</option>
+<option value="AUH">Abu Dhabi (AUH)</option>
+<option value="SYD">Sydney (SYD)</option>
+<option value="NBO">Nairobi (NBO)</option>
+<option value="MAD">Madrid (MAD)</option>
+<option value="FRA">Frankfurt (FRA)</option>
+<option value="ABV">Abuja (ABV)</option>
                     </select>
                 </div>
             </div>
@@ -609,7 +627,7 @@ const NavigatedSection = function( {activeTabs} ){
         </div>
 
         <button className="search-btn"
-        onClick = {() => navigate('/carResult')}
+        onClick = {handleCarSearch}
         >Search Cars</button>
     </div>
 </div>
