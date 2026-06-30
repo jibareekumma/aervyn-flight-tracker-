@@ -4,6 +4,7 @@ import homeIcon from "/icons/home_icon.png"
 import searchIcon from "/icons/search_icon.png"
 import favoriteIcon from "/icons/favorite_icon.png"
 import profileIcon from "/icons/profile_icon 2.png"
+import bookingIcon2 from "/icons/booking_icon2.png"
 
 
 import discountIcon from "/icons/discount_icon.png"
@@ -29,18 +30,23 @@ const FooterNavigation = function(){
            <p>Home</p>
            </div>
 
-            <div className = 'nav-container'>
-           <img src = {searchIcon} alt="Search icon"
-           title = "Search a destination" 
+            <div className = 'nav-container'
+            onClick = {() => navigate('/bookings')}
+            >
+           <img src = {bookingIcon2} alt="Search icon"
+           title = "Book a Hotel/Cars/Destination" 
            className='nav-search'
+           
            />
-           <p>Search</p>
+           <p>Bookings</p>
            </div>
 
-            <div className = 'nav-container'>
+            <div className = 'nav-container'
+            onClick = { () => navigate('/favorite') }
+            >
            <img src = {favoriteIcon} alt="Favourite icon"
            title = "Favorite Flights" className='nav-favorite'
-           onClick = { () => navigate('/favorite') }
+           
            />
            <p>Favorites</p>
            </div>

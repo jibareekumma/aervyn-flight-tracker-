@@ -15,6 +15,8 @@ import Destination from "./Destination"
 import FooterNavigation from "./FooterNavigation"
 import mainIcon from "/icons/main-icon.png"
 
+import bookingIcon2 from "/icons/booking_icon2.png"
+
 
 
 
@@ -39,7 +41,7 @@ const Dashboard = function(){
                         <img src={homeIcon} alt="home" />
                     </div>
                     <div className="sidebar-icon">
-                        <img src={searchIcon} alt="search" />
+                        <img src={bookingIcon2} alt="bookings" />
                     </div>
                     <div className="sidebar-icon">
                         <img src={calendarIcon} alt="calendar" />

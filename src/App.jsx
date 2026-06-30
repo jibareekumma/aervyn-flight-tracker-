@@ -9,6 +9,8 @@ import Intro from "./components/Intro"
 import Dashboard from './components/Dashboard'
 import Favorite from './components/Favorite'
 
+import Bookings from './components/Bookings'
+
 
 import FlightResult from './components/resultPages/FlightResult'
 import HotelResult from './components/resultPages/HotelResult'
@@ -47,6 +49,7 @@ function App() {
         <Route path = '/carResult' element = {<CarResult/>} />
 
         <Route path = '/favorite' element = {<Favorite/>} />
+        <Route path = '/bookings' element = {<Bookings/>} />
       </Routes>
     </>
   )
