@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { supabase } from "../lib/supabaseClient"
-import dummyProfile from "/photos/dummy profile.jpeg"
+import pfp from "/photos/pfp 1.jpg"
 import "../css/Header.css"
 
 
@@ -45,7 +45,7 @@ const Header = function({ activeTabs, setActiveTabs } ){
                 <img src={bellIcon} alt="bell icon" loading="lazy" />
             </div>
 
-            <img src={dummyProfile} alt="user-profile"
+            <img src={pfp} alt="user-profile"
             className="user-profile-photo"
             loading="lazy"
             />

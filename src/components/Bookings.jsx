@@ -3,7 +3,6 @@
 
 import React, { useState } from "react";
 
-import FooterNavigation from "./FooterNavigation";
 
 
 import flightImage from "/photos/flight_booking_img.jpeg"
@@ -22,11 +21,13 @@ import calendarIcon from "/icons/bell_icon.png"
 import settingsIcon from "/icons/spin-rotate.png"
 
 import "../css/Bookings.css"
+import { useNavigate } from "react-router-dom";
 
 const Bookings = () => {
   const [filter, setFilter] = useState("all");
   const [sort, setSort] = useState("upcoming");
 
+  const navigate = useNavigate();
   return (
     <>
       <aside className="desktop-sidebar">
@@ -214,7 +215,43 @@ const Bookings = () => {
         {/* Past Trips Section */}
 
 
-        <FooterNavigation />
+        <nav>
+                    <div className = 'nav-container'>
+                   <img src = {homeIcon} alt="House icon"
+                   title = "Go back home" className='nav-home'
+                   onClick = {() => navigate('/dashboard')}
+                   />
+                   <p>Home</p>
+                   </div>
+        
+                    <div className = 'nav-container'
+                    onClick = {() => navigate('/bookings')}
+                    >
+                   <img src = {bookingIcon2} alt="Search icon"
+                   title = "Book a Hotel/Cars/Destination" 
+                   className='nav-search'
+                   
+                   />
+                   <p>Bookings</p>
+                   </div>
+        
+                    <div className = 'nav-container'
+                    onClick = { () => navigate('/favorite') }
+                    >
+                   <img src = {favoriteIcon} alt="Favourite icon"
+                   title = "Favorite Flights" className='nav-favorite'
+                   
+                   />
+                   <p>Favorites</p>
+                   </div>
+        
+                    <div className = 'nav-container'>
+                   <img src = {profileIcon} alt="Profile icon"
+                   title = "Edit Profile" className='nav-profile'
+                   />
+                   <p>Profile</p>
+                   </div>
+                </nav>
       </div>
     </>
   );

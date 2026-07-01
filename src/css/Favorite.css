@@ -1,24 +1,28 @@
 .favorites-page {
   max-width: 480px;
-  margin: 0 auto;
-  background: rgb(10, 13, 20);
+  background: rgb(15, 38, 46);
   min-height: 100vh;
-  padding: 0 16px 80px 16px;
+  padding: 0 1rem;
   position: relative;
 }
 @media (min-width: 768px) {
   .favorites-page {
-    max-width: 1100px;
-    padding: 0 48px 48px 48px;
-    background: #f8f9fc;
+    max-width: 1024px;
+    padding: 0 40px 40px 40px;
+    background: rgb(15, 38, 46);
     min-height: 100vh;
     display: block;
     margin-left: 88px;
   }
 }
 .favorites-page .favorites-header {
-  padding: 20px 0 16px 0;
-  border-bottom: 1px solid #eef0f4;
+  width: 100%;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .favorites-page .favorites-header {
@@ -29,79 +33,89 @@
     gap: 24px;
   }
 }
-.favorites-page .favorites-header .brand {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  color: #0b0b1a;
-  margin-bottom: 4px;
-}
-@media (min-width: 768px) {
-  .favorites-page .favorites-header .brand {
-    font-size: 28px;
-    margin-bottom: 0;
-  }
-}
 .favorites-page .favorites-header .page-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1a1a2e;
+  font-size: 1.8rem;
+  font-weight: 550;
+  color: white;
+  letter-spacing: 1px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorites-header .page-title {
     font-size: 22px;
     font-weight: 500;
-    color: #3a3a5a;
+    color: white;
+  }
+}
+.favorites-page .favorites-header img {
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+@media (min-width: 768px) {
+  .favorites-page .favorites-header img {
+    width: 2rem;
+    height: 2rem;
   }
 }
 .favorites-page .filter-tabs {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  gap: 8px;
-  padding: 16px 0 12px 0;
-  border-bottom: 1px solid #eef0f4;
+  justify-content: space-between;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  height: 5rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
 }
 .favorites-page .filter-tabs::-webkit-scrollbar {
   display: none;
 }
 @media (min-width: 768px) {
   .favorites-page .filter-tabs {
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 20px 0 16px 0;
-    border-bottom: 1px solid #e6e9f0;
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 3.5rem;
+    gap: 4px;
+    padding: 0 6px;
+    background: rgb(44, 66, 76);
+    border-radius: 999px;
+    border: 0.5px groove rgb(180, 190, 200);
   }
 }
 .favorites-page .filter-tabs button {
   flex: 0 0 auto;
   background: transparent;
   border: none;
-  padding: 8px 16px;
-  border-radius: 100px;
+  height: auto;
+  border-radius: 10px;
   font-size: 14px;
+  width: 20%;
   font-weight: 500;
-  color: #6b6b80;
+  color: white;
   cursor: pointer;
   transition: all 0.2s;
   white-space: nowrap;
-  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
 }
 .favorites-page .filter-tabs button:hover {
-  background: #f0f2f7;
-  color: #1a1a2e;
+  background: rgb(141, 154, 160);
+  color: white;
 }
 .favorites-page .filter-tabs button.active {
-  background: #0b0b1a;
+  background: rgba(10, 13, 20, 0.55);
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(11, 11, 26, 0.12);
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   .favorites-page .filter-tabs button {
-    font-size: 15px;
-    padding: 10px 24px;
+    width: auto;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 999px;
   }
 }
 .favorites-page .favorite-section {
@@ -126,9 +140,10 @@
   grid-column: 1/-1;
 }
 .favorites-page .favorite-section .section-header h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1a1a2e;
+  font-size: 1.5rem;
+  font-weight: 550;
+  color: white;
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .section-header h3 {
@@ -136,7 +151,7 @@
   }
 }
 .favorites-page .favorite-section .section-header .badge {
-  background: #eef0f4;
+  background: rgb(141, 154, 160);
   color: #1a1a2e;
   font-size: 13px;
   font-weight: 600;
@@ -152,8 +167,8 @@
 }
 .favorites-page .favorite-section .section-header .view-all {
   margin-left: auto;
-  font-size: 13px;
-  color: #0b0b1a;
+  font-size: 1.2rem;
+  color: white;
   text-decoration: none;
   font-weight: 500;
 }
@@ -164,25 +179,27 @@
 }
 .favorites-page .favorite-section .section-header .view-all:hover {
   text-decoration: underline;
+  color: rgb(180, 190, 200);
 }
 .favorites-page .favorite-section .favorite-card {
-  background: #ffffff;
+  background: rgb(44, 66, 76);
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  border: 1px solid #eef0f4;
+  border: none;
   transition: box-shadow 0.2s;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card {
     margin-bottom: 0;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 }
 .favorites-page .favorite-section .favorite-card:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 .favorites-page .favorite-section .favorite-card .card-image {
   width: 100%;
@@ -225,8 +242,9 @@
 }
 .favorites-page .favorite-section .favorite-card .card-content .card-header h4 {
   font-size: 15px;
-  font-weight: 600;
-  color: #1a1a2e;
+  font-weight: 550;
+  color: rgb(180, 190, 200);
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .card-header h4 {
@@ -236,12 +254,13 @@
 .favorites-page .favorite-section .favorite-card .card-content .card-header .flight-class {
   font-size: 12px;
   font-weight: 500;
-  color: #6b6b80;
-  background: #f0f2f7;
+  color: white;
+  background: rgb(80, 180, 200);
   padding: 2px 10px;
-  border-radius: 100px;
+  border-radius: 10px;
   display: inline-block;
   align-self: flex-start;
+  letter-spacing: 1px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .card-header .flight-class {
@@ -251,13 +270,18 @@
 .favorites-page .favorite-section .favorite-card .card-content .card-header .rating {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 1.5rem;
   flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .favorites-page .favorite-section .favorite-card .card-content .card-header .rating {
+    gap: 8px;
+  }
 }
 .favorites-page .favorite-section .favorite-card .card-content .card-header .rating .stars {
   color: #f5a623;
   font-size: 13px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .card-header .rating .stars {
@@ -267,7 +291,7 @@
 .favorites-page .favorite-section .favorite-card .card-content .card-header .rating .rating-number {
   font-size: 14px;
   font-weight: 700;
-  color: #1a1a2e;
+  color: white;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .card-header .rating .rating-number {
@@ -276,8 +300,9 @@
 }
 .favorites-page .favorite-section .favorite-card .card-content .card-header .rating .rating-label {
   font-size: 12px;
-  color: #6b6b80;
-  font-weight: 500;
+  color: rgb(180, 190, 200);
+  font-weight: 550;
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .card-header .rating .rating-label {
@@ -286,18 +311,20 @@
 }
 .favorites-page .favorite-section .favorite-card .card-content .card-header .car-type {
   font-size: 12px;
-  font-weight: 500;
-  color: #6b6b80;
-  background: #f0f2f7;
+  font-weight: 550;
+  color: white;
+  background: rgb(80, 180, 200);
   padding: 2px 10px;
   border-radius: 100px;
   display: inline-block;
   align-self: flex-start;
+  letter-spacing: 0.5px;
 }
 .favorites-page .favorite-section .favorite-card .card-content .location {
-  font-size: 13px;
-  color: #6b6b80;
+  font-size: 1.5rem;
+  color: rgb(180, 190, 200);
   margin-bottom: 8px;
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .location {
@@ -309,7 +336,7 @@
   gap: 12px;
   margin-bottom: 8px;
   font-size: 13px;
-  color: #6b6b80;
+  color: white;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .car-specs {
@@ -317,9 +344,10 @@
   }
 }
 .favorites-page .favorite-section .favorite-card .card-content .car-specs span {
-  background: #f0f2f7;
+  background: rgb(80, 180, 200);
   padding: 2px 10px;
-  border-radius: 100px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
 }
 .favorites-page .favorite-section .favorite-card .card-content .route-details {
   display: flex;
@@ -327,8 +355,6 @@
   justify-content: space-between;
   margin: 8px 0 10px 0;
   padding: 8px 0;
-  border-top: 1px solid #f0f2f7;
-  border-bottom: 1px solid #f0f2f7;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .route-details {
@@ -344,8 +370,8 @@
 .favorites-page .favorite-section .favorite-card .card-content .route-details .origin .code,
 .favorites-page .favorite-section .favorite-card .card-content .route-details .destination .code {
   font-size: 16px;
-  font-weight: 700;
-  color: #0b0b1a;
+  font-weight: 550;
+  color: white;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .route-details .origin .code,
@@ -355,15 +381,28 @@
 }
 .favorites-page .favorite-section .favorite-card .card-content .route-details .origin .time,
 .favorites-page .favorite-section .favorite-card .card-content .route-details .destination .time {
-  font-size: 13px;
-  font-weight: 500;
-  color: #3a3a5a;
+  font-size: 1.4rem;
+  font-weight: 550;
+  color: rgb(180, 190, 200);
+}
+@media (min-width: 768px) {
+  .favorites-page .favorite-section .favorite-card .card-content .route-details .origin .time,
+  .favorites-page .favorite-section .favorite-card .card-content .route-details .destination .time {
+    font-size: 15px;
+  }
 }
 .favorites-page .favorite-section .favorite-card .card-content .route-details .origin .date,
 .favorites-page .favorite-section .favorite-card .card-content .route-details .destination .date {
-  font-size: 11px;
-  color: #6b6b80;
+  font-size: 1.6rem;
+  color: white;
   margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+@media (min-width: 768px) {
+  .favorites-page .favorite-section .favorite-card .card-content .route-details .origin .date,
+  .favorites-page .favorite-section .favorite-card .card-content .route-details .destination .date {
+    font-size: 13px;
+  }
 }
 .favorites-page .favorite-section .favorite-card .card-content .route-details .route-line {
   display: flex;
@@ -374,16 +413,23 @@
 }
 .favorites-page .favorite-section .favorite-card .card-content .route-details .route-line .duration {
   font-size: 13px;
-  font-weight: 600;
-  color: #1a1a2e;
+  font-weight: 550;
+  color: rgb(180, 190, 200);
+  letter-spacing: 0.5px;
 }
 .favorites-page .favorite-section .favorite-card .card-content .route-details .route-line .stops {
-  font-size: 11px;
-  color: #6b6b80;
-  background: #f0f2f7;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  color: white;
+  background: rgb(80, 180, 200);
   padding: 2px 8px;
   border-radius: 100px;
   margin-top: 2px;
+}
+@media (min-width: 768px) {
+  .favorites-page .favorite-section .favorite-card .card-content .route-details .route-line .stops {
+    font-size: 12px;
+  }
 }
 .favorites-page .favorite-section .favorite-card .card-content .card-footer {
   display: flex;
@@ -404,8 +450,9 @@
 }
 .favorites-page .favorite-section .favorite-card .card-content .card-footer .pricing .price {
   font-size: 18px;
-  font-weight: 700;
-  color: #0b0b1a;
+  font-weight: 550;
+  color: white;
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .card-footer .pricing .price {
@@ -415,9 +462,10 @@
 .favorites-page .favorite-section .favorite-card .card-content .card-footer .pricing .per-person,
 .favorites-page .favorite-section .favorite-card .card-content .card-footer .pricing .per-night,
 .favorites-page .favorite-section .favorite-card .card-content .card-footer .pricing .per-day {
-  font-size: 12px;
-  color: #6b6b80;
+  font-size: 1.3rem;
+  color: rgb(180, 190, 200);
   font-weight: 500;
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorite-section .favorite-card .card-content .card-footer .pricing .per-person,
@@ -428,7 +476,7 @@
 }
 .favorites-page .favorite-section .favorite-card .card-content .card-footer .pricing .original-price {
   font-size: 13px;
-  color: #b0b0c0;
+  color: rgb(180, 190, 200);
   text-decoration: line-through;
   margin-left: 4px;
 }
@@ -440,11 +488,12 @@
 .favorites-page .favorite-section .favorite-card .card-content .card-footer .view-details {
   font-size: 13px;
   font-weight: 500;
-  color: #0b0b1a;
+  color: white;
+  letter-spacing: 0.5px;
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 100px;
-  background: #f0f2f7;
+  background: rgb(80, 180, 200);
   transition: background 0.2s;
 }
 @media (min-width: 768px) {
@@ -459,7 +508,6 @@
 .favorites-page .favorites-footer {
   margin-top: 32px;
   padding-top: 24px;
-  border-top: 1px solid #eef0f4;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -469,9 +517,10 @@
   }
 }
 .favorites-page .favorites-footer p {
-  font-size: 13px;
-  color: #6b6b80;
+  font-size: 1.3rem;
+  color: rgb(180, 190, 200);
   margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   .favorites-page .favorites-footer p {
@@ -480,17 +529,18 @@
 }
 .favorites-page .favorites-footer .logout {
   font-size: 14px;
-  color: #0b0b1a;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   padding: 8px 24px;
-  border: 1px solid #d0d4dd;
-  border-radius: 100px;
+  border: 0.5px groove rgb(180, 190, 200);
+  border-radius: 10px;
   display: inline-block;
   transition: all 0.2s;
 }
 .favorites-page .favorites-footer .logout:hover {
-  background: #f0f2f7;
+  background: rgb(44, 66, 76);
+  color: black;
   border-color: #0b0b1a;
 }
 .favorites-page .mobile-bottom-nav {
@@ -547,4 +597,13 @@
 }
 .favorites-page .mobile-bottom-nav .nav-item:hover img {
   opacity: 0.9;
+}
+
+#flight-price {
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  #flight-price {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=Favorite.css.map */
