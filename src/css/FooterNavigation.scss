@@ -26,6 +26,7 @@ $font-xl:   clamp(2rem, 2.5vw, 2.5rem);
 
 
 nav{
+    position: static;
     border: none;
     background-color: $bg-color4;
     width: 100%;

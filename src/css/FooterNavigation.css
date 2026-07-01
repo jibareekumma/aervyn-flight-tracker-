@@ -1,4 +1,5 @@
 nav {
+  position: static;
   border: none;
   background-color: rgb(44, 66, 76);
   width: 100%;

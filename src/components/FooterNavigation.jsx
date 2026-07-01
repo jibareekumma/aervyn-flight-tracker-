@@ -26,6 +26,7 @@ const FooterNavigation = function(){
             <div className = 'nav-container'>
            <img src = {homeIcon} alt="House icon"
            title = "Go back home" className='nav-home'
+           onClick = {() => navigate('/dashboard')}
            />
            <p>Home</p>
            </div>

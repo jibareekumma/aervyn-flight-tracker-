@@ -61,10 +61,15 @@
 }
 @media (min-width: 768px) {
   .booking-page .filter-tabs {
-    width: 70%;
-    flex-wrap: wrap;
-    gap: 12px;
-    border-bottom: 1px solid #e6e9f0;
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 4px;
+    height: 3.5rem;
+    padding: 0 6px;
+    border-radius: 999px;
+    border: 0.5px groove rgb(180, 190, 200);
   }
 }
 .booking-page .filter-tabs button {
@@ -93,8 +98,11 @@
 }
 @media (min-width: 768px) {
   .booking-page .filter-tabs button {
-    font-size: 15px;
-    padding: 10px 24px;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 999px;
   }
 }
 .booking-page .trip-section {
@@ -103,15 +111,9 @@
 @media (min-width: 768px) {
   .booking-page .trip-section {
     margin-top: 32px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-  }
-  .booking-page .trip-section:first-of-type {
-    grid-template-columns: 1fr 1fr;
-  }
-  .booking-page .trip-section.past {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 .booking-page .trip-section .section-header {
@@ -119,7 +121,6 @@
   flex-direction: row;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
-  border: 2px solid white;
 }
 .booking-page .trip-section .section-header h3 {
   font-size: 1.35rem;
@@ -150,70 +151,124 @@
   }
 }
 .booking-page .trip-section .trip-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 16px;
+  background-color: rgb(44, 66, 76);
+  color: white;
+  padding: 0.5rem;
   margin-bottom: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  border: 1px solid #eef0f4;
   transition: box-shadow 0.2s;
+  border-radius: 10px;
 }
 @media (min-width: 768px) {
   .booking-page .trip-section .trip-card {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 100px 230px 1fr 170px;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 2px;
+    padding: 16px 20px;
     margin-bottom: 0;
-    border-radius: 20px;
+    border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 }
 .booking-page .trip-section .trip-card:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
+.booking-page .trip-section .trip-card .container {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .booking-page .trip-section .trip-card .container {
+    display: contents;
+  }
+}
+.booking-page .trip-section .trip-card .container img {
+  width: 35%;
+  height: 16rem;
+  margin-right: 1.5rem;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .booking-page .trip-section .trip-card .container img {
+    grid-column: 1;
+    grid-row: 1/span 3;
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    border-radius: 12px;
+  }
+}
+.booking-page .trip-section .trip-card .container .trip-container {
+  width: 65%;
+}
+@media (min-width: 768px) {
+  .booking-page .trip-section .trip-card .container .trip-container {
+    display: contents;
+    width: auto;
+  }
+}
 .booking-page .trip-section .trip-card .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
+  color: white;
+}
+@media (min-width: 768px) {
+  .booking-page .trip-section .trip-card .card-header {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
 }
 .booking-page .trip-section .trip-card .card-header .trip-type {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 550;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #6b6b80;
-  background: #f0f2f7;
+  color: white;
+  background: rgb(80, 180, 200);
   padding: 2px 10px;
-  border-radius: 100px;
+  border-radius: 15px;
 }
 @media (min-width: 768px) {
   .booking-page .trip-section .trip-card .card-header .trip-type {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .booking-page .trip-section .trip-card .card-header .price {
-  font-size: 18px;
-  font-weight: 700;
-  color: #0b0b1a;
+  font-size: 1.7rem;
+  font-weight: 550;
+  color: white;
+  letter-spacing: 1px;
 }
 @media (min-width: 768px) {
   .booking-page .trip-section .trip-card .card-header .price {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .booking-page .trip-section .trip-card h4 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a1a2e;
+  font-size: 1.5rem;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  color: white;
   margin-bottom: 4px;
 }
 @media (min-width: 768px) {
   .booking-page .trip-section .trip-card h4 {
-    font-size: 18px;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 17px;
+    margin-bottom: 0;
   }
 }
 .booking-page .trip-section .trip-card .trip-meta {
   font-size: 13px;
-  color: #6b6b80;
+  color: rgb(180, 190, 200);
   display: flex;
   flex-wrap: wrap;
   gap: 4px 12px;
@@ -221,9 +276,15 @@
 }
 @media (min-width: 768px) {
   .booking-page .trip-section .trip-card .trip-meta {
-    font-size: 14px;
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 13px;
     gap: 6px 16px;
+    margin-bottom: 0;
   }
+}
+.booking-page .trip-section .trip-card .route-details .airport {
+  width: 20%;
 }
 .booking-page .trip-section .trip-card .location {
   font-size: 13px;
@@ -247,12 +308,19 @@
   justify-content: space-between;
   margin: 12px 0 12px 0;
   padding: 8px 0;
-  border-top: 1px solid #f0f2f7;
-  border-bottom: 1px solid #f0f2f7;
+  border-top: 0.5px groove rgb(180, 190, 200);
+  border-bottom: 0.5px groove rgb(180, 190, 200);
 }
 @media (min-width: 768px) {
   .booking-page .trip-section .trip-card .route-details {
-    margin: 14px 0 14px 0;
+    grid-column: 3;
+    grid-row: 1/span 3;
+    margin: 0;
+    padding: 0 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: 0.5px groove rgb(180, 190, 200);
+    border-right: 0.5px groove rgb(180, 190, 200);
   }
 }
 .booking-page .trip-section .trip-card .route-details .airport {
@@ -261,9 +329,10 @@
   align-items: center;
 }
 .booking-page .trip-section .trip-card .route-details .airport .code {
-  font-size: 16px;
-  font-weight: 700;
-  color: #0b0b1a;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 550;
+  color: white;
 }
 @media (min-width: 768px) {
   .booking-page .trip-section .trip-card .route-details .airport .code {
@@ -271,14 +340,26 @@
   }
 }
 .booking-page .trip-section .trip-card .route-details .airport .time {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 500;
-  color: #3a3a5a;
+  color: rgb(180, 190, 200);
+  letter-spacing: 0.5px;
+}
+@media (min-width: 768px) {
+  .booking-page .trip-section .trip-card .route-details .airport .time {
+    font-size: 15px;
+  }
 }
 .booking-page .trip-section .trip-card .route-details .airport .city {
-  font-size: 11px;
-  color: #6b6b80;
+  font-size: 1.1rem;
+  color: rgb(180, 190, 200);
   margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+@media (min-width: 768px) {
+  .booking-page .trip-section .trip-card .route-details .airport .city {
+    font-size: 13px;
+  }
 }
 .booking-page .trip-section .trip-card .route-details .route-line {
   display: flex;
@@ -288,12 +369,18 @@
   padding: 0 8px;
 }
 .booking-page .trip-section .trip-card .route-details .route-line .stops {
-  font-size: 12px;
-  font-weight: 500;
-  color: #3a3a5a;
-  background: #f0f2f7;
+  font-size: 1.3rem;
+  font-weight: 550;
+  color: white;
+  background: rgb(80, 180, 200);
+  letter-spacing: 0.5px;
   padding: 2px 10px;
-  border-radius: 100px;
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .booking-page .trip-section .trip-card .route-details .route-line .stops {
+    font-size: 12px;
+  }
 }
 .booking-page .trip-section .trip-card .route-details .route-line .direct {
   font-size: 12px;
@@ -313,120 +400,81 @@
 }
 @media (min-width: 768px) {
   .booking-page .trip-section .trip-card .card-footer {
-    font-size: 14px;
-    margin-top: 16px;
+    grid-column: 4;
+    grid-row: 1/span 3;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 0;
+    font-size: 13px;
   }
 }
 .booking-page .trip-section .trip-card .card-footer .ref {
   font-weight: 500;
-  color: #3a3a5a;
+  color: white;
+  letter-spacing: 0.5px;
+}
+@media (min-width: 768px) {
+  .booking-page .trip-section .trip-card .card-footer .ref {
+    background: rgba(80, 180, 200, 0.12);
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 11px;
+  }
 }
 .booking-page .trip-section .trip-card .card-footer .class {
   font-weight: 500;
-  color: #0b0b1a;
-  background: #f0f2f7;
+  color: white;
+  background: rgb(80, 180, 200);
   padding: 2px 12px;
-  border-radius: 100px;
+  border-radius: 15px;
+  letter-spacing: 0.5px;
 }
-.booking-page .trip-section .trip-card.past-flight, .booking-page .trip-section .trip-card.past-hotel {
-  opacity: 0.85;
-  background: #fafbfc;
-}
-.booking-page .trip-section .trip-card.past-flight .card-header .price, .booking-page .trip-section .trip-card.past-hotel .card-header .price {
-  color: #6b6b80;
-}
-.booking-page .help-center {
-  margin: 32px 0 16px 0;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .booking-page .help-center {
-    margin: 48px 0 24px 0;
-  }
-}
-.booking-page .help-center a {
-  font-size: 14px;
-  color: #0b0b1a;
-  font-weight: 500;
-  text-decoration: none;
-  border-bottom: 1px solid #d0d4dd;
-  padding-bottom: 2px;
-}
-@media (min-width: 768px) {
-  .booking-page .help-center a {
-    font-size: 15px;
-  }
-}
-.booking-page .help-center a:hover {
-  border-bottom-color: #0b0b1a;
-}
-.booking-page .mobile-bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  border-top: 1px solid #eef0f4;
+.booking-page .card-info-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 2rem;
   align-items: center;
-  padding: 8px 0 env(safe-area-inset-bottom, 8px) 0;
-  z-index: 100;
-  max-width: 480px;
-  margin: 0 auto;
+  padding: 0;
+  margin-left: -1rem;
+  height: 7rem;
+  border-top: 0.5px groove rgb(180, 190, 200);
+  border-bottom: 0.5px groove rgb(180, 190, 200);
+}
+.booking-page .card-info-container p {
+  font-size: 1.3rem;
+  margin-left: -1rem;
+  letter-spacing: 0.6px;
+  color: rgb(180, 190, 200);
 }
 @media (min-width: 768px) {
-  .booking-page .mobile-bottom-nav {
-    display: none;
+  .booking-page .card-info-container {
+    grid-column: 3;
+    grid-row: 1/span 3;
+    margin-top: 0;
+    margin-left: 0;
+    height: auto;
+    padding: 0 20px;
+    border-top: none;
+    border-bottom: none;
+    border-left: 0.5px groove rgb(180, 190, 200);
+    border-right: 0.5px groove rgb(180, 190, 200);
   }
-}
-.booking-page .mobile-bottom-nav .nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  background: transparent;
-  border: none;
-  font-size: 10px;
-  color: #6b6b80;
-  cursor: pointer;
-  padding: 4px 12px;
-  font-family: "Inter", sans-serif;
-  transition: color 0.2s;
-}
-.booking-page .mobile-bottom-nav .nav-item img {
-  width: 24px;
-  height: 24px;
-  opacity: 0.6;
-  transition: opacity 0.2s;
-}
-.booking-page .mobile-bottom-nav .nav-item span {
-  font-weight: 500;
-}
-.booking-page .mobile-bottom-nav .nav-item.active {
-  color: #0b0b1a;
-}
-.booking-page .mobile-bottom-nav .nav-item.active img {
-  opacity: 1;
-}
-.booking-page .mobile-bottom-nav .nav-item:hover {
-  color: #0b0b1a;
-}
-.booking-page .mobile-bottom-nav .nav-item:hover img {
-  opacity: 0.9;
-}
-@media (min-width: 768px) {
-  .booking-page .trip-section:first-of-type .trip-card {
-    width: 100%;
-  }
-  .booking-page .trip-section.past .trip-card {
-    width: 100%;
+  .booking-page .card-info-container p {
+    font-size: 14px;
+    margin-left: 0.5rem;
   }
 }
 
+#card-info-icon {
+  width: 3rem;
+  height: 3rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
 @media (min-width: 768px) {
-  .booking-page {
-    max-width: 1100px;
-    padding: 0 48px 48px 48px;
+  #card-info-icon {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }/*# sourceMappingURL=Bookings.css.map */
