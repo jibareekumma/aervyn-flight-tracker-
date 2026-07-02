@@ -86,7 +86,8 @@ const HotelDetails = function ({
                 <div className='details-wrapper'>
 
                     <div className='hotel-header'>
-                        {renderImage(selectedHotel.image, "Image of hotel", "hotel-image")}
+                        {renderImage(selectedHotel.image, 
+                            "Image of hotel", "hotel-image")}
                         <div className="text">
                             <h5>{selectedHotel.name}</h5>
                             <div className='stars-row'>

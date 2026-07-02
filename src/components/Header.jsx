@@ -5,6 +5,8 @@ import { supabase } from "../lib/supabaseClient"
 import pfp from "/photos/pfp 1.jpg"
 import "../css/Header.css"
 
+import UserProfile from "./UserProfile"
+
 
 import bellIcon from "/icons/bell_icon.png"
 import favoriteIcon from "/icons/favorite_icon.png"
@@ -66,6 +68,9 @@ const Header = function({ activeTabs, setActiveTabs } ){
             onClick = {() => setActiveTabs("cars")}>
             Cars</div>
     </section>
+    <UserProfile 
+        profileImg = {pfp}
+    />
 </>
    
 }

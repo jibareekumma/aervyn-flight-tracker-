@@ -320,6 +320,7 @@ const Favorite = () => {
           <div className='nav-container'>
             <img src={profileIcon} alt="Profile icon"
               title="Edit Profile" className='nav-profile'
+              onClick = {() => navigate('/profile')}
             />
             <p>Profile</p>
           </div>

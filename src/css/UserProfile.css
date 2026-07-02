@@ -1,0 +1,119 @@
+.profile-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 3rem;
+}
+
+.profile-header {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.profile-header h4 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 550;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+  gap: 1rem;
+  background-color: rgb(44, 66, 76);
+  border-radius: 10px;
+}
+.profile-details:hover {
+  border: 0.5px solid rgba(80, 180, 200, 0.12);
+}
+.profile-details .profile-avatar {
+  position: relative;
+  width: 9rem;
+  height: 9rem;
+}
+.profile-details .profile-avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.profile-details .profile-avatar .icon-container {
+  position: absolute;
+  right: -4px;
+  bottom: 2px;
+  height: 2.8rem;
+  width: 2.8rem;
+  background-color: rgb(10, 13, 20);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-details .profile-avatar .icon-container:hover {
+  cursor: pointer;
+}
+.profile-details .profile-avatar .icon-container img {
+  width: 2.8rem;
+  height: 2.8rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.profile-details h4 {
+  letter-spacing: 0.5px;
+  font-size: 1.6rem;
+  word-spacing: 1px;
+  font-weight: 550;
+}
+.profile-details p {
+  letter-spacing: 0.5px;
+  color: rgb(180, 190, 200);
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.profile-details p:hover {
+  cursor: pointer;
+  color: rgb(80, 180, 200);
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(44, 66, 76);
+  border-radius: 10px;
+  border: none;
+}
+.profile-links .link-item {
+  display: flex;
+  padding: 1.5rem 1rem;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(80, 180, 200, 0.12);
+  align-items: center;
+}
+.profile-links .link-item:hover {
+  cursor: pointer;
+  background-color: rgb(141, 154, 160);
+}
+.profile-links .link-item img {
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+.profile-links .link-item p {
+  letter-spacing: 0.5px;
+  font-size: 1.4rem;
+  font-weight: 550;
+  word-spacing: 1px;
+  width: 70%;
+  justify-self: flex-start;
+}
+.profile-links .link-item-last {
+  border-bottom: none;
+}/*# sourceMappingURL=UserProfile.css.map */

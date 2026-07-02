@@ -1,13 +1,20 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
+
+
 import Login from "./components/Login"
 import Register from "./components/Register"
 import Intro from "./components/Intro"
 import Dashboard from './components/Dashboard'
 import Favorite from './components/Favorite'
 import Bookings from './components/Bookings'
+import UserProfile from './components/UserProfile'
+
+
 import FlightResult from './components/resultPages/FlightResult'
 import HotelResult from './components/resultPages/HotelResult'
 import CarResult from './components/resultPages/CarResult'
+
+
 import { useAuth } from './context/AuthContext'
 import { FavoritesProvider } from './context/FavoriteContext'
 function App() {
@@ -30,6 +37,8 @@ function App() {
         <Route path = '/carResult' element = {<CarResult/>} />
         <Route path = '/favorite' element = {<Favorite/>} />
         <Route path = '/bookings' element = {<Bookings/>} />
+
+        <Route path = '/profile' element = {<UserProfile/>} />
       </Routes>
       </FavoritesProvider>
     </>
