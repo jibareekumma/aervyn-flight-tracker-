@@ -1,5 +1,6 @@
 
 
+
 import pfp from "/photos/pfp 1.jpg"
 
 
@@ -14,13 +15,55 @@ import openIcon from "/icons/open_icon.png"
 import homeIcon from "/icons/home_icon.png"
 import profileIcon from "/icons/profile_icon 2.png"
 import bookingIcon2 from "/icons/booking_icon2.png"
+import calendarIcon from "/icons/bell_icon.png"
+import settingsIcon from "/icons/spin-rotate.png"
+import mainIcon from "/icons/main-icon.png"
 
 
 
 import "../css/UserProfile.css"
-const UserProfile = function(  ){
+import { useNavigate } from "react-router-dom"
+const UserProfile = function(){
+
+const navigate = useNavigate();
 
     return<>
+        <div className = 'profile-layout'>
+
+            <aside className="desktop-sidebar">
+                <div className="sidebar-top">
+                    <img src = {mainIcon}
+                    alt="logo" className="sidebar-logo" />
+                </div>
+
+                <div className="sidebar-icons">
+                    <div className="sidebar-icon"
+                    onClick = {() => navigate('/dashboard')}>
+                        <img src={homeIcon} alt="home" />
+                    </div>
+                    <div className="sidebar-icon"
+                    onClick = {() => navigate('/bookings')}>
+                        <img src={bookingIcon2} alt="bookings" />
+                    </div>
+                    <div className="sidebar-icon">
+                        <img src={calendarIcon} alt="calendar" />
+                    </div>
+                    <div className="sidebar-icon"
+                    onClick = {() => navigate('/favorite')}>
+                        <img src={favoriteIcon} alt="favorites" />
+                    </div>
+                    <div className="sidebar-icon active">
+                        <img src={profileIcon} alt="profile" />
+                    </div>
+                </div>
+
+                <div className="sidebar-bottom">
+                    <div className="sidebar-icon">
+                        <img src={settingsIcon} alt="settings" />
+                    </div>
+                </div>
+            </aside>
+
         <div className = 'profile-container'>
 
 
@@ -103,7 +146,7 @@ const UserProfile = function(  ){
             </div>
 
 
-            <nav>
+                    <nav>
                         <div className = 'nav-container'>
                        <img src = {homeIcon} alt="House icon"
                        title = "Go back home" className='nav-home'
@@ -141,6 +184,7 @@ const UserProfile = function(  ){
                        <p>Profile</p>
                        </div>
                     </nav>
+        </div>
         </div>
     </>
 }

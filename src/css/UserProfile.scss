@@ -170,3 +170,106 @@ $border-subtle: rgba(255, 255, 255, 0.07);
 
 
 
+.profile-layout{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.desktop-sidebar{
+    display: none;
+}
+
+@media (min-width: 968px){
+
+    .desktop-sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 6.5rem;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        background-color: $bg-color1;
+        padding: 2rem 0;
+        border-right: 1px solid $border-subtle;
+
+        .sidebar-top{
+            display: flex;
+            justify-content: center;
+
+            .sidebar-logo{
+                width: 3rem;
+                height: 3rem;
+                object-fit: contain;
+            }
+        }
+
+        .sidebar-icons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .sidebar-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: $transix-fast;
+
+            img{
+                width: 1.8rem;
+                height: 1.8rem;
+                filter: $filter-white-lighter;
+            }
+
+            &:hover{
+                background-color: $card-hover;
+            }
+
+            &.active{
+                background-color: $accent-dim;
+
+                img{
+                    filter: $filter-blue;
+                }
+            }
+        }
+
+        .sidebar-bottom{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .profile-container{
+        flex: 1;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+        max-width: 40rem;
+        margin: 0 auto;
+        gap: 2.5rem;
+    }
+
+    .profile-header{
+        justify-content: flex-start;
+    }
+
+    .profile-details{
+        .profile-avatar{
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+
+    nav{
+        display: none;
+    }
+}
