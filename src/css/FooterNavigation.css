@@ -1,5 +1,6 @@
 nav {
-  position: static;
+  position: sticky;
+  bottom: 0;
   border: none;
   background-color: rgb(44, 66, 76);
   width: 100%;

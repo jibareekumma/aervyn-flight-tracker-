@@ -9,6 +9,7 @@ import rightArrow from "/icons/right_arr.png"
 
 import "../../css/FlightDetail.css"
 import { useEffect } from "react"
+import { useFavorites } from "../../context/FavoriteContext"
 
 const FlightDetails = function ({
     isOpen,
@@ -20,6 +21,9 @@ const FlightDetails = function ({
     getInitials,
     getAirlineColor
 }) {
+
+    const { isFavorite, toggleFavorite } = useFavorites()
+    const flightIsFavorited = selectedFlight ? isFavorite(selectedFlight, "flight") : false
 
     useEffect(() => {
         if (selectedFlight) {
@@ -34,6 +38,11 @@ const FlightDetails = function ({
 
     const formatPrice = function (priceUSD) {
         return `$${priceUSD}`
+    }
+
+    const handleFavoriteClick = function (e) {
+        e.stopPropagation()
+        toggleFavorite(selectedFlight, "flight")
     }
 
     const renderAirlineLogo = function (airlineCode, airlineName, sizeClass) {
@@ -72,7 +81,6 @@ const FlightDetails = function ({
             {selectedFlight && (
                 <div className='details-wrapper'>
 
-                    {/* ── HEADER ── airline logo, name, code, icons */}
                     <div className='details-header'>
                         <div className='header'>
                             {renderAirlineLogo(selectedFlight.airlineCode, selectedFlight.airlineName)}
@@ -82,9 +90,9 @@ const FlightDetails = function ({
                             </div>
                         </div>
                         <div className='icons-container'>
-                            <div className="icon-item" title="Add to favorites">
+                            <div className="icon-item" title="Add to favorites" onClick={handleFavoriteClick}>
                                 <img src={favoriteIcon} alt="Favourite Icon" loading="lazy"
-                                    className="bottom-sheet-icon"
+                                    className={`bottom-sheet-icon ${flightIsFavorited ? 'favorited' : ''}`}
                                 />
                             </div>
                             <div className="icon-item" title="Share Flight">
@@ -94,9 +102,7 @@ const FlightDetails = function ({
                             </div>
                         </div>
                     </div>
-                    {/* ── END HEADER ── */}
 
-                    {/* ── PRICE ── price per person */}
                     <div className="details-price">
                         <div className='price'>
                             <h4>{formatPrice(selectedFlight.priceUSD)}</h4>
@@ -110,9 +116,7 @@ const FlightDetails = function ({
                             <p className='weight-p'>{selectedFlight.availableSeats} seats left</p>
                         </div>
                     </div>
-                    {/* ── END PRICE ── */}
 
-                    {/* ── FLIGHT TIMELINE ── direct route, no stops */}
                     <div className="flightTimeline">
                         <div className="flightTimeline__route">
                             <div className="flightTimeline__airport flightTimeline__airport--left">
@@ -144,9 +148,7 @@ const FlightDetails = function ({
                             <span>{selectedFlight.arrivalTime}</span>
                         </div>
                     </div>
-                    {/* ── END FLIGHT TIMELINE ── */}
 
-                    {/* ── FLIGHT DETAILS CARD ── departure, arrival */}
                     <div className="flightDetailsCard">
                         <div className="flightDetailsCard__header">
                             <h3>Flight Details</h3>
@@ -180,9 +182,7 @@ const FlightDetails = function ({
 
                         </div>
                     </div>
-                    {/* ── END FLIGHT DETAILS CARD ── */}
 
-                    {/* ── CLASS DETAILS ── seat, cabin class */}
                     <div className='class-details'>
                         <div className='details-icon'>
                             <img src={seatIcon} alt="passenger seat" loading="lazy" />
@@ -196,9 +196,7 @@ const FlightDetails = function ({
                             </div>
                         </div>
                     </div>
-                    {/* ── END CLASS DETAILS ── */}
 
-                    {/* ── VENDORS ── available booking options */}
                     <div className="details-vendor">
                         <h4>Available Vendors</h4>
                         <div className="container">
@@ -215,13 +213,13 @@ const FlightDetails = function ({
                             </div>
                         </div>
                     </div>
-                    {/* ── END VENDORS ── */}
 
-                    {/* ── FOOTER ── favorite, share, book now */}
                     <div className="details-footer">
-                        <div className="favorite">
+                        <div className="favorite" onClick={handleFavoriteClick}>
                             <img src={favoriteIcon} alt="Favorite Icon"
-                                loading="lazy" title="Add to favorite" />
+                                loading="lazy" title="Add to favorite"
+                                className={flightIsFavorited ? 'favorited' : ''}
+                            />
                         </div>
                         <div className="share">
                             <img src={shareIcon} alt="Share Icon"
@@ -233,7 +231,6 @@ const FlightDetails = function ({
                             <img src={rightArrow} alt="Right Arrow" loading="lazy" />
                         </button>
                     </div>
-                    {/* ── END FOOTER ── */}
 
                 </div>
             )}
@@ -246,7 +243,6 @@ const FlightDetails = function ({
             {selectedFlight && (
                 <div className='modal-wrapper'>
 
-                    {/* ── TOP ── airline logo, name, verified badge, favorite/share icons */}
                     <div className='modal-top'>
                         <div className='modal-top-left'>
                             {renderAirlineLogo(selectedFlight.airlineCode, selectedFlight.airlineName)}
@@ -256,17 +252,17 @@ const FlightDetails = function ({
                             </div>
                         </div>
                         <div className='modal-top-right'>
-                            <div className="icon-item" title="Add to favorites">
-                                <img src={favoriteIcon} alt="Favourite Icon" loading="lazy" />
+                            <div className="icon-item" title="Add to favorites" onClick={handleFavoriteClick}>
+                                <img src={favoriteIcon} alt="Favourite Icon" loading="lazy"
+                                    className={flightIsFavorited ? 'favorited' : ''}
+                                />
                             </div>
                             <div className="icon-item" title="Share Flight">
                                 <img src={shareIcon} alt="Share Icon" loading="lazy" />
                             </div>
                         </div>
                     </div>
-                    {/* ── END TOP ── */}
 
-                    {/* ── ROUTE ── direct origin to destination */}
                     <div className='modal-route'>
                         <div className='route-point'>
                             <h3>{selectedFlight.departureTime}</h3>
@@ -294,9 +290,7 @@ const FlightDetails = function ({
                             <small>{selectedFlight.arrivalDate}</small>
                         </div>
                     </div>
-                    {/* ── END ROUTE ── */}
 
-                    {/* ── META ROW ── duration, stops, cabin class */}
                     <div className='modal-meta'>
                         <div className='meta-item'>
                             <img src={spinRotate} alt="duration icon" />
@@ -322,12 +316,9 @@ const FlightDetails = function ({
                             </div>
                         </div>
                     </div>
-                    {/* ── END META ROW ── */}
 
-                    {/* ── BODY ── flight leg on left, price/vendors on right */}
                     <div className='modal-body'>
 
-                        {/* ── FLIGHT LEG ── */}
                         <div className='modal-legs'>
                             <h4>Flight Details</h4>
 
@@ -357,9 +348,7 @@ const FlightDetails = function ({
                                 </div>
                             </div>
                         </div>
-                        {/* ── END FLIGHT LEG ── */}
 
-                        {/* ── SIDE ── price, baggage, vendors */}
                         <div className='modal-side'>
 
                             <div className='side-card'>
@@ -394,19 +383,18 @@ const FlightDetails = function ({
                             </div>
 
                         </div>
-                        {/* ── END SIDE ── */}
 
                     </div>
-                    {/* ── END BODY ── */}
 
-                    {/* ── FOOTER ── favorite, share, book now, disclaimer */}
                     <div className="modal-footer">
                         <div className='footer-top'>
-                            <div className="favorite">
+                            <div className="favorite" onClick={handleFavoriteClick}>
                                 <img src={favoriteIcon}
                                     alt="Favorite Icon"
-                                    loading="lazy" title="Add to favorite" />
-                                <p>Add to Favorites</p>
+                                    loading="lazy" title="Add to favorite"
+                                    className={flightIsFavorited ? 'favorited' : ''}
+                                />
+                                <p>{flightIsFavorited ? 'Added to Favorites' : 'Add to Favorites'}</p>
                             </div>
                             <div className="share">
                                 <img src={shareIcon} alt="Share Icon"
@@ -425,7 +413,6 @@ const FlightDetails = function ({
                             redirected to the vendor's site to
                             complete booking</p>
                     </div>
-                    {/* ── END FOOTER ── */}
 
                 </div>
             )}

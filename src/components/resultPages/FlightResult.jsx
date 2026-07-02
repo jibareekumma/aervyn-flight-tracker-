@@ -19,6 +19,9 @@ import settingsIcon from "/icons/spin-rotate.png"
 
 import FlightDetails from "./FlightDetails"
 
+
+
+
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 

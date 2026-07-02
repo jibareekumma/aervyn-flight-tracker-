@@ -13,6 +13,7 @@ import mealIcon from "/icons/meal_icon.png"
 
 import "../../css/HotelDetails.css"
 import { useEffect } from "react"
+import { useFavorites } from "../../context/FavoriteContext"
 
 const HotelDetails = function ({
     isOpen,
@@ -22,6 +23,9 @@ const HotelDetails = function ({
     imageErrors,
     onImageError
 }) {
+
+    const { isFavorite, toggleFavorite } = useFavorites()
+    const hotelIsFavorited = selectedHotel ? isFavorite(selectedHotel, "hotel") : false
 
     useEffect(() => {
         if (selectedHotel) {
@@ -33,6 +37,11 @@ const HotelDetails = function ({
             document.body.style.overflow = ""
         }
     }, [selectedHotel])
+
+    const handleFavoriteClick = function (e) {
+        e.stopPropagation()
+        toggleFavorite(selectedHotel, "hotel")
+    }
 
     const amenityIcons = {
         "Free WiFi": wifiIcon,
@@ -76,7 +85,6 @@ const HotelDetails = function ({
             {selectedHotel && (
                 <div className='details-wrapper'>
 
-                    {/* ── HEADER ── hotel image, name, rating, address */}
                     <div className='hotel-header'>
                         {renderImage(selectedHotel.image, "Image of hotel", "hotel-image")}
                         <div className="text">
@@ -97,9 +105,7 @@ const HotelDetails = function ({
                             </div>
                         </div>
                     </div>
-                    {/* ── END HEADER ── */}
 
-                    {/* ── STAY INFO ── check-in, check-out, guests */}
                     <div className="stay-info">
                         <div className='stay-info-item'>
                             <p>Check-in</p>
@@ -114,9 +120,7 @@ const HotelDetails = function ({
                             <h6>{selectedHotel.guests}</h6>
                         </div>
                     </div>
-                    {/* ── END STAY INFO ── */}
 
-                    {/* ── AMENITIES ── pill icons */}
                     <div className='amenities'>
                         <h4>Amenities</h4>
                         <div className='amenities-pecs'>
@@ -134,9 +138,7 @@ const HotelDetails = function ({
                             )}
                         </div>
                     </div>
-                    {/* ── END AMENITIES ── */}
 
-                    {/* ── ROOM TYPES ── */}
                     <div className='room-types'>
                         <h4>Room Types</h4>
                         {selectedHotel.rooms.map(room => (
@@ -157,13 +159,13 @@ const HotelDetails = function ({
                             </div>
                         ))}
                     </div>
-                    {/* ── END ROOM TYPES ── */}
 
-                    {/* ── FOOTER ── favorite, share, reserve now */}
                     <div className="details-footer">
-                        <div className="favorite">
+                        <div className="favorite" onClick={handleFavoriteClick}>
                             <img src={favoriteIcon} alt="Favorite Icon"
-                                loading="lazy" title="Add to favorite" />
+                                loading="lazy" title="Add to favorite"
+                                className={hotelIsFavorited ? 'favorited' : ''}
+                            />
                         </div>
                         <div className="share">
                             <img src={shareIcon}
@@ -181,7 +183,6 @@ const HotelDetails = function ({
                                 alt="Right Arrow" loading="lazy" />
                         </button>
                     </div>
-                    {/* ── END FOOTER ── */}
 
                 </div>
             )}
@@ -194,7 +195,6 @@ const HotelDetails = function ({
             {selectedHotel && (
                 <div className='modal-wrapper'>
 
-                    {/* ── TOP ── hotel image, name, rating, address, favorite/share icons */}
                     <div className='modal-top'>
                         <div className='modal-top-left'>
                             {renderImage(selectedHotel.image, "Image of hotel", "hotel-image")}
@@ -219,9 +219,11 @@ const HotelDetails = function ({
                         </div>
                         <div className='modal-top-right'>
                             <div className="icon-item"
-                                title="Add to favorites">
+                                title="Add to favorites" onClick={handleFavoriteClick}>
                                 <img src={favoriteIcon}
-                                    alt="Favourite Icon" loading="lazy" />
+                                    alt="Favourite Icon" loading="lazy"
+                                    className={hotelIsFavorited ? 'favorited' : ''}
+                                />
                             </div>
                             <div className="icon-item"
                                 title="Share Hotel">
@@ -230,9 +232,7 @@ const HotelDetails = function ({
                             </div>
                         </div>
                     </div>
-                    {/* ── END TOP ── */}
 
-                    {/* ── STAY INFO ── check-in, check-out, guests */}
                     <div className="stay-info">
                         <div className='stay-info-item'>
                             <p>Check-in</p>
@@ -247,12 +247,9 @@ const HotelDetails = function ({
                             <h6>{selectedHotel.guests}</h6>
                         </div>
                     </div>
-                    {/* ── END STAY INFO ── */}
 
-                    {/* ── BODY ── amenities + room types on left, price/policies on right */}
                     <div className='modal-body'>
 
-                        {/* ── LEFT ── amenities, room types */}
                         <div className='modal-main'>
 
                             <div className='amenities'>
@@ -289,9 +286,7 @@ const HotelDetails = function ({
                             </div>
 
                         </div>
-                        {/* ── END LEFT ── */}
 
-                        {/* ── RIGHT ── price card, cancellation policy */}
                         <div className='modal-side'>
 
                             <div className='side-card'>
@@ -307,19 +302,18 @@ const HotelDetails = function ({
                             </div>
 
                         </div>
-                        {/* ── END RIGHT ── */}
 
                     </div>
-                    {/* ── END BODY ── */}
 
-                    {/* ── FOOTER ── favorite, share, reserve now, disclaimer */}
                     <div className="modal-footer">
                         <div className='footer-top'>
-                            <div className="favorite">
+                            <div className="favorite" onClick={handleFavoriteClick}>
                                 <img src={favoriteIcon}
                                     alt="Favorite Icon"
-                                    loading="lazy" title="Add to favorite" />
-                                <p>Add to Favorites</p>
+                                    loading="lazy" title="Add to favorite"
+                                    className={hotelIsFavorited ? 'favorited' : ''}
+                                />
+                                <p>{hotelIsFavorited ? 'Added to Favorites' : 'Add to Favorites'}</p>
                             </div>
                             <div className="share">
                                 <img src={shareIcon} alt="Share Icon"
@@ -338,7 +332,6 @@ const HotelDetails = function ({
                             redirected to the hotel's site to
                             complete your reservation</p>
                     </div>
-                    {/* ── END FOOTER ── */}
 
                 </div>
             )}

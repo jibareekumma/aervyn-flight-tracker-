@@ -1,6 +1,5 @@
 
 
-
 import favoriteIcon from "/icons/favorite_icon.png"
 import shareIcon from "/icons/share_icon.png"
 import rightArrow from "/icons/right_arr.png"
@@ -8,6 +7,7 @@ import locationIcon from "/icons/location.png"
 
 import "../../css/CarDetail.css"
 import { useEffect, useState } from "react"
+import { useFavorites } from "../../context/FavoriteContext"
 
 const CarDetails = function ({
     isOpen,
@@ -19,6 +19,8 @@ const CarDetails = function ({
 }) {
 
     const [displayCar, setDisplayCar] = useState(null);
+    const { isFavorite, toggleFavorite } = useFavorites()
+    const carIsFavorited = displayCar ? isFavorite(displayCar, "car") : false
 
     useEffect(() => {
         if (selectedCar) {
@@ -31,6 +33,11 @@ const CarDetails = function ({
             document.body.style.overflow = ""
         }
     }, [selectedCar])
+
+    const handleFavoriteClick = function (e) {
+        e.stopPropagation()
+        toggleFavorite(displayCar, "car")
+    }
 
     const renderImage = function (imagePath, altText, className) {
         if (imageErrors[imagePath]) {
@@ -66,7 +73,6 @@ const CarDetails = function ({
             {displayCar && (
                 <div className='car-details-wrapper'>
 
-                    {/* ── HEADER ── car image, name, type, specs */}
                     <div className='car-header'>
                         {renderImage(displayCar.image, "Image of car", "car-image")}
                         <div className="car-text">
@@ -83,10 +89,7 @@ const CarDetails = function ({
                             </div>
                         </div>
                     </div>
-                    {/* ── END HEADER ── */}
 
-
-                    {/* ── LOCATION INFO ── pickup and return locations */}
                     <div className="car-location-info">
                         <div className='location-item'>
                             <div className='location-label'>
@@ -104,10 +107,7 @@ const CarDetails = function ({
                             <p>{displayCar.returnDate}</p>
                         </div>
                     </div>
-                    {/* ── END LOCATION INFO ── */}
 
-
-                    {/* ── CAR FEATURES ── */}
                     <div className='car-features'>
                         <h4>Features</h4>
                         <div className='car-features-grid'>
@@ -118,10 +118,7 @@ const CarDetails = function ({
                             ))}
                         </div>
                     </div>
-                    {/* ── END CAR FEATURES ── */}
 
-
-                    {/* ── AVAILABLE CARS ── similar cars */}
                     <div className='similar-cars'>
                         <h4>Similar Cars</h4>
                         {displayCar.similarCars.map(car => (
@@ -147,14 +144,13 @@ const CarDetails = function ({
                             </div>
                         ))}
                     </div>
-                    {/* ── END AVAILABLE CARS ── */}
 
-
-                    {/* ── FOOTER ── favorite, share, rent now */}
                     <div className="car-details-footer">
-                        <div className="car-favorite">
+                        <div className="car-favorite" onClick={handleFavoriteClick}>
                             <img src={favoriteIcon} alt="Favorite Icon"
-                                loading="lazy" title="Add to favorite" />
+                                loading="lazy" title="Add to favorite"
+                                className={carIsFavorited ? 'favorited' : ''}
+                            />
                         </div>
                         <div className="car-share">
                             <img src={shareIcon} 
@@ -172,7 +168,6 @@ const CarDetails = function ({
                             alt="Right Arrow" loading="lazy" />
                         </button>
                     </div>
-                    {/* ── END FOOTER ── */}
 
                 </div>
             )}
@@ -186,7 +181,6 @@ const CarDetails = function ({
             {displayCar && (
                 <div className='car-modal-wrapper'>
 
-                    {/* ── TOP ── car image, name, type, specs, favorite/share icons */}
                     <div className='car-modal-top'>
                         <div className='car-modal-top-left'>
                             {renderImage(displayCar.image, "Image of car", "car-modal-image")}
@@ -206,9 +200,11 @@ const CarDetails = function ({
                         </div>
                         <div className='car-modal-top-right'>
                             <div className="car-icon-item" 
-                            title="Add to favorites">
+                            title="Add to favorites" onClick={handleFavoriteClick}>
                                 <img src={favoriteIcon} 
-                                alt="Favourite Icon" loading="lazy" />
+                                alt="Favourite Icon" loading="lazy"
+                                className={carIsFavorited ? 'favorited' : ''}
+                                />
                             </div>
                             <div className="car-icon-item" 
                             title="Share Car">
@@ -217,10 +213,7 @@ const CarDetails = function ({
                             </div>
                         </div>
                     </div>
-                    {/* ── END TOP ── */}
 
-
-                    {/* ── LOCATION INFO ── pickup and return */}
                     <div className="car-location-info">
                         <div className='location-item'>
                             <div className='location-label'>
@@ -238,13 +231,9 @@ const CarDetails = function ({
                             <p>{displayCar.returnDate}</p>
                         </div>
                     </div>
-                    {/* ── END LOCATION INFO ── */}
 
-
-                    {/* ── BODY ── features + similar cars on left, price/policies on right */}
                     <div className='car-modal-body'>
 
-                        {/* ── LEFT ── features, similar cars */}
                         <div className='car-modal-main'>
 
                             <div className='car-features'>
@@ -285,10 +274,7 @@ const CarDetails = function ({
                             </div>
 
                         </div>
-                        {/* ── END LEFT ── */}
 
-
-                        {/* ── RIGHT ── price card, cancellation policy */}
                         <div className='car-modal-side'>
 
                             <div className='car-side-card'>
@@ -311,20 +297,18 @@ const CarDetails = function ({
                             </div>
 
                         </div>
-                        {/* ── END RIGHT ── */}
 
                     </div>
-                    {/* ── END BODY ── */}
 
-
-                    {/* ── FOOTER ── favorite, share, rent now, disclaimer */}
                     <div className="car-modal-footer">
                         <div className='car-footer-top'>
-                            <div className="car-favorite">
+                            <div className="car-favorite" onClick={handleFavoriteClick}>
                                 <img src={favoriteIcon}
                                     alt="Favorite Icon"
-                                    loading="lazy" title="Add to favorite" />
-                                <p>Add to Favorites</p>
+                                    loading="lazy" title="Add to favorite"
+                                    className={carIsFavorited ? 'favorited' : ''}
+                                />
+                                <p>{carIsFavorited ? 'Added to Favorites' : 'Add to Favorites'}</p>
                             </div>
                             <div className="car-share">
                                 <img src={shareIcon} alt="Share Icon"
@@ -343,7 +327,6 @@ const CarDetails = function ({
                             redirected to the rental company's site to
                             complete your reservation</p>
                     </div>
-                    {/* ── END FOOTER ── */}
 
                 </div>
             )}
