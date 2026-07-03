@@ -1,0 +1,106 @@
+
+
+import leftArr from "/icons/left_arrow_icon.png"
+import cancelIcon from "/icons/cancel_icon2.png"
+import cameraIcon from "/icons/camera_icon.png"
+import logoutIcon from "/icons/logout_icon.png"
+
+
+
+import { useState, useEffect } from "react"
+
+import "../css/EditProfile.css"
+
+const EditProfile = function ({ onClose, pfp }) {
+
+    const [isActive, setIsActive] = useState(false);
+
+    useEffect(() => {
+        const frame = requestAnimationFrame(() => setIsActive(true));
+        return () => cancelAnimationFrame(frame);
+    }, []);
+
+    const handleClose = () => {
+        setIsActive(false);
+        setTimeout(() => {
+            onClose();
+        }, 350); // matches $transix (0.35s) so unmount waits for the fade-out
+    };
+
+    return <>
+        <div
+            className={`overlay ${isActive ? "overlay--active" : ""}`}
+            onClick={handleClose}
+        ></div>
+
+        <div className={`profile-edit-window ${isActive ? 
+            "profile-edit-window--active" : ""}`}>
+
+
+            <div className = 'edit-header'>
+                <div className="icon-container">
+                    <img src= {leftArr} alt="Left Arrow" 
+                    loading="lazy" 
+                    />
+                </div>
+                <h4>Edit Profile</h4>
+                <div className="icon-container"
+                    onClick = {handleClose}
+                >
+                    <img src = {cancelIcon} alt="Cancel Icon" 
+                    loading="lazy"
+                    />
+                </div>
+            </div>
+
+
+            <div className="edit-container">
+                <div className="profile-details">
+                                    <div className="profile-image-container">
+                                        <div className="profile-avatar">
+                                            <img src={pfp}
+                                                alt="User profile photo"
+                                                loading="lazy" />
+                                            <div className='icon-container'
+                                            >
+                                                <img src={cameraIcon}
+                                                    alt="Icon of camera" loading='lazy' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>Change Photo</h4>
+                                    <p>JPG, PNG, or WebP, Max 5MB.</p>
+                                </div>
+
+
+
+                <div className="edit-form">
+                    <h5>Full Name</h5>
+                    <input type="text" placeholder="New Name"
+                        maxLength={50}
+                    />
+                    <p>This is how your name will 
+                        appear in the site</p>
+                </div>
+
+
+                <button className="edit-btn">
+                    Save Changes
+                </button>
+            </div>
+
+
+
+
+            <button className="log-out-btn">
+                <img src = {logoutIcon} alt="Log Out icon" 
+                loading = "lazy"
+                />
+                <p>Log out</p>
+            </button>
+
+        </div>
+    </>
+}
+
+export default EditProfile;

@@ -1,0 +1,93 @@
+
+
+
+$bg-color3: rgba(15, 38, 46);
+$bg-color4: rgba(44, 66, 76);
+$filter-white: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+$transix-fast: 0.2s ease;
+
+.desktop-sidebar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop-sidebar {
+        width: 7rem;
+        min-height: 100vh;
+        background-color: $bg-color3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        opacity: 0;
+        animation: slideUp 0.6s ease-out 0s forwards;
+
+        .sidebar-top {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6rem;
+
+            .sidebar-logo {
+                width: 7rem;
+                height: 7rem;
+                object-fit: contain;
+                filter: $filter-white;
+            }
+        }
+
+        .sidebar-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .sidebar-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar-icon {
+            width: 4.5rem;
+            height: 4.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color $transix-fast;
+
+            img {
+                width: 2.2rem;
+                height: 2.2rem;
+                filter: $filter-white;
+                opacity: 0.6;
+            }
+
+            &:hover {
+                background-color: $bg-color4;
+
+                img {
+                    opacity: 1;
+                }
+            }
+
+            &.active {
+                background-color: $bg-color4;
+
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -68,21 +68,34 @@ const Favorite = () => {
             alt="logo" className="sidebar-logo" />
         </div>
         <div className="sidebar-icons">
-          <div className="sidebar-icon">
+          <div className="sidebar-icon"
+            onClick = {() => navigate('/dashboard')}
+          >
             <img src={homeIcon} alt="home" />
           </div>
-          <div className="sidebar-icon">
+
+          <div className="sidebar-icon"
+          onClick = {() => navigate('/bookings')}
+          >
             <img src={bookingIcon2} alt="bookings" />
           </div>
+
           <div className="sidebar-icon">
             <img src={calendarIcon} alt="calendar" />
           </div>
-          <div className="sidebar-icon active">
+
+          <div className="sidebar-icon active"
+          onClick = {() => navigate('/favorite')}
+          >
             <img src={favoriteIcon} alt="favorites" />
           </div>
-          <div className="sidebar-icon">
+
+          <div className="sidebar-icon"
+          onClick = {() => navigate('/profile')}
+          >
             <img src={profileIcon} alt="profile" />
           </div>
+
         </div>
         <div className="sidebar-bottom">
           <div className="sidebar-icon">

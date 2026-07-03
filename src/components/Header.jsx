@@ -68,9 +68,7 @@ const Header = function({ activeTabs, setActiveTabs } ){
             onClick = {() => setActiveTabs("cars")}>
             Cars</div>
     </section>
-    <UserProfile 
-        profileImg = {pfp}
-    />
+    
 </>
    
 }

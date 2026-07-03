@@ -1,8 +1,9 @@
 
 
 
-import pfp from "/photos/pfp 1.jpg"
+import { useState } from "react"
 
+import pfp from "/photos/pfp 1.jpg"
 
 import pencilIcon from "/icons/pencil_icon.png"
 import searchIcon from "/icons/search_icon.png"
@@ -10,182 +11,155 @@ import bookingIcon from "/icons/booking_icon.png"
 import favoriteIcon from "/icons/favorite_icon.png"
 import logoutIcon from "/icons/logout_icon.png"
 import openIcon from "/icons/open_icon.png"
-
-
 import homeIcon from "/icons/home_icon.png"
-import profileIcon from "/icons/profile_icon 2.png"
 import bookingIcon2 from "/icons/booking_icon2.png"
-import calendarIcon from "/icons/bell_icon.png"
-import settingsIcon from "/icons/spin-rotate.png"
-import mainIcon from "/icons/main-icon.png"
+import profileIcon from "/icons/profile_icon 2.png"
 
-
-
+import Sidebar from "./Sidebar"
+import EditProfile from "./EditProfile"
 import "../css/UserProfile.css"
 import { useNavigate } from "react-router-dom"
-const UserProfile = function(){
 
-const navigate = useNavigate();
+const UserProfile = function () {
 
-    return<>
-        <div className = 'profile-layout'>
+    const navigate = useNavigate();
+    const [showEditProfile, setShowEditProfile] = useState(false);
 
-            <aside className="desktop-sidebar">
-                <div className="sidebar-top">
-                    <img src = {mainIcon}
-                    alt="logo" className="sidebar-logo" />
+    return <>
+        <div className='profile-layout'>
+
+            <Sidebar active="profile" />
+
+            <div className='profile-container'>
+
+                <div className="profile-header">
+                    <h4>User Aervyn Profile</h4>
                 </div>
 
-                <div className="sidebar-icons">
-                    <div className="sidebar-icon"
-                    onClick = {() => navigate('/dashboard')}>
-                        <img src={homeIcon} alt="home" />
-                    </div>
-                    <div className="sidebar-icon"
-                    onClick = {() => navigate('/bookings')}>
-                        <img src={bookingIcon2} alt="bookings" />
-                    </div>
-                    <div className="sidebar-icon">
-                        <img src={calendarIcon} alt="calendar" />
-                    </div>
-                    <div className="sidebar-icon"
-                    onClick = {() => navigate('/favorite')}>
-                        <img src={favoriteIcon} alt="favorites" />
-                    </div>
-                    <div className="sidebar-icon active">
-                        <img src={profileIcon} alt="profile" />
-                    </div>
-                </div>
-
-                <div className="sidebar-bottom">
-                    <div className="sidebar-icon">
-                        <img src={settingsIcon} alt="settings" />
-                    </div>
-                </div>
-            </aside>
-
-        <div className = 'profile-container'>
-
-
-            <div className = "profile-header">
-                <h4>User Aervyn Profile</h4>
-            </div>
-
-
-
-            <div className="profile-details">
-                <div className="profile-image-container">
-                    <div className = "profile-avatar">
-                        <img src = {pfp} 
-                        alt="User profile photo" 
-                        loading="lazy" />
-                        <div className = 'icon-container'>
-                            <img src = {pencilIcon} 
-                            alt="Icon of pencil" loading = 'lazy' />
+                <div className="profile-details">
+                    <div className="profile-image-container">
+                        <div className="profile-avatar">
+                            <img src={pfp}
+                                alt="User profile photo"
+                                loading="lazy" />
+                            <div className='icon-container'
+                                onClick={() => setShowEditProfile(true)}
+                            >
+                                <img src={pencilIcon}
+                                    alt="Icon of pencil" loading='lazy' />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <h4>User Name</h4>
-                <p>usermail@example.com</p>
-            </div>
-
-
-
-            <div className = 'profile-links'>
-
-                <div className = 'link-item'>
-                    <img src = {pencilIcon} alt="Item Icon"
-                    loading="lazy" className="link-icon"
-                    />
-                    <p>Edit Profile</p>
-                    <img src = {openIcon} alt="Open icon" 
-                    loading="lazy" className="open-icon"
-                    />
+                    <h4>User Name</h4>
+                    <p>usermail@example.com</p>
                 </div>
 
-                <div className = 'link-item'>
-                    <img src = {searchIcon} alt="Search Icon"
-                    loading="lazy" className="link-icon"
-                    />
-                    <p>Search Flights</p>
-                    <img src = {openIcon} alt="Open icon" 
-                    loading="lazy" className="open-icon"
-                    />
-                </div>
+                <div className='profile-links'>
 
-                <div className = 'link-item'>
-                    <img src = {bookingIcon} alt="Item Icon"
-                    loading="lazy" className="link-icon"
-                    />
-                    <p>Bookings</p>
-                    <img src = {openIcon} alt="Open icon" 
-                    loading="lazy" className="open-icon"
-                    />
-                </div>
+                    <div className='link-item'
+                        onClick={() => setShowEditProfile(true)}
+                    >
+                        <img src={pencilIcon} alt="Item Icon"
+                            loading="lazy" className="link-icon"
+                        />
+                        <p>Edit Profile</p>
+                        <img src={openIcon} alt="Open icon"
+                            loading="lazy" className="open-icon"
+                        />
+                    </div>
 
-                <div className = 'link-item'>
-                    <img src = {favoriteIcon} alt="Item Icon"
-                    loading="lazy" className="link-icon"
-                    />
-                    <p>Favorites</p>
-                    <img src = {openIcon} alt="Item icon" 
-                    loading="lazy" className="open-icon"
-                    />
-                </div>
+                    <div className='link-item'
+                        onClick = {() => navigate('/dashboard')}
+                    >
+                        <img src={searchIcon} alt="Search Icon"
+                            loading="lazy" className="link-icon"
+                        />
+                        <p>Search Flights</p>
+                        <img src={openIcon} alt="Open icon"
+                            loading="lazy" className="open-icon"
+                        />
+                    </div>
 
-                <div className = 'link-item link-item-last'>
-                    <img src = {logoutIcon} alt="Item Icon"
-                    loading="lazy" className="link-icon"
-                    />
-                    <p>Log Out</p>
-                    <img src = {openIcon} alt="Item icon" 
-                    loading="lazy" className="open-icon"
-                    />
-                </div>
-
-            </div>
-
-
-                    <nav>
-                        <div className = 'nav-container'>
-                       <img src = {homeIcon} alt="House icon"
-                       title = "Go back home" className='nav-home'
-                       onClick = {() => navigate('/dashboard')}
-                       />
-                       <p>Home</p>
-                       </div>
-            
-                        <div className = 'nav-container'
+                    <div className='link-item'
                         onClick = {() => navigate('/bookings')}
-                        >
-                       <img src = {bookingIcon2} alt="Search icon"
-                       title = "Book a Hotel/Cars/Destination" 
-                       className='nav-search'
-                       
-                       />
-                       <p>Bookings</p>
-                       </div>
-            
-                        <div className = 'nav-container'
-                        onClick = { () => navigate('/favorite') }
-                        >
-                       <img src = {favoriteIcon} alt="Favourite icon"
-                       title = "Favorite Flights" className='nav-favorite'
-                       
-                       />
-                       <p>Favorites</p>
-                       </div>
-            
-                        <div className = 'nav-container'>
-                       <img src = {profileIcon} alt="Profile icon"
-                       title = "Edit Profile" className='nav-profile'
-                       onClick = {() => navigate('/profile')}
-                       />
-                       <p>Profile</p>
-                       </div>
-                    </nav>
+                    >
+                        <img src={bookingIcon} alt="Item Icon"
+                            loading="lazy" className="link-icon"
+                        />
+                        <p>Bookings</p>
+                        <img src={openIcon} alt="Open icon"
+                            loading="lazy" className="open-icon"
+                        />
+                    </div>
+
+                    <div className='link-item'
+                        onClick = {() => navigate('/favorite')}
+                    >
+                        <img src={favoriteIcon} alt="Item Icon"
+                            loading="lazy" className="link-icon"
+                        />
+                        <p>Favorites</p>
+                        <img src={openIcon} alt="Item icon"
+                            loading="lazy" className="open-icon"
+                        />
+                    </div>
+
+                    <div className='link-item link-item-last'>
+                        <img src={logoutIcon} alt="Item Icon"
+                            loading="lazy" className="link-icon"
+                        />
+                        <p>Log Out</p>
+                        <img src={openIcon} alt="Item icon"
+                            loading="lazy" className="open-icon"
+                        />
+                    </div>
+
+                </div>
+
+                <nav>
+                    <div className='nav-container'>
+                        <img src={homeIcon} alt="House icon"
+                            title="Go back home" className='nav-home'
+                            onClick={() => navigate('/dashboard')}
+                        />
+                        <p>Home</p>
+                    </div>
+
+                    <div className='nav-container'
+                        onClick={() => navigate('/bookings')}
+                    >
+                        <img src={bookingIcon2} alt="Search icon"
+                            title="Book a Hotel/Cars/Destination"
+                            className='nav-search'
+                        />
+                        <p>Bookings</p>
+                    </div>
+
+                    <div className='nav-container'
+                        onClick={() => navigate('/favorite')}
+                    >
+                        <img src={favoriteIcon} alt="Favourite icon"
+                            title="Favorite Flights" className='nav-favorite'
+                        />
+                        <p>Favorites</p>
+                    </div>
+
+                    <div className='nav-container'>
+                        <img src={profileIcon} alt="Profile icon"
+                            title="Edit Profile" className='nav-profile'
+                            onClick={() => navigate('/profile')}
+                        />
+                        <p>Profile</p>
+                    </div>
+                </nav>
+            </div>
         </div>
-        </div>
+
+        {showEditProfile &&
+            <EditProfile onClose={() => setShowEditProfile(false)} 
+                pfp = {pfp}
+            />
+        }
     </>
 }
 
