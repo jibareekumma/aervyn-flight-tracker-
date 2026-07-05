@@ -1,9 +1,6 @@
 
 
-
 import { useState } from "react"
-
-import pfp from "/photos/pfp 1.jpg"
 
 import pencilIcon from "/icons/pencil_icon.png"
 import searchIcon from "/icons/search_icon.png"
@@ -19,11 +16,14 @@ import Sidebar from "./Sidebar"
 import EditProfile from "./EditProfile"
 import "../css/UserProfile.css"
 import { useNavigate } from "react-router-dom"
+import { useProfile } from "../context/ProfileContext"
 
 const UserProfile = function () {
 
     const navigate = useNavigate();
     const [showEditProfile, setShowEditProfile] = useState(false);
+
+    const { profileImg, profileName, updateProfile } = useProfile();
 
     return <>
         <div className='profile-layout'>
@@ -39,7 +39,7 @@ const UserProfile = function () {
                 <div className="profile-details">
                     <div className="profile-image-container">
                         <div className="profile-avatar">
-                            <img src={pfp}
+                            <img src={profileImg}
                                 alt="User profile photo"
                                 loading="lazy" />
                             <div className='icon-container'
@@ -50,7 +50,7 @@ const UserProfile = function () {
                             </div>
                         </div>
                     </div>
-                    <h4>User Name</h4>
+                    <h4>{profileName}</h4>
                     <p>usermail@example.com</p>
                 </div>
 
@@ -157,7 +157,9 @@ const UserProfile = function () {
 
         {showEditProfile &&
             <EditProfile onClose={() => setShowEditProfile(false)} 
-                pfp = {pfp}
+                pfp = {profileImg}
+                name = {profileName}
+                handleSave = {updateProfile}
             />
         }
     </>

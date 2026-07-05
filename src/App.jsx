@@ -17,12 +17,14 @@ import CarResult from './components/resultPages/CarResult'
 
 import { useAuth } from './context/AuthContext'
 import { FavoritesProvider } from './context/FavoriteContext'
+import { ProfileProvider } from './context/ProfileContext'
 function App() {
   const { user, loading } = useAuth()
     if (loading) return <p>Loading...</p>
  
   return (
     <>
+      <ProfileProvider>
       <FavoritesProvider>
       <Routes>
         <Route  path = "/" element = {<Intro />} />
@@ -41,6 +43,7 @@ function App() {
         <Route path = '/profile' element = {<UserProfile/>} />
       </Routes>
       </FavoritesProvider>
+      </ProfileProvider>
     </>
   )
 }

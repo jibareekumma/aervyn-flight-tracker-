@@ -1,19 +1,17 @@
 
 
+
 import { useState, useEffect } from "react"
 import { supabase } from "../lib/supabaseClient"
-import pfp from "/photos/pfp 1.jpg"
 import "../css/Header.css"
-
-import UserProfile from "./UserProfile"
-
-
 import bellIcon from "/icons/bell_icon.png"
 import favoriteIcon from "/icons/favorite_icon.png"
-
+import { useProfile } from "../context/ProfileContext"
 
 const Header = function({ activeTabs, setActiveTabs } ){
     const [userName, setUserName] = useState("")
+
+    const { profileImg } = useProfile()
 
     useEffect(() => {
         const getUser = async () => {
@@ -24,13 +22,11 @@ const Header = function({ activeTabs, setActiveTabs } ){
         }
         getUser()
     }, [])
-
     const today = new Date().toLocaleDateString('en-US', {
         weekday: 'long', 
         day: 'numeric',
         month: 'long'
     })
-
     return <>
         
         
@@ -39,21 +35,17 @@ const Header = function({ activeTabs, setActiveTabs } ){
             <p>{today}</p>
             <h6>{userName}</h6>
         </div>
-
         <div className="user-detail-header-icons">
             
-
             <div className="bell-icon">
                 <img src={bellIcon} alt="bell icon" loading="lazy" />
             </div>
-
-            <img src={pfp} alt="user-profile"
+            <img src={profileImg} alt="user-profile"
             className="user-profile-photo"
             loading="lazy"
             />
         </div>
     </section>
-
     <section className="grouped-navigation">
         <div className={`grouped-item item-flight 
         ${activeTabs === "flights" ? "active" : ""}`}
@@ -72,5 +64,4 @@ const Header = function({ activeTabs, setActiveTabs } ){
 </>
    
 }
-
 export default Header
