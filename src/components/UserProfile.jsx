@@ -1,6 +1,7 @@
 
 
 import { useState } from "react"
+import { supabase } from "../lib/supabaseClient"
 
 import pencilIcon from "/icons/pencil_icon.png"
 import searchIcon from "/icons/search_icon.png"
@@ -24,6 +25,12 @@ const UserProfile = function () {
     const [showEditProfile, setShowEditProfile] = useState(false);
 
     const { profileImg, profileName, updateProfile } = useProfile();
+
+    const handleLogOut = async () => {
+
+        await supabase.auth.signOut();
+        navigate('/login')
+    }
 
     return <>
         <div className='profile-layout'>
@@ -104,7 +111,9 @@ const UserProfile = function () {
                         />
                     </div>
 
-                    <div className='link-item link-item-last'>
+                    <div className='link-item link-item-last'
+                        onClick = {handleLogOut}
+                    >
                         <img src={logoutIcon} alt="Item Icon"
                             loading="lazy" className="link-icon"
                         />

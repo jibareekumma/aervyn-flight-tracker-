@@ -10,6 +10,8 @@ import logoutIcon from "/icons/logout_icon.png"
 
 import { useState, useEffect } from "react"
 import { useRef } from "react"
+import { supabase } from "../lib/supabaseClient"
+import { useNavigate } from "react-router-dom"
 
 import "../css/EditProfile.css"
 
@@ -58,6 +60,14 @@ const EditProfile = function ({ onClose, pfp, name, handleSave }) {
 
         handleClose();
     };
+
+    const navigate = useNavigate();
+
+    const handleLogOut = async () => {
+
+        await supabase.auth.signOut();
+        navigate('/login')
+    }
    
 
     return <>
@@ -142,7 +152,9 @@ const EditProfile = function ({ onClose, pfp, name, handleSave }) {
 
 
 
-            <button className="log-out-btn">
+            <button className="log-out-btn"
+                onClick = {handleLogOut}
+            >
                 <img src = {logoutIcon} alt="Log Out icon" 
                 loading = "lazy"
                 />

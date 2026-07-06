@@ -1,6 +1,7 @@
 
 
 import { useNavigate } from "react-router-dom"
+import { supabase } from "../lib/supabaseClient"
 
 import mainIcon from "/icons/main-icon.png"
 import homeIcon from "/icons/home_icon.png"
@@ -15,6 +16,12 @@ import "../css/Sidebar.css"
 // active: "dashboard" | "bookings" | "favorite" | "profile"
 const Sidebar = function ({ active }) {
     const navigate = useNavigate();
+
+    const handleLogOut = async () => {
+
+        await supabase.auth.signOut();
+        navigate('/login')
+    }
 
     return (
         <aside className="desktop-sidebar">
