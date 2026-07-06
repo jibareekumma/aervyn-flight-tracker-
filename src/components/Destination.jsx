@@ -184,7 +184,7 @@ const Destination = function ({activeTabs}) {
 
     <div className='texts'>
         <h6>Popular Cars</h6>
-        <a href="">View all</a>
+        
     </div>
 
     <div className='cities-wrapper' ref={carsWrapperRef}>

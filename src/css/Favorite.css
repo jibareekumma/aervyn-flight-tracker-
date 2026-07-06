@@ -2,7 +2,7 @@
   max-width: 480px;
   background: rgb(15, 38, 46);
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 0 1rem 7rem 1rem;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -543,61 +543,6 @@
   color: black;
   border-color: #0b0b1a;
 }
-.favorites-page .mobile-bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  border-top: 1px solid #eef0f4;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 8px 0 env(safe-area-inset-bottom, 8px) 0;
-  z-index: 100;
-  max-width: 480px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .favorites-page .mobile-bottom-nav {
-    display: none;
-  }
-}
-.favorites-page .mobile-bottom-nav .nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  background: transparent;
-  border: none;
-  font-size: 10px;
-  color: #6b6b80;
-  cursor: pointer;
-  padding: 4px 12px;
-  font-family: "Inter", sans-serif;
-  transition: color 0.2s;
-}
-.favorites-page .mobile-bottom-nav .nav-item img {
-  width: 24px;
-  height: 24px;
-  opacity: 0.6;
-  transition: opacity 0.2s;
-}
-.favorites-page .mobile-bottom-nav .nav-item span {
-  font-weight: 500;
-}
-.favorites-page .mobile-bottom-nav .nav-item.active {
-  color: #0b0b1a;
-}
-.favorites-page .mobile-bottom-nav .nav-item.active img {
-  opacity: 1;
-}
-.favorites-page .mobile-bottom-nav .nav-item:hover {
-  color: #0b0b1a;
-}
-.favorites-page .mobile-bottom-nav .nav-item:hover img {
-  opacity: 0.9;
-}
 
 #flight-price {
   font-size: 1.8rem;
@@ -623,4 +568,39 @@
   width: 20px;
   cursor: pointer;
   margin-left: auto;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(44, 66, 76);
+  padding: 1.2rem 0 calc(1.2rem + env(safe-area-inset-bottom, 0)) 0;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+nav .nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+nav .nav-container img {
+  width: 2.2rem;
+  height: 2.2rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+nav .nav-container p {
+  font-size: 1.1rem;
+  color: rgb(180, 190, 200);
+  letter-spacing: 0.5px;
 }/*# sourceMappingURL=Favorite.css.map */

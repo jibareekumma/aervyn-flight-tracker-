@@ -79,11 +79,12 @@ const Login = function (){
                         loading ='lazy'
                         />
                     </button>
-                    <div className = 'logo-container'></div>
+                    
                     <img src = {mainLogo} 
                     alt="Company Logo" 
                     loading = 'lazy'
                     className = 'company-logo'
+                    
                     />
                     </div>
                 </div>
@@ -102,7 +103,9 @@ const Login = function (){
                         
                     
 
-                <div className = 'input-container'>
+                <div className = 'input-container'
+                    id = 'mail-input'
+                    >
                         <div className = 'icon-box'>
                                 <img src = {mailIcon} 
                                 alt="User mail icon" 
@@ -118,7 +121,9 @@ const Login = function (){
                         />
                     </div>
 
-                     <div className = 'input-container'>
+                     <div className = 'input-container'
+                     id = 'password-input'
+                     >
                         <div className = 'icon-box'>
                                 <img src = {padlockIcon} 
                                 alt="password icon" 
@@ -127,7 +132,7 @@ const Login = function (){
 
                         <input 
                         maxLength = {40}
-                        placeholder = "New Password"
+                        placeholder = "Input Password"
                         value = {password}
                         onChange = {(e) => setPassword(e.target.value)}
                         disabled = {loading}
@@ -152,7 +157,9 @@ const Login = function (){
 
                     </div>
 
-                    <div className = 'checkbox-container'>
+                    <div className = 'checkbox-container'
+                    
+                    >
                     <input type = "checkbox" 
                     className = 'checkbox-input'
                     />
@@ -161,6 +168,7 @@ const Login = function (){
 
                     <button type = 'button'
                     className = 'register-btn'
+                    id="login-btn"
                     onClick = {handleLogin}
                     disabled = {loading}
                     >

@@ -3,10 +3,12 @@
 
 import { useState, useEffect } from "react"
 import { supabase } from "../lib/supabaseClient"
+
 import "../css/Header.css"
 import bellIcon from "/icons/bell_icon.png"
 import favoriteIcon from "/icons/favorite_icon.png"
 import { useProfile } from "../context/ProfileContext"
+import { useNavigate } from "react-router-dom"
 
 const Header = function({ activeTabs, setActiveTabs } ){
     const [userName, setUserName] = useState("")
@@ -27,6 +29,8 @@ const Header = function({ activeTabs, setActiveTabs } ){
         day: 'numeric',
         month: 'long'
     })
+
+    const navigate = useNavigate();
     return <>
         
         
@@ -43,6 +47,7 @@ const Header = function({ activeTabs, setActiveTabs } ){
             <img src={profileImg} alt="user-profile"
             className="user-profile-photo"
             loading="lazy"
+            onClick = { () => navigate('/profile')}
             />
         </div>
     </section>

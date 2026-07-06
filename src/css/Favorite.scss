@@ -1,3 +1,5 @@
+
+
 $secondary-text: rgb(180, 190, 200);
 $bg-color1: rgba(10, 13, 20);
 $btn-color: rgb(210, 221, 230);
@@ -24,7 +26,7 @@ $border-subtle: rgba(255, 255, 255, 0.07);
   
   background: $bg-color3;
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 0 1rem 7rem 1rem;
   
   position: relative;
 
@@ -587,68 +589,6 @@ $border-subtle: rgba(255, 255, 255, 0.07);
       }
     }
   }
-
-  // ===== MOBILE BOTTOM NAV =====
-  .mobile-bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #ffffff;
-    border-top: 1px solid #eef0f4;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 8px 0 env(safe-area-inset-bottom, 8px) 0;
-    z-index: 100;
-    max-width: 480px;
-    margin: 0 auto;
-
-    @media (min-width: 768px) {
-      display: none;
-    }
-
-    .nav-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2px;
-      background: transparent;
-      border: none;
-      font-size: 10px;
-      color: #6b6b80;
-      cursor: pointer;
-      padding: 4px 12px;
-      font-family: 'Inter', sans-serif;
-      transition: color 0.2s;
-
-      img {
-        width: 24px;
-        height: 24px;
-        opacity: 0.6;
-        transition: opacity 0.2s;
-      }
-
-      span {
-        font-weight: 500;
-      }
-
-      &.active {
-        color: #0b0b1a;
-
-        img {
-          opacity: 1;
-        }
-      }
-
-      &:hover {
-        color: #0b0b1a;
-        img {
-          opacity: 0.9;
-        }
-      }
-    }
-  }
 }
 
  #flight-price{
@@ -675,4 +615,42 @@ $border-subtle: rgba(255, 255, 255, 0.07);
     width: 20px;
     cursor: pointer;
     margin-left: auto;
+}
+
+// ===== BOTTOM NAV (fixed to viewport, mobile only) =====
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $bg-color4;
+    padding: 1.2rem 0 calc(1.2rem + env(safe-area-inset-bottom, 0)) 0;
+    z-index: 100;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        cursor: pointer;
+
+        img {
+            width: 2.2rem;
+            height: 2.2rem;
+            filter: $filter-white;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: $secondary-text;
+            letter-spacing: 0.5px;
+        }
+    }
 }

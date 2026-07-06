@@ -7,6 +7,7 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 3rem;
+  padding-bottom: 7rem;
 }
 
 .profile-header {
@@ -128,6 +129,41 @@
   display: none;
 }
 
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(44, 66, 76);
+  padding: 1.2rem 0 calc(1.2rem + env(safe-area-inset-bottom, 0)) 0;
+  z-index: 100;
+}
+@media (min-width: 968px) {
+  nav {
+    display: none;
+  }
+}
+nav .nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+nav .nav-container img {
+  width: 2.2rem;
+  height: 2.2rem;
+  filter: brightness(0) invert(1) saturate(0.1) brightness(0.85);
+}
+nav .nav-container p {
+  font-size: 1.1rem;
+  color: rgb(180, 190, 200);
+  letter-spacing: 0.5px;
+}
+
 @media (min-width: 968px) {
   .desktop-sidebar {
     display: flex;
@@ -201,8 +237,5 @@
   .profile-details .profile-avatar {
     width: 10rem;
     height: 10rem;
-  }
-  nav {
-    display: none;
   }
 }/*# sourceMappingURL=UserProfile.css.map */
