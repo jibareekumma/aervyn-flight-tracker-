@@ -8,6 +8,9 @@ import { useState } from 'react';
 import '../css/Intro.css';
 import { useNavigate } from 'react-router-dom'
 
+import mainLogo from "/icons/main-icon.png"
+import hamburgerIcon from "/icons/hamburger-icon.png"
+
 const Intro = function () {
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -16,22 +19,23 @@ const Intro = function () {
     return (
         <div className="body-container">
 
-            <header>
+            <div className="intro-header">
                 <img
-                    src="/icons/main-icon.png"
+                    src= {mainLogo}
                     alt="Company Logo"
                     loading="lazy"
                     className="logo-image"
                 />
 
-                <nav className="hamburger-menu">
+                {/* <nav className="hamburger-menu"> */}
                     <img
-                        src="/icons/hamburger-icon.png"
+                        src = {hamburgerIcon}
                         alt="Hamburger icon"
                         loading="lazy"
+                        className="hamburger-menu"
                         onClick={() => setOpenMenu(true)}
                     />
-                </nav>
+                {/* </nav> */}
 
                 <nav className="desktop-nav">
                     <div className = 'nav-items'>
@@ -43,7 +47,7 @@ const Intro = function () {
                     <button type="button" 
                     className="desktop-nav-cta">Get Started</button>
                 </nav>
-            </header>
+            </div>
 
             {openMenu && (
                 <div className="menu-overlay" 

@@ -41,35 +41,41 @@ $opacity: 0;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    background-image: url("photos/bg image mbl.jpg");
+    background-image: url("/photos/bg image mbl.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
-header {
+.intro-header {
     margin-top: 2rem;
     margin-left: 2rem;
+    margin-right: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    gap: 1.5rem;
     height: auto;
     opacity: $opacity;
     animation: $entrance-animation;
 
     .logo-image {
-        width: 10rem;
-        height: 4rem;
-        object-fit: contain;
+        // flex-shrink: 0;
+        width: 12rem;
+        height: 5rem;
+        
         opacity: $opacity;
         animation: $entrance-animation;
+       
+        
     }
 
-    nav.hamburger-menu {
-        width: 8rem;
-        height: 5rem;
+    .hamburger-menu {
+        flex-shrink: 0;
+        width: 4rem;
+        height: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,15 +85,16 @@ header {
         transition: background-color $transix;
         opacity: $opacity;
         animation: $entrance-animation;
+        
+        filter: brightness(0) invert(1);
 
         &:hover {
             cursor: pointer;
-            background-color: none;
         }
 
         img {
-            width: 4.5rem;
-            height: 4.5rem;
+            width: 3rem;
+            height: 3rem;
             filter: brightness(0) invert(1);
         }
     }
